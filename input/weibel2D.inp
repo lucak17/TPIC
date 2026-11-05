@@ -1,0 +1,185 @@
+# INPUT FILE for a 2D3V thermal-anisotropy Weibel benchmark with ECSIM
+# The instability of E. S. Weibel, Phys. Rev. Lett. 2, 83 (1959).
+#
+# This deck uses the Weibel field profile plus uniform Maxwellian particles:
+#   Bz(x,0) = B_s cos(2*pi*m*x/Lx)
+# with a homogeneous anisotropic electron distribution.
+#
+# Normalization:
+#   omega_pi = 1, c = 1, d_i = c / omega_pi = 1
+#   mu = m_i / m_e = 100  ->  omega_pe = sqrt(mu) = 10, d_e = 0.1
+#
+# Benchmark target: 448^2 cells with 256 particles per cell per species, on one rank in about 10.7 GiB of
+# GPU memory (800^2 cells with 64 particles per cell need 13.5 GiB):
+#   Lx = Ly = 40 d_e = 4.0
+#   dx = dy = 0.0893 d_e = 0.00893 (1.79 electron Debye lengths along x)
+#   dt = 0.025 / omega_pe = 0.0025
+#   ncycles = 12000  ->  omega_pe * t_end = 300
+# Kinetic theory for the seeded mode (k*d_e = 0.628, A = 3, uth = 0.05, cold mobile ions): gamma = 0.0307
+# omega_pe; the fastest mode, m = 5, grows at 0.0322. The magnetic-only seed also excites an undamped light
+# wave (omega = 1.18 omega_pe), below 3 % of the mode energy after omega_pe*t ~ 150. The seeded mode saturates
+# near omega_pe*t = 260, at |Bz| ~ 3e-3, while the electron anisotropy relaxes from T_y/T_x = 4 to 1.7.
+
+# %%%%%%%%%%%%%%%%%%% Input / output %%%%%%%%%%%%%%%%%%%
+SaveDirName    = data_weibel2D_ecsim
+RestartDirName = restart_weibel2D_ecsim
+
+Case              = Weibel
+WriteMethod       = pvtk    # pvtk (parallel VTK), adios2 or hdf5
+# Per-channel overrides of WriteMethod (same values); commented out, the channel inherits WriteMethod.
+# FieldWriteMethod     = pvtk
+# ParticlesWriteMethod = pvtk
+RestartWriteMethod = default   # Checkpoint engine: adios2 or hdf5; default: ADIOS2 if built, else HDF5, else none
+SimulationName    = weibel2D_ecsim_mu100
+
+# %%%%%%%%%%%%%%%%%%% Initial electromagnetic fields %%%%%%%%%%%%%%%%%%%
+# Uniform background magnetic field. The Weibel magnetic seed below is
+# superposed on this background.
+B0x = 0.0
+B0y = 0.0
+B0z = 0.0
+
+# Single-mode periodic magnetic seed:
+#   m = 4
+#   K = 2*pi*m/Lx = 2*pi
+#   k*d_e = K/sqrt(mu) = 0.62831853...
+#   B_s = 1.0e-4/sqrt(mu) = 1.0e-5
+WeibelSeedModeX      = 4
+WeibelSeedAmplitude  = 1.0e-5
+
+# Optional Ey seed: Ey = -(gamma/K) B_s sin(Kx).
+# Keep it zero for the default magnetic-only benchmark seed.
+WeibelSeedGrowthRate = 0.0
+
+# %%%%%%%%%%%%%%%%%%% Time integration %%%%%%%%%%%%%%%%%%%
+dt      = 0.0025
+ncycles = 12000
+th      = 0.5
+c       = 1.0
+
+# ECSimSmoothing = none (off) or energy_conserving; ECSimSmoothingOperator = face7 or binomial27.
+# face7: each pass gives Smooth*f + (1-Smooth)/6 * (sum of the six face neighbours); binomial27: fixed
+# [1,2,1]^3/64 weights. Active only with energy_conserving, SmoothNiter > 0 and Smooth < 1 (Smooth in [0, 1]).
+Smooth = 0.0
+SmoothNiter = 6
+ECSimSmoothing = none
+ECSimSmoothingOperator = face7
+
+# %%%%%%%%%%%%%%%%%%% 2D3V domain in ion-normalized units %%%%%%%%%%%%%%%%%%%
+Lx = 4.0
+Ly = 4.0
+Lz = 1.0
+
+# 448 cells: the seeded wavelength 10 d_e spans 112 cells, the cutoff wavelength 2*pi*d_e/sqrt(A) = 3.6 d_e
+# spans 41.
+nxc = 448
+nyc = 448
+nzc = 1
+
+# %%%%%%%%%%%%%%%%%%% MPI topology %%%%%%%%%%%%%%%%%%%
+XLEN = 1
+YLEN = 1
+ZLEN = 1
+
+# Periodic fields in all directions.  With nzc=1 and PERIODICZ=true, this is a
+# 2D x-y spatial domain that still evolves all three velocity components.
+PERIODICX = true
+PERIODICY = true
+PERIODICZ = true
+
+# Explicitly mirror field periodicity for particles as well.
+PERIODICX_P = true
+PERIODICY_P = true
+PERIODICZ_P = true
+
+# %%%%%%%%%%%%%%%%%%% Species %%%%%%%%%%%%%%%%%%%
+# Species 0 = electrons, species 1 = ions.
+# qom = q/m, so qom_e = -100 implies m_e = 1/100 for unit-charge electrons.
+# Ions are cold and mobile here because fixed ions / analytic neutralizing
+# backgrounds are not implemented in TPIC.
+ns = 2
+
+rhoINIT   = 1.0  1.0
+
+# 16 x 16 x 1 = 256 particles/cell/species: 102.8 million particles.
+npcelx = 16  16
+npcely = 16  16
+npcelz = 1  1
+
+qom = -100.0  1.0
+
+# Thermal anisotropy: T_y / T_x = (0.10 / 0.05)^2 = 4, so A = 3.
+# Electrons are hot in y and colder in x,z.  Ions are initially cold.
+uth = 0.05  0.0
+vth = 0.10  0.0
+wth = 0.05  0.0
+
+# No imposed bulk drift.
+u0 = 0.0  0.0
+v0 = 0.0  0.0
+w0 = 0.0  0.0
+
+# Remove only the sampled residual electron mean velocity after loading.
+# The option is per species and defaults to false when omitted.
+CenterInitialVelocity = true  false
+
+# Particle positions: QuietStart = true places every particle at the centre of its subcell (npcelx*npcely*npcelz
+# subcells per cell), the same points for every species, so species with equal npcel* sit on one another;
+# false (the default) draws a random point in each subcell, a different one for every species.
+QuietStart = false
+
+# %%%%%%%%%%%%%%%%%%% Boundary conditions %%%%%%%%%%%%%%%%%%%
+# With PERIODIC*=true, periodicity governs the actual boundary behavior.
+# These face values remain present for completeness.
+
+# Electromagnetic field:
+#   0 = perfect electric conductor (PEC), 1 = perfect magnetic conductor (PMC),
+#   2 = open (--check-input admits it; --initialize and --run reject it)
+bcEMfaceXright = 0
+bcEMfaceXleft  = 0
+bcEMfaceYright = 0
+bcEMfaceYleft  = 0
+bcEMfaceZright = 0
+bcEMfaceZleft  = 0
+
+# Particles:
+#   1 = perfect mirror; 0 = exit, 2 = reemission, 3 = open out and 4 = open in
+#   are not implemented and are refused on a wall
+bcPfaceXright = 1
+bcPfaceXleft  = 1
+bcPfaceYright = 1
+bcPfaceYleft  = 1
+bcPfaceZright = 1
+bcPfaceZleft  = 1
+
+# %%%%%%%%%%%%%%%%%%% Numerics and output %%%%%%%%%%%%%%%%%%%
+GMREStol = 1.0e-15
+
+# Spatial snapshots every 40 cycles:
+#   40 * dt = 0.1 = 1 / omega_pe (5.3 snapshots per period of the light wave the seed excites)
+FieldOutputCycle = 40
+# FieldOutputTag: B, E and Gauss (cell residual) joined by +. MomentsOutputTag: rho, J, PXX, PXY, PXZ, PYY, PYZ, PZZ joined by +;
+# <name> selects every species, <name>_tot the total, <name><s> species s. Pressure is off unless named.
+# With both tags omitted, B, E, rho and J (total and per species) are written.
+FieldOutputTag   = B+E
+# Electron pressure (species 0) gives the second moments <v_x^2>, <v_y^2> and <v_z^2>, which follow the anisotropy.
+MomentsOutputTag = rho+J+PXX0+PYY0+PZZ0
+
+# Scalar cadence of diagnostics.csv:
+#   4 * dt = 0.01 = 0.1 / omega_pe
+DiagnosticsOutputCycle = 4
+# Console energy cadence (0 reports only the final state)
+DiagnosticEnergyCycle = 1
+# Gauss-law residual cadence: gauss.csv and one log line per sample (0 disables)
+DiagnosticGaussCycle = 0
+
+ParticlesOutputCycle = 0       # particle snapshots (0 disables)
+# ParticlesOutputTag has no effect: a particle snapshot always holds position, velocity, charge and id.
+# ParticlesOutputTag = position+velocity+q
+RestartOutputCycle   = 0       # checkpoint cadence (0 disables)
+CallFinalize         = 1       # also checkpoint the final state when RestartOutputCycle > 0
+
+# From the repository root, compare the growth of the seeded mode with kinetic theory with:
+#   python3 tools/postprocessing/analyze_weibel.py --run-dir <run-dir>
+# Here <run-dir> is the directory from which the simulation was launched; the analyzer resolves SaveDirName
+# relative to it and takes the electron second moments from the pressure written above.

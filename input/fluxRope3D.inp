@@ -1,0 +1,155 @@
+# INPUT FILE for a 3D screw-pinch flux-rope kink ECSIM run
+# Flux rope with internal kink after S. Markidis et al., Plasma Phys. Control. Fusion 56, 064010 (2014).
+#
+# Normalization:
+#   x is normalized to d_i = c / omega_pi
+#   t is normalized to omega_pi^-1
+#   c = 1, omega_pi = 1, d_i = 1
+#   FluxRopeB0 = 0.1 gives Omega_ci / omega_pi = 0.1 for the rope core field
+#
+# Case = fluxRope initializes:
+#   dBx = -FluxRopeB0 * (y - yc) / ((x - xc)^2 + (y - yc)^2 + w^2)
+#   dBy =  FluxRopeB0 * (x - xc) / ((x - xc)^2 + (y - yc)^2 + w^2)
+#   dBz =  FluxRopeB0
+#   E  =  0
+# The total magnetic field is B = (B0x, B0y, B0z) + dB_fluxRope.
+# with uniform ion/electron density, force-balanced thermal speeds, and an
+# electron axial drift Uez = -Jz / n_e, Jz = 2*FluxRopeB0*w^2/(r^2+w^2)^2.
+
+# %%%%%%%%%%%%%%%%%%% Input / output %%%%%%%%%%%%%%%%%%%
+SaveDirName    = data_fluxRope3D_ecsim
+RestartDirName = restart_fluxRope3D_ecsim
+
+Case              = fluxRope
+WriteMethod       = pvtk    # pvtk (parallel VTK), adios2 or hdf5
+# Per-channel overrides of WriteMethod (same values); commented out, the channel inherits WriteMethod.
+# FieldWriteMethod     = pvtk
+# ParticlesWriteMethod = pvtk
+RestartWriteMethod = default   # Checkpoint engine: adios2 or hdf5; default: ADIOS2 if built, else HDF5, else none
+SimulationName    = fluxRope3D_kink_ecsim_miMe25
+
+# %%%%%%%%%%%%%%%%%%% Flux-rope equilibrium %%%%%%%%%%%%%%%%%%%
+FluxRopeB0                       = 0.1
+FluxRopeWidth                    = 1.0
+FluxRopeCenterX                  = 6.283185307179586
+FluxRopeCenterY                  = 6.283185307179586
+FluxRopePressureFloor            = 9.0e-4
+FluxRopeElectronPressureFraction = 0.1
+
+# Uniform background magnetic field. Set to zero for no extra background.
+# Total initial axial field is FluxRopeB0 + B0z.
+B0x = 0.0
+B0y = 0.0
+B0z = 0.0
+
+# %%%%%%%%%%%%%%%%%%% Time integration %%%%%%%%%%%%%%%%%%%
+# 4000 cycles at dt = 0.3 reaches t = 1200 omega_pi^-1 = 120 Omega_ci^-1.
+dt      = 0.3
+ncycles = 4000
+th      = 0.5
+c       = 1.0
+
+# Light ECSIM energy-conserving smoothing: one weak face-neighbour pass.
+# ECSimSmoothing = none (off) or energy_conserving; ECSimSmoothingOperator = face7 or binomial27.
+# face7: each pass gives Smooth*f + (1-Smooth)/6 * (sum of the six face neighbours); binomial27: fixed
+# [1,2,1]^3/64 weights. Active only with energy_conserving, SmoothNiter > 0 and Smooth < 1 (Smooth in [0, 1]).
+Smooth                 = 0.9
+SmoothNiter            = 1
+ECSimSmoothing         = energy_conserving
+ECSimSmoothingOperator = face7
+
+# %%%%%%%%%%%%%%%%%%% 3D flux-rope domain %%%%%%%%%%%%%%%%%%%
+# Lx = Ly = 4*pi d_i, Lz = 8*pi d_i.
+Lx = 12.566370614359172
+Ly = 12.566370614359172
+Lz = 25.132741228718345
+
+nxc = 64
+nyc = 64
+nzc = 128
+
+# %%%%%%%%%%%%%%%%%%% MPI topology %%%%%%%%%%%%%%%%%%%
+# This deck targets 8 ranks. Change XLEN/YLEN/ZLEN together with
+# mpirun -np if you use a different process count.
+XLEN = 2
+YLEN = 2
+ZLEN = 2
+
+PERIODICX = false
+PERIODICY = false
+PERIODICZ = true
+
+PERIODICX_P = false
+PERIODICY_P = false
+PERIODICZ_P = true
+
+# %%%%%%%%%%%%%%%%%%% Species %%%%%%%%%%%%%%%%%%%
+# Species 0 = electrons, species 1 = ions. qom_e = -25 gives mi/me = 25.
+ns = 2
+
+rhoINIT   = 1.0  1.0
+
+# 3 x 3 x 3 = 27 particles/cell/species.
+npcelx = 3  3
+npcely = 3  3
+npcelz = 3  3
+
+qom = -25.0  1.0
+
+# Thermal speeds and axial drift are spatially computed by the fluxRope loader.
+uth = 0.0  0.0
+vth = 0.0  0.0
+wth = 0.0  0.0
+
+u0 = 0.0  0.0
+v0 = 0.0  0.0
+w0 = 0.0  0.0
+
+# CenterInitialVelocity shifts a species so that its mean velocity equals that of the drift its case loads.
+CenterInitialVelocity = false  false
+
+# Particle positions: QuietStart = true places every particle at the centre of its subcell (npcelx*npcely*npcelz
+# subcells per cell), the same points for every species, so species with equal npcel* sit on one another;
+# false (the default) draws a random point in each subcell, a different one for every species.
+QuietStart = false
+
+# %%%%%%%%%%%%%%%%%%% Boundary conditions %%%%%%%%%%%%%%%%%%%
+
+# Electromagnetic field: 0 = perfect electric conductor (PEC), 1 = perfect magnetic conductor (PMC),
+# 2 = open (--check-input admits it; --initialize and --run reject it).
+# z is periodic through PERIODICZ = true; its face values are placeholders.
+bcEMfaceXright = 0
+bcEMfaceXleft  = 0
+bcEMfaceYright = 0
+bcEMfaceYleft  = 0
+bcEMfaceZright = 0
+bcEMfaceZleft  = 0
+
+# Particles: 1 = perfect mirror; 0 = exit, 2 = reemission, 3 = open out and 4 = open in
+# are not implemented and are refused on a wall.
+# z particle periodicity is set by PERIODICZ_P = true.
+bcPfaceXright = 1
+bcPfaceXleft  = 1
+bcPfaceYright = 1
+bcPfaceYleft  = 1
+bcPfaceZright = 1
+bcPfaceZleft  = 1
+
+# %%%%%%%%%%%%%%%%%%% Numerics and output %%%%%%%%%%%%%%%%%%%
+GMREStol   = 1.0e-3
+
+FieldOutputCycle       = 100
+# FieldOutputTag: B, E and Gauss (cell residual) joined by +. MomentsOutputTag: rho, J, PXX, PXY, PXZ, PYY, PYZ, PZZ joined by +;
+# <name> selects every species, <name>_tot the total, <name><s> species s. Pressure is off unless named.
+# With both tags omitted, B, E, rho and J (total and per species) are written.
+FieldOutputTag         = B+E
+MomentsOutputTag       = rho+rho_tot+J+J_tot+PXX+PXY+PXZ+PYY+PYZ+PZZ+PXX_tot+PXY_tot+PXZ_tot+PYY_tot+PYZ_tot+PZZ_tot
+DiagnosticsOutputCycle = 10    # diagnostics.csv cadence (0 disables)
+DiagnosticEnergyCycle = 1      # console energy cadence (0 reports only the final state)
+DiagnosticGaussCycle = 0       # Gauss-law residual cadence: gauss.csv and one log line per sample (0 disables)
+
+ParticlesOutputCycle = 0       # particle snapshots (0 disables)
+# ParticlesOutputTag has no effect: a particle snapshot always holds position, velocity, charge and id.
+# ParticlesOutputTag = position+velocity+q
+RestartOutputCycle   = 0       # checkpoint cadence (0 disables)
+CallFinalize         = 1       # also checkpoint the final state when RestartOutputCycle > 0

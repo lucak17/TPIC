@@ -1,0 +1,17 @@
+/build*/
+/artifacts/
+/runs/
+__pycache__/
+*.png
+*.svg
+*.json
+!/CMakePresets.json
+!/cmake/dependencies.json
+*.log
+*.tmp
+*.asm
+*.py[cod]
+*.egg-info/
+.venv/
+CMakeUserPresets.json
+

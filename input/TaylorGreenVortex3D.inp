@@ -1,0 +1,146 @@
+# INPUT FILE for a 3D Taylor-Green vortex ECSIM run
+#
+#   E = 0
+#   B = B0 zhat plus optional Taylor-Green magnetic seed
+#   u_i(x,y,z) = u_e(x,y,z) = u_TG(x,y,z)
+#
+# The optional magnetic TGV perturbation is available through
+# TaylorGreenVortexMagneticAmplitude. It is zero here, a pure flow vortex; a
+# nonzero seed also loads the species drifts that carry its current.
+
+# %%%%%%%%%%%%%%%%%%% Input / output %%%%%%%%%%%%%%%%%%%
+SaveDirName    = data_tgv3D_ecsim
+RestartDirName = restart_tgv3D_ecsim
+
+Case              = TaylorGreenVortex
+WriteMethod       = pvtk    # pvtk (parallel VTK), adios2 or hdf5
+# Per-channel overrides of WriteMethod (same values); commented out, the channel inherits WriteMethod.
+# FieldWriteMethod     = pvtk
+# ParticlesWriteMethod = pvtk
+RestartWriteMethod = default   # Checkpoint engine: adios2 or hdf5; default: ADIOS2 if built, else HDF5, else none
+SimulationName    = taylorGreenVortex3D_ecsim_mu100
+
+# %%%%%%%%%%%%%%%%%%% Taylor-Green vortex seed %%%%%%%%%%%%%%%%%%%
+# L = 8 d_i and mode 1 give k0 = 2*pi/8 = 0.7853981634.
+TaylorGreenVortexMode              = 1
+# Per-axis modes default to TaylorGreenVortexMode; ModeX/Lx must equal ModeY/Ly.
+# TaylorGreenVortexModeX           = 1
+# TaylorGreenVortexModeY           = 1
+# TaylorGreenVortexModeZ           = 1
+TaylorGreenVortexVelocityAmplitude = 0.05
+TaylorGreenVortexMagneticAmplitude = 0.0
+TaylorGreenVortexSeedMotionalE     = false
+
+# %%%%%%%%%%%%%%%%%%% Initial electromagnetic fields %%%%%%%%%%%%%%%%%%%
+# Uniform background magnetic field. The TGV magnetic seed is controlled only
+# by TaylorGreenVortexMagneticAmplitude and is superposed on this background.
+B0x = 0.0
+B0y = 0.0
+B0z = 0.1
+
+# %%%%%%%%%%%%%%%%%%% Time integration %%%%%%%%%%%%%%%%%%%
+dt      = 0.08
+ncycles = 1000
+th      = 0.5
+c       = 1.0
+
+# ECSimSmoothing = none (off) or energy_conserving; ECSimSmoothingOperator = face7 or binomial27.
+# face7: each pass gives Smooth*f + (1-Smooth)/6 * (sum of the six face neighbours); binomial27: fixed
+# [1,2,1]^3/64 weights. Active only with energy_conserving, SmoothNiter > 0 and Smooth < 1 (Smooth in [0, 1]).
+Smooth                 = 0.2
+SmoothNiter            = 3
+ECSimSmoothing         = energy_conserving
+ECSimSmoothingOperator = binomial27
+
+# %%%%%%%%%%%%%%%%%%% 3D periodic domain %%%%%%%%%%%%%%%%%%%
+# Lengths are normalized to d_i, so this is an 8 d_i cube.
+Lx = 8.0
+Ly = 8.0
+Lz = 8.0
+
+nxc = 120
+nyc = 120
+nzc = 120
+
+# %%%%%%%%%%%%%%%%%%% MPI topology %%%%%%%%%%%%%%%%%%%
+XLEN = 1
+YLEN = 1
+ZLEN = 1
+
+PERIODICX = true
+PERIODICY = true
+PERIODICZ = true
+
+PERIODICX_P = true
+PERIODICY_P = true
+PERIODICZ_P = true
+
+# %%%%%%%%%%%%%%%%%%% Species %%%%%%%%%%%%%%%%%%%
+# Species 0 = electrons, species 1 = ions. qom_e = -100 gives mi/me = 100.
+ns = 2
+
+rhoINIT   = 1.0  1.0
+
+npcelx = 4  4
+npcely = 4  4
+npcelz = 4  4
+
+qom = -100.0  1.0
+
+# Equal ion/electron temperatures with vth_e = sqrt(mi/me) * vth_i.
+uth = 0.10  0.01
+vth = 0.10  0.01
+wth = 0.10  0.01
+
+# Global drifts are zero; the spatial TGV drift is added by the initializer.
+u0 = 0.0  0.0
+v0 = 0.0  0.0
+w0 = 0.0  0.0
+
+# Per species: shift the loaded velocities so that the species mean equals that of the drift its case loads.
+CenterInitialVelocity = true  true
+
+# Particle positions: QuietStart = true places every particle at the centre of its subcell (npcelx*npcely*npcelz
+# subcells per cell), the same points for every species, so species with equal npcel* sit on one another;
+# false (the default) draws a random point in each subcell, a different one for every species.
+QuietStart = false
+
+# %%%%%%%%%%%%%%%%%%% Boundary conditions %%%%%%%%%%%%%%%%%%%
+# Every direction is periodic here, so the face values are placeholders.
+
+# Electromagnetic field: 0 = perfect electric conductor (PEC), 1 = perfect magnetic conductor (PMC),
+# 2 = open (--check-input admits it; --initialize and --run reject it).
+bcEMfaceXright = 0
+bcEMfaceXleft  = 0
+bcEMfaceYright = 0
+bcEMfaceYleft  = 0
+bcEMfaceZright = 0
+bcEMfaceZleft  = 0
+
+# Particles: 1 = perfect mirror; 0 = exit, 2 = reemission, 3 = open out and 4 = open in
+# are not implemented and are refused on a wall.
+bcPfaceXright = 1
+bcPfaceXleft  = 1
+bcPfaceYright = 1
+bcPfaceYleft  = 1
+bcPfaceZright = 1
+bcPfaceZleft  = 1
+
+# %%%%%%%%%%%%%%%%%%% Numerics and output %%%%%%%%%%%%%%%%%%%
+GMREStol   = 1.0e-10
+
+FieldOutputCycle       = 20
+# FieldOutputTag: B, E and Gauss (cell residual) joined by +. MomentsOutputTag: rho, J, PXX, PXY, PXZ, PYY, PYZ, PZZ joined by +;
+# <name> selects every species, <name>_tot the total, <name><s> species s. Pressure is off unless named.
+# With both tags omitted, B, E, rho and J (total and per species) are written.
+FieldOutputTag         = B+E
+MomentsOutputTag       = rho+rho_tot+J+J_tot+PXX+PXY+PXZ+PYY+PYZ+PZZ+PXX_tot+PXY_tot+PXZ_tot+PYY_tot+PYZ_tot+PZZ_tot
+DiagnosticsOutputCycle = 1     # diagnostics.csv cadence (0 disables)
+DiagnosticEnergyCycle = 1      # console energy cadence (0 reports only the final state)
+DiagnosticGaussCycle = 0       # Gauss-law residual cadence: gauss.csv and one log line per sample (0 disables)
+
+ParticlesOutputCycle = 0       # particle snapshots (0 disables)
+# ParticlesOutputTag has no effect: a particle snapshot always holds position, velocity, charge and id.
+# ParticlesOutputTag = position+velocity+q
+RestartOutputCycle   = 0       # checkpoint cadence (0 disables)
+CallFinalize         = 1       # also checkpoint the final state when RestartOutputCycle > 0

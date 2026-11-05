@@ -1,0 +1,863 @@
+{
+  "repository": "LPFx",
+  "revision": "1b7dccd240e7eaf1e342df24d6c3179d26149bab",
+  "scope": "Files copied unchanged from LPFx at this revision; cmake/lpfx/CMakeLists.txt, cmake/lpfx/LPFxOptions.cmake, cmake/lpfx/LPFxTargets.cmake are adapted to this tree",
+  "files": [
+    {
+      "path": "cmake/lpfx/FindLPFxCrayPat.cmake",
+      "sha256": "9a93ad8a8fb2f4cea7b6f65e2f6a044d21c7640bbac30352010467abb300cb23"
+    },
+    {
+      "path": "cmake/lpfx/FindLPFxNVTX.cmake",
+      "sha256": "ce7e8f1048a50ba8efa94c704f48884d1bfabea618f0d879026e3d03cdfff782"
+    },
+    {
+      "path": "cmake/lpfx/FindLPFxROCTX.cmake",
+      "sha256": "190d255c911e5abbeb91bb5b0e8ced0c15b10eed0bddcee349ecb112cb03f857"
+    },
+    {
+      "path": "cmake/lpfx/FindNCCL.cmake",
+      "sha256": "2875a1851c64e6d44a2b73d35a3adf3563303f0b0d974400c81d4afae9f6ab65"
+    },
+    {
+      "path": "cmake/lpfx/FindRCCL.cmake",
+      "sha256": "1c51c65f0f97c3a5f3d06f740339f4ff86e83693cba4148e0105fc1e8c9e1e88"
+    },
+    {
+      "path": "cmake/lpfx/LPFxDeviceBackend.cmake",
+      "sha256": "694b008076a750ee882518d9af3af4e80e858491022585ac9bba3cb9d02b8f3e"
+    },
+    {
+      "path": "cmake/lpfx/lpfx_config.hpp.in",
+      "sha256": "571fbfec8f3e1ca7f33765c9f80513f566bf820bf722c3d60a9903368098e8c6"
+    },
+    {
+      "path": "include/lpfx/algorithm/coupling/device/cuda_hip.hpp",
+      "sha256": "38cccdbb238a0f1472cb8404f8a41b46a3fadd79fd6781f426cecf2731e66f47"
+    },
+    {
+      "path": "include/lpfx/algorithm/coupling/device/launch.hpp",
+      "sha256": "358a5b283adc7a4b566c075391d23c7647eb35f74dcfdbecfb34c67526060fe2"
+    },
+    {
+      "path": "include/lpfx/algorithm/coupling/device/particle_field.hpp",
+      "sha256": "e47a7a5e5bcef88232d114ad7508ba2da94ca987866a2da25b143d501247fe69"
+    },
+    {
+      "path": "include/lpfx/algorithm/coupling/host.hpp",
+      "sha256": "0074b76f447d69f99b69c3cc2f6a5c3c85d52834f0a89f1c1afe55abd54e5e9f"
+    },
+    {
+      "path": "include/lpfx/algorithm/coupling/particle.hpp",
+      "sha256": "258d07f8850f3126a1bf71fca1072fdd267c15baef18aa8702e81b61ab17785c"
+    },
+    {
+      "path": "include/lpfx/algorithm/coupling/physical_to_logical.hpp",
+      "sha256": "c0fbf416c089e719fba2fef0eac41ea21c2bda30fceb1806dadb8fb355c2626e"
+    },
+    {
+      "path": "include/lpfx/algorithm/coupling/trilinear.hpp",
+      "sha256": "8756be9b6fb48db84a6f052a9ac08887e454d2e315dd53f56e62ec20b3a07392"
+    },
+    {
+      "path": "include/lpfx/algorithm/device_kernel.hpp",
+      "sha256": "a4b362b45879828fc5f492f995ea6ba835b4e5415d3d5e403c7834e56a5be312"
+    },
+    {
+      "path": "include/lpfx/algorithm/field/differential/backward_difference.hpp",
+      "sha256": "e36c2554c4201cc0b6c9b9026cb1121495c3f1b2115890a4c8e1913f958cc00b"
+    },
+    {
+      "path": "include/lpfx/algorithm/field/differential/device/cuda_hip.hpp",
+      "sha256": "28043494d39c795213dfdff50312242db3751a13790c3c24734cfad1a32e386f"
+    },
+    {
+      "path": "include/lpfx/algorithm/field/differential/device/stencil.hpp",
+      "sha256": "7046dabc646236dc6ed715a22ba6e8fabfcc7f309a828155b1f0af7abca82c85"
+    },
+    {
+      "path": "include/lpfx/algorithm/field/differential/device/work.hpp",
+      "sha256": "3db27108c1374dc8676f958769781ebc4f102a068922ba5203c95970d465ec46"
+    },
+    {
+      "path": "include/lpfx/algorithm/field/differential/host.hpp",
+      "sha256": "918e14933a83986b90b497355cec03f04d59665b93e495683aa0f147ac1549c2"
+    },
+    {
+      "path": "include/lpfx/algorithm/field/differential/operators.hpp",
+      "sha256": "bb3a3f9b39f28a5bf5743912a343a40a9ab52e9198da5ff1b9d05881e3ce9bd1"
+    },
+    {
+      "path": "include/lpfx/algorithm/field/differential/spacing.hpp",
+      "sha256": "a659ff247d749b5c8b1fc6bd429d1df7213fc65150e5b7f04265cde325363267"
+    },
+    {
+      "path": "include/lpfx/algorithm/field/differential/staggered_difference.hpp",
+      "sha256": "382f32f97a955e04c778c6732183a19b15347866673252f69d307039a3ed3a2d"
+    },
+    {
+      "path": "include/lpfx/algorithm/particle/cell_bins.hpp",
+      "sha256": "c44f31d39970880664edb882d33e99de505f8fcc27f9f2d5ae3d778ed5522ecf"
+    },
+    {
+      "path": "include/lpfx/algorithm/particle/device/compaction.hpp",
+      "sha256": "f157ab26edf78c6b0f26f73944f909bd870b5185b6f6b7796b9a6ac6709cd0b9"
+    },
+    {
+      "path": "include/lpfx/algorithm/particle/device/cuda_hip/compaction.hpp",
+      "sha256": "b349f899afd6d0e186654839e3d6e717604e9a0605bc4fccbd273cedcfddc358"
+    },
+    {
+      "path": "include/lpfx/algorithm/particle/device/cuda_hip/sort.hpp",
+      "sha256": "34f6123e5e8bbe65b7cb564c0aa608f90df35745ee11d703ccf45e8c87c4180d"
+    },
+    {
+      "path": "include/lpfx/algorithm/particle/device/launch.hpp",
+      "sha256": "4e3028297699bfd84fe44ff88d069610baa3d22585ff430e19969f1ce4fdf6a0"
+    },
+    {
+      "path": "include/lpfx/algorithm/particle/device/sort.hpp",
+      "sha256": "9497696e4e06f387e9ef87d1ca41e349067a95af0f84a71ef477229c0c2d2885"
+    },
+    {
+      "path": "include/lpfx/algorithm/particle/host/compaction.hpp",
+      "sha256": "e368a849f9d77530457dbcdf31f1f0ea27f46668a68f6524b4e4f00bb5fd1497"
+    },
+    {
+      "path": "include/lpfx/algorithm/particle/host/sort.hpp",
+      "sha256": "17ca0169c04c8d21378d4425616ef94b1e112d8120058a413eefd3be9b3452e0"
+    },
+    {
+      "path": "include/lpfx/algorithm/particle/key.hpp",
+      "sha256": "680efbe012df697b0de9292d1127e60b6fb109d7f319a657707e804c12f0a0fb"
+    },
+    {
+      "path": "include/lpfx/algorithm/reduce/device/cuda_hip.hpp",
+      "sha256": "8cb6fc057fb297e725c6a5658dcedde2f12517644e8e859f1ad411c36b342b4a"
+    },
+    {
+      "path": "include/lpfx/algorithm/reduce/device/reduction.hpp",
+      "sha256": "3c00ee81ee7e03c823c14075d9a929cc854df5994a00681cb4cf0892c48b047f"
+    },
+    {
+      "path": "include/lpfx/algorithm/reduce/device/workspace.hpp",
+      "sha256": "7065d2f5b5e198f5a7c872085d03170a7125bacd45f9422f0643c3564c593ed2"
+    },
+    {
+      "path": "include/lpfx/algorithm/reduce/host.hpp",
+      "sha256": "00a7f132bf20d8c028f99eb89cf3fc41a5e30d18555a0fd1da9f367f63fbdd86"
+    },
+    {
+      "path": "include/lpfx/algorithm/reduce/operation.hpp",
+      "sha256": "302a706a57485db262fae3433c1365371f848c347a2839ecf4d682fb756dc387"
+    },
+    {
+      "path": "include/lpfx/algorithm/scan/device/cuda_hip.hpp",
+      "sha256": "f68787d12b4e2c85f1e519ea455d5a752b36e1d9e0de617aad4e49c50ae1629e"
+    },
+    {
+      "path": "include/lpfx/algorithm/scan/device/scan.hpp",
+      "sha256": "0d35c546e323212b3bf8c3f09918726a5aad566608ae0dfb43c62e7d6dd7f9b9"
+    },
+    {
+      "path": "include/lpfx/algorithm/scan/device/workspace.hpp",
+      "sha256": "3eafd03920c01ca5d06db040e2de7742af14b7cb9270314dbefe373d60d9cfed"
+    },
+    {
+      "path": "include/lpfx/algorithm/scan/host.hpp",
+      "sha256": "aa96402bceed7ab89961e2af372cc32a24d70b90e2af6b764d92f951e5c664f9"
+    },
+    {
+      "path": "include/lpfx/algorithm/scan/operation.hpp",
+      "sha256": "165fda706f1c5149e2d1b06d039825939a60073512d36a887c4470cf7b8b9130"
+    },
+    {
+      "path": "include/lpfx/api/distributed/communication.hpp",
+      "sha256": "9fa91fa6f4743ac18c700e7cdbfd595f4fc622c8e07195fb717d57275823661a"
+    },
+    {
+      "path": "include/lpfx/api/distributed/key.hpp",
+      "sha256": "253a4fe43de19adfce1d8a582bd48aa365fcde52368df6bf6819e7b63181a889"
+    },
+    {
+      "path": "include/lpfx/api/distributed/particle_wire.hpp",
+      "sha256": "af2f99c0f9591125efd1d1a3b6e4367557f1191116c39e51195041b9a8eb8665"
+    },
+    {
+      "path": "include/lpfx/api/distributed/particles.hpp",
+      "sha256": "fda4867f0f7cf74ba3db3e380cf633d6619f2380abef391bda1c20ed467d102b"
+    },
+    {
+      "path": "include/lpfx/api/distributed/requests.hpp",
+      "sha256": "65d633344038524d647d3700247792b6bd6e87229cf4f62b4eb6dcddb755f6d1"
+    },
+    {
+      "path": "include/lpfx/api/field/descriptors.hpp",
+      "sha256": "7ad18e6ea812b6a1382a2a4d0ea0500d7ab0911764ddd8a1e27666bce32c5044"
+    },
+    {
+      "path": "include/lpfx/api/field/field.hpp",
+      "sha256": "d17c1d43a4809404f792a13a29978bd1e258caf77eca320f392f4bbbe048f286"
+    },
+    {
+      "path": "include/lpfx/api/particle/device_particles.hpp",
+      "sha256": "d87c101bbe2a58cf87c2ac53ba24e99ee3d02d1ce8f2b3776a3dee905669512d"
+    },
+    {
+      "path": "include/lpfx/api/particle/host_particles.hpp",
+      "sha256": "ff29b04b716ac686b0f644a674d7a83366e9e6ab07fd1ec0b2cbca5361a33d0b"
+    },
+    {
+      "path": "include/lpfx/api/particle/schema.hpp",
+      "sha256": "bb27fc7fc1db254b2a87c9692eaddcb1b314b74487d1c7cad79e2ac9515b18cb"
+    },
+    {
+      "path": "include/lpfx/backend/backend.hpp",
+      "sha256": "1c74b8ab8f35b433a2b20894a2388b07aefed9e46b0a510ca986457d5564f863"
+    },
+    {
+      "path": "include/lpfx/backend/cuda/backend.hpp",
+      "sha256": "16f659b135fc523be4ac347de160c9ed16bd246ab2c57887fd86af76e07ea61a"
+    },
+    {
+      "path": "include/lpfx/backend/cuda_hip/intrinsics.hpp",
+      "sha256": "199990b4295d70a8c101a6ff3bae1231ac8c4f7c25110dab7fbac60d95d451a6"
+    },
+    {
+      "path": "include/lpfx/backend/cuda_hip/kernel.hpp",
+      "sha256": "1c31bc19ed87731eca39ae950c2c6e72c007dee2fda6e1945a12fb5a79f43e2a"
+    },
+    {
+      "path": "include/lpfx/backend/cuda_hip/native_traits.inc",
+      "sha256": "92ac996f20013dab992f1bfd02d9797ffa34c2b66a81704dd81794ac63e5d74f"
+    },
+    {
+      "path": "include/lpfx/backend/cuda_hip/runtime.hpp",
+      "sha256": "db349eec2814422a17e483c20d50285693b25ebfb1b756c1e5d20177bd1a701f"
+    },
+    {
+      "path": "include/lpfx/backend/cuda_hip/subgroup.hpp",
+      "sha256": "9452ce535e97d770c4c448fa75ecd4a71b7748f0c18f01b1df1c1dc90c6ad456"
+    },
+    {
+      "path": "include/lpfx/backend/error_reporting.hpp",
+      "sha256": "8abcef4a503fc466befff269a0ec9cc776f35255ab20aa453615e780747f533b"
+    },
+    {
+      "path": "include/lpfx/backend/handles.hpp",
+      "sha256": "23d712f21bc6f8fb7b9efe32472a3bb4f78004dac8ac92dd92d8c87a02555de7"
+    },
+    {
+      "path": "include/lpfx/backend/hip/backend.hpp",
+      "sha256": "73310419484dc78d582af7352fde071ce5c57c6baa9d2e5a27d7d5996f89658b"
+    },
+    {
+      "path": "include/lpfx/backend/launch.hpp",
+      "sha256": "0b2ce26090ac5ea4ec0195ffd033974203b03324e66e56c7df5ee52bdeeeb5f6"
+    },
+    {
+      "path": "include/lpfx/backend/operation_registration.hpp",
+      "sha256": "2051e160aaee3aad881c0ea1fa835eaf93904552cff6321b04c8387c01a33ea2"
+    },
+    {
+      "path": "include/lpfx/backend/properties.hpp",
+      "sha256": "091f667bc151123f29d5d4d796fdd48dae3920d4b822db9ee47b954454526635"
+    },
+    {
+      "path": "include/lpfx/backend/traits.hpp",
+      "sha256": "24c1b3ab847d0624622bb00ffb439ae9394021716c378eff4f6601975a1892a9"
+    },
+    {
+      "path": "include/lpfx/core/attributes.hpp",
+      "sha256": "d65902858d93e6ac2099f4bb4409fad8402947366fdfd9e54c65774f91674269"
+    },
+    {
+      "path": "include/lpfx/core/checked_arithmetic.hpp",
+      "sha256": "12f7e03c6bbf316642548deffade43785e0002cc6eb3b0281a35071930921b40"
+    },
+    {
+      "path": "include/lpfx/core/error.hpp",
+      "sha256": "85a8f5fe38631412684e24c06fc8019970a4b3725fb697c8149b97f18b553ca2"
+    },
+    {
+      "path": "include/lpfx/core/error_reporting.hpp",
+      "sha256": "d60cdea9c431fe0e562a8cdb01e2c7c778dc2a2d236fb0d32166d3d24df81969"
+    },
+    {
+      "path": "include/lpfx/core/fixed_array.hpp",
+      "sha256": "ba360845af19b43394c896845d183f5fa033f12b06a3773809b4e2d0d8426c50"
+    },
+    {
+      "path": "include/lpfx/core/fixed_string.hpp",
+      "sha256": "fa73cc39348c2c892c137a06371c9eb4607f64309c7ea6b20081673ce0a94dfe"
+    },
+    {
+      "path": "include/lpfx/core/memory_intrinsics.hpp",
+      "sha256": "a0da0506ecfe717056ca86313e839811c3b9b8d7cb0c3266a14acfec8d9abccb"
+    },
+    {
+      "path": "include/lpfx/core/meta.hpp",
+      "sha256": "0d4cf08ab3b80e6cd02c8e64c6f36677acd068ca6fdbfa10dddfb8689b43c123"
+    },
+    {
+      "path": "include/lpfx/core/private_construction.hpp",
+      "sha256": "7b756f408632f691c18c05e85219a765b7698572bc4f03011cc8d96c156d581f"
+    },
+    {
+      "path": "include/lpfx/core/result.hpp",
+      "sha256": "b30c9ecc1abec52e9681a0fbf5f2e40c1edf6ce306ae7611d0b3815fb524c213"
+    },
+    {
+      "path": "include/lpfx/data/field/component.hpp",
+      "sha256": "8595ce6e2c7a7a97a966f2379576049509cad6d165c8380a6a37d911526e524c"
+    },
+    {
+      "path": "include/lpfx/data/field/layout.hpp",
+      "sha256": "73b79c60eaad430813dd63f7a8afbd59c5f1ae0ff8b8691b4d568c50296cdff8"
+    },
+    {
+      "path": "include/lpfx/data/field/owner.hpp",
+      "sha256": "31ea24dc4a60e2617de6f1fbed15ffb8047b391c266ad69f6d5e4ca1bbb0c1ff"
+    },
+    {
+      "path": "include/lpfx/data/field/transfer.hpp",
+      "sha256": "98ced159bfbf3d59baed6b172976fefa61c3f2f4a8e1ccf1e0b1e36176e4a79e"
+    },
+    {
+      "path": "include/lpfx/data/field/view.hpp",
+      "sha256": "55181f21a16a57711608cac590d1beda3932dbba0ff2f203935f56e0d2228179"
+    },
+    {
+      "path": "include/lpfx/data/field/wire_traits.hpp",
+      "sha256": "84cfbd7789034b3e5a2b6be4573d23b3c32f07b17ebe3bfc92a78568cdd6fce1"
+    },
+    {
+      "path": "include/lpfx/data/particle/capacity.hpp",
+      "sha256": "cf6ac57b4a6d105fbce6f6a780990009a6c446989314cb97993ae00a161e9d34"
+    },
+    {
+      "path": "include/lpfx/data/particle/device/classification.hpp",
+      "sha256": "200b81fe1942aa96bf4d89f63fb270b17584483760525395a0c83a4d7f789ba0"
+    },
+    {
+      "path": "include/lpfx/data/particle/device/cuda_hip/classification.hpp",
+      "sha256": "d24cca38fb8855406523fba646f5027d7741ac3c74e65c138e0840a6209a2667"
+    },
+    {
+      "path": "include/lpfx/data/particle/device/initialization.hpp",
+      "sha256": "250b29e467fcf2baa35f8b0a8ace931154317a69095d693cee837df49128702c"
+    },
+    {
+      "path": "include/lpfx/data/particle/device/storage.hpp",
+      "sha256": "62bc07625011350ee7407e32067f3375a9b0e551d9525aec8ea357ef6d785950"
+    },
+    {
+      "path": "include/lpfx/data/particle/device/transfer.hpp",
+      "sha256": "2663efa8bd6b6e8b32ac377dd9ee306f8d495f3069966f9e1a5de8ae8cc567d1"
+    },
+    {
+      "path": "include/lpfx/data/particle/device/view.hpp",
+      "sha256": "81f8868ede39506335e685569aa273583b08c05ec6c79460a876bb01375df485"
+    },
+    {
+      "path": "include/lpfx/data/particle/host/storage.hpp",
+      "sha256": "002fd7e85fccc758340477d8892621d8a1a5b13492319d39bda86ee1291e4e34"
+    },
+    {
+      "path": "include/lpfx/data/particle/host/view.hpp",
+      "sha256": "c6b8357d795bad88baa825ab3208e2ac236616ec5b1551e6f789497ff1fae0de"
+    },
+    {
+      "path": "include/lpfx/data/particle/layout.hpp",
+      "sha256": "787bb547f0f2184732079ec248e301b9c5bffc4aa62528828753ee1c89b4d1e7"
+    },
+    {
+      "path": "include/lpfx/data/particle/schema.hpp",
+      "sha256": "76847eaab4ee28b1018b23de251f6adabff09c9900c5f5ad2e672e2529306a1e"
+    },
+    {
+      "path": "include/lpfx/data/particle/slots.hpp",
+      "sha256": "bfc46f24695eeef348de3c54004f966e349da8375fa41cf8723210e5155f7e15"
+    },
+    {
+      "path": "include/lpfx/distributed/binding/bound_operation.hpp",
+      "sha256": "f6faf404166bb6c1fc1e4eeafb51970d1c8acad1306913c854f9505fc67debc7"
+    },
+    {
+      "path": "include/lpfx/distributed/binding/collective.hpp",
+      "sha256": "b074b088b6e107e2bf31ad00fbd9d93aaada73761e4edf110cf3a649d0bb12f0"
+    },
+    {
+      "path": "include/lpfx/distributed/binding/field.hpp",
+      "sha256": "4658f73454d1478c73c8712a804a05d1467a807db58152cba00d428eaf7b02e9"
+    },
+    {
+      "path": "include/lpfx/distributed/binding/message.hpp",
+      "sha256": "ac3aa8871ec30997fb512848006fd1986b4fb6a0c00670eca6c0980c2452cbac"
+    },
+    {
+      "path": "include/lpfx/distributed/binding/particle.hpp",
+      "sha256": "511d9f584a033af867f2b0a6b25a9d27d869e74af842abec964d4e9d01e48d36"
+    },
+    {
+      "path": "include/lpfx/distributed/collective/port.hpp",
+      "sha256": "32956cf7e6f854b9b99400bdccbaf2045da721fe457dcd2ed6c6cf2cbb031906"
+    },
+    {
+      "path": "include/lpfx/distributed/collective/program.hpp",
+      "sha256": "98a83cbdf6d2f693cf9debd79663435008fece56e427ddf8c8e836341dd51a0f"
+    },
+    {
+      "path": "include/lpfx/distributed/collective_operand.hpp",
+      "sha256": "df2b5d23de838242087f9b4f039a213b78245a062d5702acd11794bcf8b6e814"
+    },
+    {
+      "path": "include/lpfx/distributed/common/canonical_wire.hpp",
+      "sha256": "2c6c5034c90e4a5ce70d550a68cf091cce738b8d5fb5d75e2850cdd41636acfc"
+    },
+    {
+      "path": "include/lpfx/distributed/common/directions.hpp",
+      "sha256": "ee1290b987e864f06631ac77f78b226042a4d404f40ad8f42e5ef6546787c5c3"
+    },
+    {
+      "path": "include/lpfx/distributed/common/executor.hpp",
+      "sha256": "9b6571f28fd7534fa0c7d420e1433b5e8e69b7fc6779055872f973a9c354322b"
+    },
+    {
+      "path": "include/lpfx/distributed/communication.hpp",
+      "sha256": "9a3fda35dc1ded9e2723983edc65fc77c12eb5fafe7afde2c9c10ef4db0455df"
+    },
+    {
+      "path": "include/lpfx/distributed/composition/entry.hpp",
+      "sha256": "60a3018be0002d6568cc4bf922384e395153bb588ca3e95472564a99d4267824"
+    },
+    {
+      "path": "include/lpfx/distributed/composition/mpi.hpp",
+      "sha256": "3b89cae391120e3780d69a5563f9901bd14ce187dbfbd6a8a097940846a5cc46"
+    },
+    {
+      "path": "include/lpfx/distributed/composition/mpi_xccl.hpp",
+      "sha256": "60e1f5afe7cbc9b6ac67ccdcbfe6ea37bc9b9ec483297758d3c1760f71e17ce2"
+    },
+    {
+      "path": "include/lpfx/distributed/descriptor/collective.hpp",
+      "sha256": "1b51b0e7f925d227c39bbfb2dd1e970f6ee0ecea16cb40adbf567d37e28371e8"
+    },
+    {
+      "path": "include/lpfx/distributed/descriptor/family.hpp",
+      "sha256": "d1cee52a6e6a452942767582191fe10a492ffbb589e65215db92bb153bc8e5c1"
+    },
+    {
+      "path": "include/lpfx/distributed/descriptor/field.hpp",
+      "sha256": "67af8b82f3a3df993bcbd76fec2ad15c23cf3f4ee59f866ef6063b5f5f61d15a"
+    },
+    {
+      "path": "include/lpfx/distributed/descriptor/message.hpp",
+      "sha256": "1ace0cd02bd1ac7ab6dab755e5de81ec7ec8ddb87ec27971732f67a8ba1fbde1"
+    },
+    {
+      "path": "include/lpfx/distributed/descriptor/particle.hpp",
+      "sha256": "376ec6b873c63a741b310a7757485b628f1281664b5b7f21342cef31981b22be"
+    },
+    {
+      "path": "include/lpfx/distributed/detail/byte_interval.hpp",
+      "sha256": "6382d64c678416b2e744a362c6aee3e806a2395318ab42eef4293c5329cfe8bb"
+    },
+    {
+      "path": "include/lpfx/distributed/detail/fixed_byte.hpp",
+      "sha256": "561e0be9ee628a4f45c18be0fd21940cb523e8ff9e01f2dd439ae16d7dfe54cf"
+    },
+    {
+      "path": "include/lpfx/distributed/detail/fixed_exchange_program.hpp",
+      "sha256": "b985fea022570b7a272a14d249c04616d853786ee063a6fea574c19a64ac0184"
+    },
+    {
+      "path": "include/lpfx/distributed/detail/integer_codec.hpp",
+      "sha256": "b5f0b715221dc954da8d941b185d6f329bccf4224d4f714dd0236b9643b184f3"
+    },
+    {
+      "path": "include/lpfx/distributed/detail/static_vector.hpp",
+      "sha256": "82c403cc74289dddfb064630cd23541b9b069a19aa55d75a3d9b0132d30214e7"
+    },
+    {
+      "path": "include/lpfx/distributed/field/device.hpp",
+      "sha256": "bb459717e548f8e2dd883e272ca387014d2ba1632f12f50b3bba2730e1a17d88"
+    },
+    {
+      "path": "include/lpfx/distributed/field/geometry.hpp",
+      "sha256": "8e66ff38b2df8a82c1cacecc17a1b63c104ead258786c1d655d5ba5fcd10f2e7"
+    },
+    {
+      "path": "include/lpfx/distributed/field/host.hpp",
+      "sha256": "f1d70aad2d99da9fcd86505dd1752faf47b74aa4ab50d5db2f90f3fda5707234"
+    },
+    {
+      "path": "include/lpfx/distributed/field/lowering.hpp",
+      "sha256": "3c555a6348150de0de4ff0ec9dc340d69c26c0efe68c1c9cf0c85c2a1dd3c672"
+    },
+    {
+      "path": "include/lpfx/distributed/field/owner.hpp",
+      "sha256": "64ea370cbfa92870cadffd184713077227cc6ee42c6ecd1def94153382d842ce"
+    },
+    {
+      "path": "include/lpfx/distributed/field/pattern.hpp",
+      "sha256": "b49dff709ca793d4b39b0ca90c5b413eff878d89a21645d696d60fabf43fbb24"
+    },
+    {
+      "path": "include/lpfx/distributed/field/program.hpp",
+      "sha256": "258ee67cb9aa03afcdad7d21e6e162873e0bb6cb55d6d9790f68fd69a780aa37"
+    },
+    {
+      "path": "include/lpfx/distributed/field/registration.hpp",
+      "sha256": "573fca09d75cec2c6b219ef12c428a3285553bf9d2f7c67bb71baef3e6ebc645"
+    },
+    {
+      "path": "include/lpfx/distributed/field/submission.hpp",
+      "sha256": "c37983ff87b987c32d0900b5a6f0c01550a05de589660337e7ea17a7951e214b"
+    },
+    {
+      "path": "include/lpfx/distributed/message/buffers.hpp",
+      "sha256": "65f59c2f6fa615b0c9690b3b18e488e7570cee2fbe934a5ea00df31abb24c87b"
+    },
+    {
+      "path": "include/lpfx/distributed/message/program.hpp",
+      "sha256": "f521ea39e4e541302d953bb60a8e4b73b683bbeed1c5ac5f270d5c8d9904b4b6"
+    },
+    {
+      "path": "include/lpfx/distributed/mpi.hpp",
+      "sha256": "f5b070571a1ec4a551eed771fd17bb23d36e7dacb3be0f1b21cc7fac910b42de"
+    },
+    {
+      "path": "include/lpfx/distributed/nccl.hpp",
+      "sha256": "4024a8a7a813defb4a3e9deb4732443f068b57f713c0172a7cfa033fbefebdbc"
+    },
+    {
+      "path": "include/lpfx/distributed/operation/prepared_operation.hpp",
+      "sha256": "248f34b6ef8626d092a0f1b7e98dc8335e1134a4e12cd76e7d64608379ba826e"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/classification_producer.hpp",
+      "sha256": "81a41c12e8b66bf3e87e151267f7ba528aa2329fc881f8f2082b964969baebf2"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/limits.hpp",
+      "sha256": "30af7b64109e0093b883fb7900588cd89756498f029c0039491b073d9e2df7b7"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/migration/capacity.hpp",
+      "sha256": "60f466b23e2157b589dbe6a289b4a1997b6dd1539e52d5e0aaaa4375abb4cc98"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/migration/device/arrivals.hpp",
+      "sha256": "af791bafd2ffcbbf976f7abb25e6593229d29d6148ffcd2f202ab4f8eb7759f6"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/migration/device/cuda_hip/kernel_suite.hpp",
+      "sha256": "bdbf7220b487d411af3053e1e61b2acfef14484b8b1c16ef47af7899b48477d2"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/migration/device/execution.hpp",
+      "sha256": "2af1c79e93f8fdbc060b686b35e63f5ef2ab1e6f7b93b09f6662fc4a567ead66"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/migration/device/kernel_suite.hpp",
+      "sha256": "579f80f2afc24fb21fd060b0f90958b27faf31413e257ee5dc0399bbc306091c"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/migration/host/execution.hpp",
+      "sha256": "2e68a0883607fc598bc06214bf6920e3cb8116c39dd8240fb7545329cfc18efd"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/migration/pattern.hpp",
+      "sha256": "b18a50143898f05f376d2f8513d448975a10f516a9ff18d9c6717f281ba89aec"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/migration/payload_slices.hpp",
+      "sha256": "a1201984b9c9945c01922f710b917ebc4e61e3dd9ce98c7c3ffd3c93911a5cb0"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/migration/program.hpp",
+      "sha256": "7ba7848d92abd24858ca6d3febfedf271cc436056e9b6f0f03ee8b1e2ee33033"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/migration/registration.hpp",
+      "sha256": "857c37dc8b18d4c7c57533653540af3751bb8a1afdd4cf65fe4a9e9b73488fb2"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/migration/resident_reorder.hpp",
+      "sha256": "ba8c2a1800d9874297e610c564cf6a51f8e6dfa0268b9d070bba83fefbbf17ec"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/migration/routing.hpp",
+      "sha256": "d0e62697a5134272f288459be4b997b6e0a76f5fe5a2420c0bee2bbbeef4bea9"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/migration/stage.hpp",
+      "sha256": "bdb9bd14a1bee663eebf5862c9306000a0c39a9603684d382e3a12f41b769c1b"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/wire/codec.hpp",
+      "sha256": "a87fa7e396cb8d1b8acebc8cdabb0bf0051a866d30c227716608ad1b9f75f4f4"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/wire/contract.hpp",
+      "sha256": "902dc2062d13a13b8c9a4245e1d925b364651a0b0171fd1339d43ef6b74ac281"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/wire/device/staging.hpp",
+      "sha256": "34fa12d9017355816806a075e7d180e690d37717af5cea98307f8a9001e6c0ed"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/wire/image.hpp",
+      "sha256": "d24565e7848a0b6700481f8a19ba4a77917e7cb08955f55896ad208959944e99"
+    },
+    {
+      "path": "include/lpfx/distributed/particle/wire/storage.hpp",
+      "sha256": "ad91c916525fa1b393932d2a1df08e4d22290d852a33d9555bf397a56b88b815"
+    },
+    {
+      "path": "include/lpfx/distributed/plan/collective.hpp",
+      "sha256": "c8f6d1cf397be1eb8a80f7f3d0863ae7f70e45779d5c04287226cf8375db757b"
+    },
+    {
+      "path": "include/lpfx/distributed/plan/field.hpp",
+      "sha256": "3c7dc93f8dbb9d98fab46788b91fa7931434777c522fe8b4fa8ef8338f46a6e9"
+    },
+    {
+      "path": "include/lpfx/distributed/plan/message.hpp",
+      "sha256": "ff63cd79a8dafce0b97b452356340a59e234536d5b7dafe7afdd5a0a75b90ced"
+    },
+    {
+      "path": "include/lpfx/distributed/plan/particle.hpp",
+      "sha256": "fec5cc6bd43ee99470a84768e1cd7f26948a46ffdfb2439aa4680914ba9d44d4"
+    },
+    {
+      "path": "include/lpfx/distributed/plan/particle_destination.hpp",
+      "sha256": "3563523c4249fd25ea908d72ad3cb7d9754c95f1be9a55922e660860ee0d6cfe"
+    },
+    {
+      "path": "include/lpfx/distributed/plan/particle_semantics.hpp",
+      "sha256": "abcac07d642877c0bf5b54f2a549c8c76e4a104bf7dc756f034f253b3d8f92f5"
+    },
+    {
+      "path": "include/lpfx/distributed/rccl.hpp",
+      "sha256": "0f24efa5be78ccaf16baa9c4b4ffd679b52704b0f3efc4799af12fcf808e4add"
+    },
+    {
+      "path": "include/lpfx/distributed/registration/image.hpp",
+      "sha256": "4cf95ddb5ab729fd5118c5a2be01efaabd88ea8bf96320e431993d8a33ed63a0"
+    },
+    {
+      "path": "include/lpfx/distributed/registration/record.hpp",
+      "sha256": "ef8837e058b10c8bd0ca91fcc15c4bcf5ff8d2a761b6409edbc1d40929996baa"
+    },
+    {
+      "path": "include/lpfx/distributed/runtime/device_runtime.hpp",
+      "sha256": "8b8b324fcf7816a09bdcc40c04b86ae94df14e2e2fccb426f564b8d1315ce41a"
+    },
+    {
+      "path": "include/lpfx/distributed/runtime/error_reporting.hpp",
+      "sha256": "50fb368bba70cbe7cf98135ea4c97f79f8e7c3beb8def2c8970a210a3e537b36"
+    },
+    {
+      "path": "include/lpfx/distributed/runtime/host_control.hpp",
+      "sha256": "7b60aa49c0ac10eef17ff233ed00934508515895c84ff50eee1ec276357265d8"
+    },
+    {
+      "path": "include/lpfx/distributed/runtime/mpi_file_writer.hpp",
+      "sha256": "242113b3033c3cc9f2ae61241c8cf3334369ad376b06456cd65892a1377a1c56"
+    },
+    {
+      "path": "include/lpfx/distributed/runtime/mpi_runtime.hpp",
+      "sha256": "848f264cfbd5a50397b3290dd5fbbf4ff7640962719b91a7fa90d992088f56ed"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/collective.hpp",
+      "sha256": "3b1c6a934e863ec4a0325393a25f372815318160e1ae47b87c60ac398549ac11"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/fixed.hpp",
+      "sha256": "3051c5196aef7428f7086d3b77446385389fc4bed0c8f43010afc6eb4d6f75a7"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/mpi/agreement.hpp",
+      "sha256": "ed5aca519eff0b30c80555d413213e59f3c2bc6f6f48397f365ceda8cfd47bcf"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/mpi/call_domain.hpp",
+      "sha256": "619b5a7ecc84a7c89bac73154db23d8d2233ba2fc9c049e12439271ef1c4ddfa"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/mpi/collective.hpp",
+      "sha256": "b7b25fa3c1c1cca55b19bc424e2dee3ed33b26600073cf53df11585057754574"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/mpi/communicator.hpp",
+      "sha256": "c66fe702dac64fea9b4dea2e33d72565aea242d47bf186d486d2f8192d9d2401"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/mpi/p2p.hpp",
+      "sha256": "70e9461c8286c0d4f442cfba1d4934459b510a241231d36e06a518c702b829ef"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/mpi/particle.hpp",
+      "sha256": "4fb7de7d9304220036be0aa6b2f9f397bc786629da8d3e3c91b0626e8dcbfa07"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/mpi/registration.hpp",
+      "sha256": "13d369aa65d9875293da959850139ea5ad9b43c0f7c0abfa5a2bc3e766ba3f4a"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/mpi/setup.hpp",
+      "sha256": "46331fcc0e68ac92d872454e573b7eb08a9de2c138b24b49d8e85acca8281d80"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/particle.hpp",
+      "sha256": "ab86f6570b6d9968848c0fd03344b19636db6df715762b15697280ee8d224630"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/routes.hpp",
+      "sha256": "98f49733409b7530311af677cd527ff90933ae61e45f6b1af4afb9cbc43e5584"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/stage.hpp",
+      "sha256": "142923f4338964879e4bad51d966f3504e7bc2566bbaac255b5684b142a26d60"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/workspace.hpp",
+      "sha256": "1822128163a05741d3ab472e147e4892b338f700a457dad70be7e3f2891f0fc7"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/xccl/collective.hpp",
+      "sha256": "6fcf5f0b61177b5c4cdf18f96d1a2d75abaa788f9204003c7a1775dd9b8adc71"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/xccl/native.hpp",
+      "sha256": "af6451b2b32b53cc3df70f26ef0a3ee25667a7f31dd6ab8797186e788bc9d2ec"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/xccl/p2p.hpp",
+      "sha256": "3f09d24ac84091676d73b6519df6791422af7af4ec78bd45326279745f99e933"
+    },
+    {
+      "path": "include/lpfx/distributed/transport/xccl/session.hpp",
+      "sha256": "26eb7a47b5c69ce9d5b165c80682427c951b1febccc8e9d093ba579c1a0e0bdf"
+    },
+    {
+      "path": "include/lpfx/domain/cartesian/box.hpp",
+      "sha256": "3a3a29aea29c55b9a8ab5498df5fe9781b1306b6fa99aea80bab7baf7d12cd6c"
+    },
+    {
+      "path": "include/lpfx/domain/cartesian/direction_mask.hpp",
+      "sha256": "7cbd6a8da0bd13c69a4b9bc27cc974eac7e5c8fae65b7111c277843f71f3d3c9"
+    },
+    {
+      "path": "include/lpfx/domain/cartesian/geometry.hpp",
+      "sha256": "a30318fb3f1b87752239a695517797a8390210b338ca91fcd4e85a11e4f0b1d1"
+    },
+    {
+      "path": "include/lpfx/domain/cartesian/halo.hpp",
+      "sha256": "07057f92eb64779480613b8c115c0f87e4ad054eab3ce54c1caaaaa4df05e8a0"
+    },
+    {
+      "path": "include/lpfx/domain/cartesian/index_policy.hpp",
+      "sha256": "6e5b1c8c6d717b4d4168536419ca53826061408ed02acd6f33f9db2ff2e75a35"
+    },
+    {
+      "path": "include/lpfx/domain/cartesian/location.hpp",
+      "sha256": "508e83afd0c8788c8b3cf86c375434da5653e8714dc06436ee11ffbb89139565"
+    },
+    {
+      "path": "include/lpfx/domain/cartesian/partition.hpp",
+      "sha256": "f574b934108eb15ddbf5845e10ea203d7e32b38002e969f80de04b0d596a3d41"
+    },
+    {
+      "path": "include/lpfx/domain/cartesian/partition_neighborhood.hpp",
+      "sha256": "8e5ecef584e39b333f2610e929f651ae219df057626f01781dc9f0f1fee716ba"
+    },
+    {
+      "path": "include/lpfx/domain/cartesian/peer_map.hpp",
+      "sha256": "229ba327c8c56af83378d79251d41a8bd40dc21b5128497e723d15fc6eb6ebb7"
+    },
+    {
+      "path": "include/lpfx/domain/cartesian/topology.hpp",
+      "sha256": "da71b357adb02979afe04d1bcd842a2e6b126dfa93e9b63e1cfc9675dd336483"
+    },
+    {
+      "path": "include/lpfx/execution/device/completion.hpp",
+      "sha256": "2f6a69a8a88ec94ffe2f3579e82ec22e92794f8a0b9d9b3cda94ac101a67c49a"
+    },
+    {
+      "path": "include/lpfx/execution/device/context.hpp",
+      "sha256": "f15051d15d04652bf328f4ad8fb0c4e1dd3659490746141b72fb9c8d21c89bb0"
+    },
+    {
+      "path": "include/lpfx/execution/host/channel.hpp",
+      "sha256": "0384d55eba0d4fa4f9d3fbdc1c0578c737f0d2305e5ba13fea096776a0ccba0c"
+    },
+    {
+      "path": "include/lpfx/execution/host/fence.hpp",
+      "sha256": "f1849866f7cb8866ab7678ab26d9c8b39021d518dd936bf4ebda32cf45585aa0"
+    },
+    {
+      "path": "include/lpfx/execution/host/openmp.hpp",
+      "sha256": "e72857a7edfff1e66ecac8657504bdb03d0c2d31af3ca41e692aab5fc1db72a8"
+    },
+    {
+      "path": "include/lpfx/execution/host/prepared_plan.hpp",
+      "sha256": "65080c14b8b175b87322f1aa3cc475798c4925d0a3196ef18420e5b40c69fb06"
+    },
+    {
+      "path": "include/lpfx/execution/host/serial.hpp",
+      "sha256": "936db680614302215994929cb7b89c17548b3ff694d3e3fb9109662ffbe142d4"
+    },
+    {
+      "path": "include/lpfx/execution/host/worker.hpp",
+      "sha256": "18c82ac1e2e0068cabbbbec431d38c01dc7b414834f16d098a65ea745d54da23"
+    },
+    {
+      "path": "include/lpfx/memory/byte_layout.hpp",
+      "sha256": "122c48e20cdf4d5346839664940e585c7c8deb806b04cd571613dc1050825231"
+    },
+    {
+      "path": "include/lpfx/memory/device/failure_flag.hpp",
+      "sha256": "9969625c9cd1c87977a234fbeae249811a56d068d6596e63aaeb1c1fd19f6e3d"
+    },
+    {
+      "path": "include/lpfx/memory/host/allocation.hpp",
+      "sha256": "bb613b17d5b4c16678e2485a2eff4d19051fe04d159bb08ee0594ac0bef9ef1e"
+    },
+    {
+      "path": "include/lpfx/memory/host/allocator.hpp",
+      "sha256": "6e108eb517170ef4efaaddf9a019ee42ee0304f12e202b60dae020fcbb205692"
+    },
+    {
+      "path": "include/lpfx/memory/host/budget.hpp",
+      "sha256": "e4564382abe3d84377a17e33dfd9d5b2bd51db3c68c68509ca3408e60e2891cc"
+    },
+    {
+      "path": "include/lpfx/memory/lifetime.hpp",
+      "sha256": "13b26f322673ec74d587f46ecb8b77bc8b4ea395aa8332a79afa9c56f6a2e463"
+    },
+    {
+      "path": "include/lpfx/memory/native_allocation.hpp",
+      "sha256": "8d1ec116daa49b48e943df8b3d3d3f1da982e583e55d5e7279be117838e950a3"
+    },
+    {
+      "path": "include/lpfx/memory/space.hpp",
+      "sha256": "f4ea3c1e67190019b740a1c1ef45c11659039dbae58f272810e1bedd55cae16d"
+    },
+    {
+      "path": "include/lpfx/profiling.hpp",
+      "sha256": "2cefd6cc514e078957ac2fe91616634e0abd9e7357b049d162641a2b18a1d536"
+    },
+    {
+      "path": "include/lpfx/version.hpp",
+      "sha256": "aaaba50362345a11c42d531f63fd38005947d882ad68046b37d2249262dbb18f"
+    },
+    {
+      "path": "tests/support/device/mock_backend.hpp",
+      "sha256": "ce5be7206937c28b79a562d9283390a89149288de8ec3e2f72d287b18519dee1"
+    }
+  ]
+}

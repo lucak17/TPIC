@@ -1,0 +1,171 @@
+SaveDirName = data
+RestartDirName = data
+
+Case              = WhistlerTurbulence
+WriteMethod       = pvtk     # Output engine: pvtk (parallel VTK), adios2 or hdf5
+# Per-channel overrides of WriteMethod (same values); commented out, the channel inherits WriteMethod.
+# FieldWriteMethod     = pvtk
+# ParticlesWriteMethod = pvtk
+RestartWriteMethod = default   # Checkpoint engine: adios2 or hdf5; default: ADIOS2 if built, else HDF5, else none
+SimulationName    = whistlerTurbulence3D_eps0.1
+
+#  %%%%%%%%%%%%%%%%%%% Decaying whistler turbulence (docs/user/whistler_turbulence.md) %%%%%%%%%%%%%%%%%%
+# Plasma and seed of [G12]: S. P. Gary, O. Chang & J. Wang, ApJ 755, 142 (2012), in a larger box (60 vs 51.2 d_e).
+# Setup adapted from [G12] and its 2D3V predecessor [S08]: S. Saito, S. P. Gary, H. Li & Y. Narita,
+# Phys. Plasmas 15, 102305 (2008).
+# Electron units: c = 1, omega_pe = 1 (qom_e = -1, rhoINIT_e = 1), d_e = 1, times in 1/omega_pe.
+# m_p/m_e = 1836, omega_pe/|Omega_e| = sqrt(5), beta_e = beta_p = 0.1, T_p = T_e.
+# The seed (Section 3): 150 helical whistlers of equal magnetic energy on B0 = B0z z at
+# k = 2*pi*(nx/Lx, ny/Ly, nz/Lz), nz = +-1..3, k_perp along x, y or a diagonal (|nx|, |ny| <= 3); cold-plasma
+# frequencies of all species (omega/(c*k) = 0.0392 to 0.1266, printed at startup), random phases from
+# WhistlerTurbulenceSeed, E from Faraday's law (transverse), electron flow from Ampere's law, ions at rest.
+WhistlerTurbulenceEpsilon = 0.1   # epsilon0 = <|dB|^2>/B0^2; the ensemble of Section 2.5: 0 (control), 0.02, 0.05, 0.1, 0.2, 0.5, 1
+WhistlerTurbulenceSeed    = 1     # phase realization; 2-3 seeds per epsilon0 measure the spread
+
+# Uniform background magnetic field: WhistlerTurbulence requires B0 along z.
+B0x = 0.0
+B0y = 0.0
+B0z = 0.4472135954999579   # |Omega_e|/omega_pe = 1/sqrt(5)
+
+#  %%%%%%%%%%%%%%%%%%% TIME %%%%%%%%%%%%%%%%%%
+dt = 0.25         # 56 steps per electron gyroperiod, v_te*dt/dx = 0.125, c*dt/dx = 1.25
+ncycles = 4000    # omega_pe*t = 1000 (|Omega_e|*t = 447)
+th = 0.5          # 0.5: exact energy conservation, no numerical damping of the whistlers
+c = 1.0
+
+#  %%%%%%%%%%%%%%%%%%% SMOOTH %%%%%%%%%%%%%%%%%%
+# ECSimSmoothing = none (off) or energy_conserving; ECSimSmoothingOperator = face7 or binomial27.
+# face7: each pass gives Smooth*f + (1-Smooth)/6 * (sum of the six face neighbours); binomial27: fixed
+# [1,2,1]^3/64 weights. Active only with energy_conserving, SmoothNiter > 0 and Smooth < 1 (Smooth in [0, 1]).
+# Energy-conserving face7, applied to the solver current and to the field the particles see: along an axis a
+# pass scales a mode by 1 - (1 - Smooth)/3*(1 - cos(k*dx)), here 0.997, 0.987, 0.949 at k*d_e = 1, 2, 4 and 0.67
+# at k*dx = pi, and removes the grid checkerboard. Six passes of Smooth = 0.2 would scale the magnetic energy at
+# k_perp*d_e = 3 and 4 by 0.6 and 0.4, steepening the spectrum above the k_perp*d_e = 1 break (Section 2.3).
+Smooth                 = 0.5
+SmoothNiter            = 1
+ECSimSmoothing         = energy_conserving
+ECSimSmoothingOperator = face7
+
+# The seed modes are integer multiples of k0 = 2*pi/L, so the box sets the seed: at L = 60 d_e it spans k*d_e = 0.105
+# to 0.544 (k_par*d_e <= 0.314, k_perp*d_e <= 0.444), omega = 0.0113 to 0.129 |Omega_e|, 18 modes below omega_LH =
+# 0.0213 |Omega_e|; the [G12] box (51.2 d_e, 256^3) gives k*d_e = 0.123 to 0.638 and 10 modes below omega_LH.
+Lx = 60.0   # k0 = 2*pi/L = 0.1047/d_e
+Ly = 60.0
+Lz = 60.0
+nxc = 300   # dx = 0.2 d_e = 2 Debye lengths: 7.9 cells per wavelength at k*d_e = 4
+nyc = 300
+nzc = 300
+# [G12] used dx = 0.1 d_e (512^3), as its explicit scheme needs cells near the Debye length; the implicit scheme
+# runs at dx = 0.2 d_e. The resolution check V3 compares the spectrum with dx = 0.1 at equal particles per volume.
+
+# %%%%%%%%%%%%%% MPI TOPOLOGY %%%%%%%%%%%%%%
+# number of MPI subdomains in each direction, one rank per GCD. The startup plan of 4.3e8 particles per rank is
+# 56 GiB of a 64 GiB GCD (device owners 45, of them particles 41; transport allowance 11 GiB); 16 ranks fit only
+# 128 ppc, 512 ppc needs 4 x 4 x 4.
+XLEN = 4    # 32 ranks of 75 x 75 x 150 cells
+YLEN = 4
+ZLEN = 2
+# field periodicity in each direction (true/false or 1/0)
+PERIODICX = true
+PERIODICY = true
+PERIODICZ = true
+# particle periodicity in each direction (defaults to the field value when omitted)
+PERIODICX_P = true
+PERIODICY_P = true
+PERIODICZ_P = true
+
+# %%%%%%%%%%%%%% PARTICLES %%%%%%%%%%%%%%%%%
+#    ns = number of species
+#    0 = electrons
+#    1 = protons
+ns = 2
+
+# qom = charge-to-mass ratio for different species: -1 and 1/1836
+qom = -1.0 5.446623093681918e-4
+
+# Initial density: equal values pair every electron with a proton (zero charge density)
+rhoINIT = 1.0 1.0
+
+# 8 x 8 x 4 = 256 particles per cell per species at the subcell centres, 1.4e10 particles in all: half the
+# particles per volume of [G12] (64 per cell at dx = 0.1). Use 512 for epsilon0 <= 0.05; 128 suffices for
+# epsilon0 >= 0.2 (Section 2.4).
+# npcelx = number of particles per cell - Direction X (equal for all species: shared positions)
+npcelx = 8 8
+# npcely = number of particles per cell - Direction Y
+npcely = 8 8
+# npcelz = number of particles per cell - Direction Z
+npcelz = 4 4
+
+# uth = thermal velocity for different species - Direction X: v_te = 0.1, v_tp = 0.1*sqrt(1/1836)
+uth  = 0.1 0.002333800140046683
+# vth = thermal velocity for different species - Direction Y
+vth  = 0.1 0.002333800140046683
+# wth = thermal velocity for different species - Direction Z
+wth  = 0.1 0.002333800140046683
+# u0 = drift velocity - Direction X
+u0 = 0.0 0.0
+# v0 = drift velocity - Direction Y
+v0 = 0.0 0.0
+# w0 = drift velocity - Direction Z
+w0 = 0.0 0.0
+# CenterInitialVelocity = per species: shift the loaded velocities so that the species mean equals that of the drift its case loads
+CenterInitialVelocity = true true   # removes the sampled momentum; the wave flow has zero mean and stays
+
+# Particle positions: QuietStart = true places every particle at the centre of its subcell (npcelx*npcely*npcelz
+# subcells per cell), the same points for every species, so species with equal npcel* sit on one another;
+# false (the default) draws a random point in each subcell, a different one for every species.
+# WhistlerTurbulence requires true: an electron on every ion.
+QuietStart = true
+
+# &&&&&&&&&&&& boundary conditions &&&&&&&&&&&&&&&
+
+#    EM field boundary condition
+#    0 = perfect electric conductor (PEC)
+#    1 = perfect magnetic conductor (PMC)
+#    2 = open (--check-input admits it; --initialize and --run reject it)
+
+    bcEMfaceXright = 0
+    bcEMfaceXleft =  0
+    bcEMfaceYright = 0
+    bcEMfaceYleft =  0
+    bcEMfaceZright = 0
+    bcEMfaceZleft =  0
+#    Particles Boundary condition
+#    1 = perfect mirror
+#    0 = exit, 2 = reemission, 3 = open out, 4 = open in: not implemented, refused on a wall
+#    Caveat: if the particle topology is periodic in a direction, that direction uses periodic particle boundaries.
+    bcPfaceXright = 1
+    bcPfaceXleft =  1
+    bcPfaceYright = 1
+    bcPfaceYleft =  1
+    bcPfaceZright = 1
+    bcPfaceZleft =  1
+
+# GMRES solver stopping criterion tolerance (Section 2.3: 1e-8 or tighter)
+   GMREStol = 1E-15
+# Output for field
+   FieldOutputCycle = 100    # every 25/omega_pe (41 dumps), including omega_pe*t = 50, 300 and 1000; 40 adds 130 (Section 2.6)
+   # FieldOutputTag: B, E and Gauss (cell residual) joined by +. MomentsOutputTag: rho, J, PXX, PXY, PXZ, PYY, PYZ, PZZ joined by +;
+   # <name> selects every species, <name>_tot the total, <name><s> species s. Pressure is off unless named.
+   # With both tags omitted, B, E, rho and J (total and per species) are written.
+   # Electron rho, J and diagonal second moments give the thermal (flow-subtracted) T_par = T_zz and T_perp;
+   # 13 Float64 arrays of 300^3 are 2.8 GB per output, 115 GB per run.
+   FieldOutputTag   = B+E
+   MomentsOutputTag = rho0+J0+PXX0+PYY0+PZZ0
+# diagnostics.csv cadence (0 disables; defaults to FieldOutputCycle when omitted)
+   DiagnosticsOutputCycle = 4
+# Console energy cadence (0 reports only the final state)
+   DiagnosticEnergyCycle = 50
+# Gauss-law residual cadence: gauss.csv and one log line per sample (0 disables)
+   DiagnosticGaussCycle = 100
+# Particle output cadence (0 disables)
+   ParticlesOutputCycle = 400   # a snapshot holds all 1.4e10 particles, ~0.9 TB (11 per run)
+   # ParticlesOutputTag has no effect: a particle snapshot always holds position, velocity, charge and id.
+   ParticlesOutputTag = position+velocity+q
+# Checkpoint cadence (0 disables); CallFinalize also checkpoints the final state when RestartOutputCycle > 0
+   RestartOutputCycle = 1000   # every 250/omega_pe, ~0.9 TB each; the final one can continue the run to omega_pe*t = 4500
+   CallFinalize = 1
+
+# The validation runs of Section 4 from this deck: V0 control with WhistlerTurbulenceEpsilon = 0; V3 resolution at
+# epsilon0 = 0.2 with dt = 0.125 (ncycles = 2400 to omega_pe*t = 300), with half the particles per cell, or with
+# Lx = Ly = Lz = 30 at 150^3 and 300^3 cells (the same 150-mode pattern, k0 doubles); V4 with three seeds.

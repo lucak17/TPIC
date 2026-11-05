@@ -1,0 +1,93 @@
+{
+  "version": 5,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 24,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "TPIC_BUILD_TESTS": "ON",
+        "LPFX_ENABLE_MPI": "ON"
+      }
+    },
+    {
+      "name": "host",
+      "inherits": "base",
+      "displayName": "Host input checker and portable tests",
+      "cacheVariables": {
+        "TPIC_BUILD_DEVICE": "OFF",
+        "LPFX_DEVICE_BACKEND": "NONE"
+      }
+    },
+    {
+      "name": "device",
+      "hidden": true,
+      "inherits": "base",
+      "cacheVariables": {
+        "TPIC_BUILD_DEVICE": "ON",
+        "LPFX_ENABLE_DEVICE_AWARE_MPI": "ON",
+        "TPIC_COMMUNICATION_BACKEND": "MPI"
+      }
+    },
+    {
+      "name": "cuda",
+      "inherits": "device",
+      "displayName": "CUDA (supply LPFX_DEVICE_ARCHITECTURES)",
+      "cacheVariables": {
+        "LPFX_DEVICE_BACKEND": "CUDA"
+      }
+    },
+    {
+      "name": "hip",
+      "inherits": "device",
+      "displayName": "HIP (supply LPFX_DEVICE_ARCHITECTURES)",
+      "cacheVariables": {
+        "LPFX_DEVICE_BACKEND": "HIP"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "host",
+      "configurePreset": "host"
+    },
+    {
+      "name": "cuda",
+      "configurePreset": "cuda"
+    },
+    {
+      "name": "hip",
+      "configurePreset": "hip"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "host",
+      "configurePreset": "host",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "cuda",
+      "configurePreset": "cuda",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "hip",
+      "configurePreset": "hip",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}

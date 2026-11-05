@@ -1,0 +1,2000 @@
+1 0 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 1 overflow
+1 2 rejected
+1 3 rejected
+1 4 rejected
+1 5 rejected
+1 6 1000 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 7 1100 rho=1 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 8 rejected
+1 9 rejected
+1 10 rejected
+1 11 rejected
+1 12 rejected
+1 13 rejected
+1 14 rejected
+1 15 rejected
+1 16 rejected
+1 17 rejected
+1 18 1000 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 19 rejected
+1 20 rejected
+1 21 rejected
+1 22 rejected
+1 23 rejected
+1 24 rejected
+1 25 rejected
+1 26 rejected
+1 27 rejected
+1 28 rejected
+1 29 rejected
+1 30 rejected
+1 31 rejected
+1 32 rejected
+1 33 rejected
+1 34 rejected
+1 35 rejected
+1 36 1111 rho=1 J=1 P=0,0,0,0,0,0 Ptot=000000
+1 37 overflow
+1 38 rejected
+1 39 rejected
+1 40 rejected
+1 41 rejected
+1 42 1000 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 43 0000 rho=0 J=0 P=1,0,0,0,0,0 Ptot=000000
+1 44 rejected
+1 45 rejected
+1 46 rejected
+1 47 rejected
+1 48 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 49 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 50 rejected
+1 51 rejected
+1 52 rejected
+1 53 rejected
+1 54 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 55 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 56 rejected
+1 57 rejected
+1 58 rejected
+1 59 rejected
+1 60 rejected
+1 61 rejected
+1 62 rejected
+1 63 rejected
+1 64 rejected
+1 65 rejected
+1 66 1000 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 67 rejected
+1 68 rejected
+1 69 rejected
+1 70 rejected
+1 71 rejected
+1 72 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 73 rejected
+1 74 rejected
+1 75 rejected
+1 76 rejected
+1 77 rejected
+1 78 1111 rho=1 J=1 P=0,0,0,0,0,0 Ptot=000000
+1 79 rejected
+1 80 rejected
+1 81 rejected
+1 82 rejected
+1 83 rejected
+1 84 rejected
+1 85 rejected
+1 86 rejected
+1 87 rejected
+1 88 rejected
+1 89 rejected
+1 90 1000 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 91 rejected
+1 92 rejected
+1 93 rejected
+1 94 rejected
+1 95 rejected
+1 96 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 97 rejected
+1 98 rejected
+1 99 rejected
+1 100 rejected
+1 101 rejected
+1 102 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 103 rejected
+1 104 rejected
+1 105 rejected
+1 106 rejected
+1 107 rejected
+1 108 rejected
+1 109 rejected
+1 110 rejected
+1 111 rejected
+1 112 rejected
+1 113 rejected
+1 114 1111 rho=1 J=1 P=0,0,0,0,0,0 Ptot=000000
+1 115 1000 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 116 rejected
+1 117 rejected
+1 118 rejected
+1 119 rejected
+1 120 rejected
+1 121 rejected
+1 122 rejected
+1 123 rejected
+1 124 rejected
+1 125 rejected
+1 126 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 127 rejected
+1 128 rejected
+1 129 rejected
+1 130 rejected
+1 131 rejected
+1 132 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 133 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 134 rejected
+1 135 rejected
+1 136 rejected
+1 137 rejected
+1 138 1111 rho=1 J=1 P=0,0,0,0,0,0 Ptot=000000
+1 139 1001 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 140 rejected
+1 141 rejected
+1 142 rejected
+1 143 rejected
+1 144 1111 rho=1 J=1 P=0,0,0,0,0,0 Ptot=000000
+1 145 rejected
+1 146 rejected
+1 147 rejected
+1 148 rejected
+1 149 rejected
+1 150 1111 rho=1 J=1 P=0,0,0,0,0,0 Ptot=000000
+1 151 rejected
+1 152 rejected
+1 153 rejected
+1 154 rejected
+1 155 rejected
+1 156 1000 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 157 rejected
+1 158 rejected
+1 159 rejected
+1 160 rejected
+1 161 rejected
+1 162 rejected
+1 163 1110 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 164 rejected
+1 165 rejected
+1 166 rejected
+1 167 rejected
+1 168 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 169 rejected
+1 170 rejected
+1 171 rejected
+1 172 rejected
+1 173 rejected
+1 174 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 175 rejected
+1 176 rejected
+1 177 rejected
+1 178 rejected
+1 179 rejected
+1 180 1000 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 181 0000 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000001
+1 182 rejected
+1 183 rejected
+1 184 rejected
+1 185 rejected
+1 186 1100 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 187 rejected
+1 188 rejected
+1 189 rejected
+1 190 rejected
+1 191 rejected
+1 192 1000 rho=0 J=0 P=0,0,0,0,0,0 Ptot=000000
+1 193 rejected
+1 194 rejected
+1 195 rejected
+1 196 rejected
+1 197 rejected
+1 198 rejected
+1 199 rejected
+2 0 1111 rho=11 J=11 P=00,00,00,00,00,00 Ptot=000000
+2 1 1100 rho=11 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 2 rejected
+2 3 rejected
+2 4 rejected
+2 5 rejected
+2 6 rejected
+2 7 rejected
+2 8 rejected
+2 9 rejected
+2 10 rejected
+2 11 rejected
+2 12 rejected
+2 13 0010 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 14 rejected
+2 15 rejected
+2 16 rejected
+2 17 rejected
+2 18 1111 rho=11 J=11 P=00,00,00,00,00,00 Ptot=000000
+2 19 1000 rho=11 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 20 rejected
+2 21 rejected
+2 22 rejected
+2 23 rejected
+2 24 rejected
+2 25 rejected
+2 26 rejected
+2 27 rejected
+2 28 rejected
+2 29 rejected
+2 30 1000 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 31 rejected
+2 32 rejected
+2 33 rejected
+2 34 rejected
+2 35 rejected
+2 36 1100 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 37 1000 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 38 rejected
+2 39 rejected
+2 40 rejected
+2 41 rejected
+2 42 rejected
+2 43 1001 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 44 0010 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 45 rejected
+2 46 rejected
+2 47 rejected
+2 48 1000 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 49 1100 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 50 rejected
+2 51 rejected
+2 52 rejected
+2 53 rejected
+2 54 rejected
+2 55 0000 rho=00 J=00 P=00,00,11,00,00,00 Ptot=000000
+2 56 rejected
+2 57 rejected
+2 58 rejected
+2 59 rejected
+2 60 rejected
+2 61 1100 rho=00 J=01 P=00,00,00,00,00,00 Ptot=000000
+2 62 rejected
+2 63 rejected
+2 64 rejected
+2 65 rejected
+2 66 1100 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 67 1100 rho=00 J=11 P=00,00,00,00,00,00 Ptot=000000
+2 68 rejected
+2 69 rejected
+2 70 rejected
+2 71 rejected
+2 72 1111 rho=11 J=11 P=00,00,00,00,00,00 Ptot=000000
+2 73 rejected
+2 74 rejected
+2 75 rejected
+2 76 rejected
+2 77 rejected
+2 78 rejected
+2 79 rejected
+2 80 rejected
+2 81 rejected
+2 82 rejected
+2 83 rejected
+2 84 1000 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 85 1001 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 86 rejected
+2 87 rejected
+2 88 rejected
+2 89 rejected
+2 90 rejected
+2 91 rejected
+2 92 rejected
+2 93 rejected
+2 94 rejected
+2 95 rejected
+2 96 1000 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 97 rejected
+2 98 rejected
+2 99 rejected
+2 100 rejected
+2 101 rejected
+2 102 rejected
+2 103 1000 rho=10 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 104 rejected
+2 105 rejected
+2 106 rejected
+2 107 rejected
+2 108 1100 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 109 1100 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 110 rejected
+2 111 rejected
+2 112 rejected
+2 113 rejected
+2 114 1111 rho=11 J=11 P=00,00,00,00,00,00 Ptot=000000
+2 115 rejected
+2 116 rejected
+2 117 rejected
+2 118 rejected
+2 119 rejected
+2 120 1100 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 121 rejected
+2 122 rejected
+2 123 rejected
+2 124 rejected
+2 125 rejected
+2 126 1000 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 127 0000 rho=00 J=00 P=00,00,11,00,00,00 Ptot=000000
+2 128 0000 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000001
+2 129 rejected
+2 130 rejected
+2 131 rejected
+2 132 1111 rho=11 J=11 P=00,00,00,00,00,00 Ptot=000000
+2 133 rejected
+2 134 rejected
+2 135 rejected
+2 136 rejected
+2 137 rejected
+2 138 rejected
+2 139 rejected
+2 140 rejected
+2 141 rejected
+2 142 rejected
+2 143 rejected
+2 144 1100 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 145 rejected
+2 146 rejected
+2 147 rejected
+2 148 rejected
+2 149 rejected
+2 150 rejected
+2 151 1000 rho=00 J=00 P=00,00,00,00,00,00 Ptot=100000
+2 152 rejected
+2 153 rejected
+2 154 rejected
+2 155 rejected
+2 156 rejected
+2 157 rejected
+2 158 rejected
+2 159 rejected
+2 160 rejected
+2 161 rejected
+2 162 1000 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 163 rejected
+2 164 rejected
+2 165 rejected
+2 166 rejected
+2 167 rejected
+2 168 1000 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 169 overflow
+2 170 rejected
+2 171 rejected
+2 172 rejected
+2 173 rejected
+2 174 rejected
+2 175 rejected
+2 176 rejected
+2 177 rejected
+2 178 rejected
+2 179 rejected
+2 180 rejected
+2 181 rejected
+2 182 rejected
+2 183 rejected
+2 184 rejected
+2 185 rejected
+2 186 rejected
+2 187 rejected
+2 188 rejected
+2 189 rejected
+2 190 rejected
+2 191 rejected
+2 192 1000 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000000
+2 193 1100 rho=00 J=00 P=00,00,00,00,00,00 Ptot=000001
+2 194 rejected
+2 195 rejected
+2 196 rejected
+2 197 rejected
+2 198 rejected
+2 199 rejected
+3 0 1100 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 1 rejected
+3 2 rejected
+3 3 rejected
+3 4 rejected
+3 5 rejected
+3 6 1000 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 7 rejected
+3 8 rejected
+3 9 rejected
+3 10 rejected
+3 11 rejected
+3 12 1111 rho=111 J=111 P=000,000,000,000,000,000 Ptot=000000
+3 13 0000 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 14 rejected
+3 15 rejected
+3 16 rejected
+3 17 rejected
+3 18 rejected
+3 19 rejected
+3 20 rejected
+3 21 rejected
+3 22 rejected
+3 23 rejected
+3 24 rejected
+3 25 rejected
+3 26 rejected
+3 27 rejected
+3 28 rejected
+3 29 rejected
+3 30 rejected
+3 31 rejected
+3 32 rejected
+3 33 rejected
+3 34 rejected
+3 35 rejected
+3 36 rejected
+3 37 rejected
+3 38 rejected
+3 39 rejected
+3 40 rejected
+3 41 rejected
+3 42 1000 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 43 1100 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 44 rejected
+3 45 rejected
+3 46 rejected
+3 47 rejected
+3 48 1111 rho=111 J=111 P=000,000,000,000,000,000 Ptot=000000
+3 49 1000 rho=000 J=111 P=000,000,000,000,000,000 Ptot=000000
+3 50 rejected
+3 51 rejected
+3 52 rejected
+3 53 rejected
+3 54 rejected
+3 55 rejected
+3 56 rejected
+3 57 rejected
+3 58 rejected
+3 59 rejected
+3 60 rejected
+3 61 rejected
+3 62 rejected
+3 63 rejected
+3 64 rejected
+3 65 rejected
+3 66 rejected
+3 67 rejected
+3 68 rejected
+3 69 rejected
+3 70 rejected
+3 71 rejected
+3 72 rejected
+3 73 1100 rho=100 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 74 rejected
+3 75 rejected
+3 76 rejected
+3 77 rejected
+3 78 1111 rho=111 J=111 P=000,000,000,000,000,000 Ptot=000000
+3 79 rejected
+3 80 rejected
+3 81 rejected
+3 82 rejected
+3 83 rejected
+3 84 rejected
+3 85 rejected
+3 86 rejected
+3 87 rejected
+3 88 rejected
+3 89 rejected
+3 90 rejected
+3 91 rejected
+3 92 rejected
+3 93 rejected
+3 94 rejected
+3 95 rejected
+3 96 rejected
+3 97 1111 rho=111 J=111 P=000,000,000,000,000,000 Ptot=000000
+3 98 rejected
+3 99 rejected
+3 100 rejected
+3 101 rejected
+3 102 1100 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 103 rejected
+3 104 rejected
+3 105 rejected
+3 106 rejected
+3 107 rejected
+3 108 1100 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 109 1100 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 110 rejected
+3 111 rejected
+3 112 rejected
+3 113 rejected
+3 114 1111 rho=111 J=111 P=000,000,000,000,000,000 Ptot=000000
+3 115 1100 rho=001 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 116 rejected
+3 117 rejected
+3 118 rejected
+3 119 rejected
+3 120 rejected
+3 121 0000 rho=001 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 122 rejected
+3 123 rejected
+3 124 rejected
+3 125 rejected
+3 126 rejected
+3 127 0000 rho=000 J=010 P=000,000,000,000,000,000 Ptot=000000
+3 128 rejected
+3 129 rejected
+3 130 rejected
+3 131 rejected
+3 132 rejected
+3 133 0000 rho=000 J=000 P=000,000,000,000,111,000 Ptot=000000
+3 134 rejected
+3 135 rejected
+3 136 rejected
+3 137 rejected
+3 138 1100 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 139 rejected
+3 140 rejected
+3 141 rejected
+3 142 rejected
+3 143 rejected
+3 144 1000 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 145 rejected
+3 146 1000 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 147 rejected
+3 148 rejected
+3 149 rejected
+3 150 1111 rho=111 J=111 P=000,000,000,000,000,000 Ptot=000000
+3 151 rejected
+3 152 rejected
+3 153 rejected
+3 154 rejected
+3 155 rejected
+3 156 1000 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 157 rejected
+3 158 rejected
+3 159 rejected
+3 160 rejected
+3 161 rejected
+3 162 rejected
+3 163 rejected
+3 164 rejected
+3 165 rejected
+3 166 rejected
+3 167 rejected
+3 168 1000 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 169 rejected
+3 170 rejected
+3 171 rejected
+3 172 rejected
+3 173 rejected
+3 174 1100 rho=000 J=000 P=000,000,000,000,000,000 Ptot=000000
+3 175 rejected
+3 176 rejected
+3 177 rejected
+3 178 rejected
+3 179 rejected
+3 180 rejected
+3 181 rejected
+3 182 rejected
+3 183 rejected
+3 184 rejected
+3 185 rejected
+3 186 rejected
+3 187 rejected
+3 188 rejected
+3 189 rejected
+3 190 rejected
+3 191 rejected
+3 192 rejected
+3 193 rejected
+3 194 rejected
+3 195 rejected
+3 196 rejected
+3 197 rejected
+3 198 rejected
+3 199 rejected
+4 0 rejected
+4 1 rejected
+4 2 rejected
+4 3 rejected
+4 4 rejected
+4 5 rejected
+4 6 rejected
+4 7 rejected
+4 8 rejected
+4 9 rejected
+4 10 rejected
+4 11 rejected
+4 12 rejected
+4 13 0000 rho=0000 J=1111 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 14 rejected
+4 15 rejected
+4 16 rejected
+4 17 rejected
+4 18 1100 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 19 rejected
+4 20 rejected
+4 21 rejected
+4 22 rejected
+4 23 rejected
+4 24 rejected
+4 25 1100 rho=0000 J=0000 P=1000,0000,0000,0000,0000,0000 Ptot=000000
+4 26 rejected
+4 27 rejected
+4 28 rejected
+4 29 rejected
+4 30 1000 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 31 rejected
+4 32 rejected
+4 33 rejected
+4 34 rejected
+4 35 rejected
+4 36 rejected
+4 37 rejected
+4 38 rejected
+4 39 rejected
+4 40 rejected
+4 41 rejected
+4 42 1111 rho=1111 J=1111 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 43 1000 rho=0000 J=0100 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 44 rejected
+4 45 rejected
+4 46 rejected
+4 47 rejected
+4 48 rejected
+4 49 1100 rho=0010 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 50 rejected
+4 51 rejected
+4 52 rejected
+4 53 rejected
+4 54 1000 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 55 rejected
+4 56 rejected
+4 57 0001 rho=1000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 58 rejected
+4 59 rejected
+4 60 1111 rho=1111 J=1111 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 61 rejected
+4 62 rejected
+4 63 rejected
+4 64 rejected
+4 65 rejected
+4 66 rejected
+4 67 rejected
+4 68 rejected
+4 69 rejected
+4 70 rejected
+4 71 rejected
+4 72 rejected
+4 73 0000 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000001
+4 74 rejected
+4 75 rejected
+4 76 rejected
+4 77 rejected
+4 78 1100 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 79 1000 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 80 rejected
+4 81 rejected
+4 82 rejected
+4 83 rejected
+4 84 rejected
+4 85 0000 rho=0000 J=1111 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 86 rejected
+4 87 rejected
+4 88 rejected
+4 89 rejected
+4 90 1000 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 91 rejected
+4 92 rejected
+4 93 rejected
+4 94 rejected
+4 95 rejected
+4 96 1111 rho=1111 J=1111 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 97 rejected
+4 98 rejected
+4 99 rejected
+4 100 rejected
+4 101 rejected
+4 102 1000 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 103 rejected
+4 104 rejected
+4 105 rejected
+4 106 rejected
+4 107 rejected
+4 108 1111 rho=1111 J=1111 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 109 1000 rho=0000 J=0000 P=0000,0000,1111,0000,0000,0000 Ptot=000000
+4 110 rejected
+4 111 rejected
+4 112 rejected
+4 113 rejected
+4 114 rejected
+4 115 rejected
+4 116 rejected
+4 117 rejected
+4 118 rejected
+4 119 rejected
+4 120 rejected
+4 121 rejected
+4 122 rejected
+4 123 rejected
+4 124 rejected
+4 125 rejected
+4 126 rejected
+4 127 rejected
+4 128 rejected
+4 129 rejected
+4 130 rejected
+4 131 rejected
+4 132 1000 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 133 1100 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 134 rejected
+4 135 rejected
+4 136 rejected
+4 137 rejected
+4 138 rejected
+4 139 1100 rho=1000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 140 rejected
+4 141 rejected
+4 142 rejected
+4 143 rejected
+4 144 1111 rho=1111 J=1111 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 145 1000 rho=1111 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 146 rejected
+4 147 rejected
+4 148 rejected
+4 149 rejected
+4 150 1000 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 151 rejected
+4 152 rejected
+4 153 rejected
+4 154 rejected
+4 155 rejected
+4 156 1111 rho=1111 J=1111 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 157 1000 rho=0000 J=0000 P=0000,0000,1111,0000,0000,0000 Ptot=000000
+4 158 rejected
+4 159 rejected
+4 160 rejected
+4 161 rejected
+4 162 rejected
+4 163 1000 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 164 rejected
+4 165 rejected
+4 166 rejected
+4 167 rejected
+4 168 1000 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 169 0010 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 170 rejected
+4 171 rejected
+4 172 rejected
+4 173 rejected
+4 174 1100 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 175 rejected
+4 176 rejected
+4 177 rejected
+4 178 rejected
+4 179 rejected
+4 180 1000 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 181 rejected
+4 182 rejected
+4 183 rejected
+4 184 rejected
+4 185 rejected
+4 186 1111 rho=1111 J=1111 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 187 rejected
+4 188 rejected
+4 189 rejected
+4 190 rejected
+4 191 rejected
+4 192 1100 rho=0000 J=0000 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 193 rejected
+4 194 rejected
+4 195 rejected
+4 196 rejected
+4 197 rejected
+4 198 1111 rho=1111 J=1111 P=0000,0000,0000,0000,0000,0000 Ptot=000000
+4 199 rejected
+5 0 1100 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 1 1000 rho=00000 J=01000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 2 rejected
+5 3 rejected
+5 4 rejected
+5 5 rejected
+5 6 rejected
+5 7 rejected
+5 8 rejected
+5 9 rejected
+5 10 rejected
+5 11 rejected
+5 12 rejected
+5 13 0000 rho=00000 J=00000 P=00000,00000,00000,00000,11111,00000 Ptot=000000
+5 14 rejected
+5 15 rejected
+5 16 rejected
+5 17 rejected
+5 18 1000 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 19 0000 rho=00000 J=01000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 20 rejected
+5 21 rejected
+5 22 rejected
+5 23 rejected
+5 24 1000 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 25 rejected
+5 26 rejected
+5 27 rejected
+5 28 rejected
+5 29 rejected
+5 30 rejected
+5 31 rejected
+5 32 rejected
+5 33 rejected
+5 34 rejected
+5 35 rejected
+5 36 1111 rho=11111 J=11111 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 37 0001 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 38 rejected
+5 39 rejected
+5 40 rejected
+5 41 rejected
+5 42 rejected
+5 43 rejected
+5 44 rejected
+5 45 rejected
+5 46 rejected
+5 47 rejected
+5 48 rejected
+5 49 rejected
+5 50 rejected
+5 51 rejected
+5 52 rejected
+5 53 rejected
+5 54 1100 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 55 rejected
+5 56 rejected
+5 57 rejected
+5 58 rejected
+5 59 rejected
+5 60 1000 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 61 1100 rho=00000 J=00000 P=00000,00000,11111,00000,00000,00000 Ptot=000000
+5 62 rejected
+5 63 rejected
+5 64 rejected
+5 65 rejected
+5 66 rejected
+5 67 0000 rho=00000 J=00000 P=00000,00000,11111,00000,00000,00000 Ptot=000000
+5 68 rejected
+5 69 rejected
+5 70 rejected
+5 71 rejected
+5 72 1000 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 73 rejected
+5 74 rejected
+5 75 rejected
+5 76 rejected
+5 77 rejected
+5 78 rejected
+5 79 overflow
+5 80 rejected
+5 81 rejected
+5 82 rejected
+5 83 rejected
+5 84 1000 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 85 1000 rho=00000 J=01000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 86 rejected
+5 87 rejected
+5 88 rejected
+5 89 rejected
+5 90 rejected
+5 91 rejected
+5 92 rejected
+5 93 rejected
+5 94 rejected
+5 95 rejected
+5 96 rejected
+5 97 0000 rho=00000 J=00000 P=00000,00000,00000,00000,11111,00000 Ptot=000000
+5 98 rejected
+5 99 rejected
+5 100 rejected
+5 101 rejected
+5 102 1111 rho=11111 J=11111 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 103 overflow
+5 104 rejected
+5 105 rejected
+5 106 rejected
+5 107 rejected
+5 108 rejected
+5 109 1100 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 110 rejected
+5 111 rejected
+5 112 rejected
+5 113 rejected
+5 114 rejected
+5 115 rejected
+5 116 rejected
+5 117 rejected
+5 118 rejected
+5 119 rejected
+5 120 1111 rho=11111 J=11111 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 121 1100 rho=00000 J=00000 P=10000,00000,00000,00000,00000,00000 Ptot=000000
+5 122 rejected
+5 123 rejected
+5 124 rejected
+5 125 rejected
+5 126 rejected
+5 127 1000 rho=00000 J=00000 P=10000,00000,00000,00000,00000,00000 Ptot=000000
+5 128 rejected
+5 129 rejected
+5 130 rejected
+5 131 rejected
+5 132 rejected
+5 133 rejected
+5 134 rejected
+5 135 rejected
+5 136 rejected
+5 137 rejected
+5 138 1100 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 139 rejected
+5 140 rejected
+5 141 rejected
+5 142 rejected
+5 143 rejected
+5 144 1000 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 145 0000 rho=00000 J=00000 P=10000,00000,00000,00000,00000,00000 Ptot=000000
+5 146 rejected
+5 147 rejected
+5 148 rejected
+5 149 rejected
+5 150 1000 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 151 rejected
+5 152 rejected
+5 153 rejected
+5 154 rejected
+5 155 rejected
+5 156 1111 rho=11111 J=11111 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 157 rejected
+5 158 rejected
+5 159 rejected
+5 160 rejected
+5 161 rejected
+5 162 1000 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 163 rejected
+5 164 rejected
+5 165 rejected
+5 166 rejected
+5 167 rejected
+5 168 1100 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 169 rejected
+5 170 rejected
+5 171 rejected
+5 172 rejected
+5 173 rejected
+5 174 rejected
+5 175 rejected
+5 176 rejected
+5 177 rejected
+5 178 rejected
+5 179 rejected
+5 180 rejected
+5 181 rejected
+5 182 rejected
+5 183 rejected
+5 184 rejected
+5 185 rejected
+5 186 1000 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 187 rejected
+5 188 rejected
+5 189 rejected
+5 190 rejected
+5 191 rejected
+5 192 rejected
+5 193 rejected
+5 194 rejected
+5 195 rejected
+5 196 rejected
+5 197 rejected
+5 198 1100 rho=00000 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+5 199 1000 rho=11111 J=00000 P=00000,00000,00000,00000,00000,00000 Ptot=000000
+6 0 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 1 1000 rho=000000 J=000000 P=000000,000000,000000,000010,000000,000000 Ptot=000000
+6 2 rejected
+6 3 rejected
+6 4 rejected
+6 5 rejected
+6 6 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 7 rejected
+6 8 rejected
+6 9 rejected
+6 10 rejected
+6 11 rejected
+6 12 1111 rho=111111 J=111111 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 13 rejected
+6 14 rejected
+6 15 rejected
+6 16 rejected
+6 17 rejected
+6 18 1111 rho=111111 J=111111 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 19 0000 rho=000000 J=111111 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 20 rejected
+6 21 rejected
+6 22 rejected
+6 23 rejected
+6 24 rejected
+6 25 0000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 26 rejected
+6 27 rejected
+6 28 rejected
+6 29 rejected
+6 30 rejected
+6 31 rejected
+6 32 rejected
+6 33 rejected
+6 34 rejected
+6 35 rejected
+6 36 rejected
+6 37 rejected
+6 38 rejected
+6 39 rejected
+6 40 rejected
+6 41 rejected
+6 42 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 43 rejected
+6 44 0000 rho=000000 J=000000 P=000000,010000,000000,000000,000000,000000 Ptot=000000
+6 45 rejected
+6 46 rejected
+6 47 rejected
+6 48 rejected
+6 49 0000 rho=000000 J=111111 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 50 rejected
+6 51 rejected
+6 52 rejected
+6 53 rejected
+6 54 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 55 rejected
+6 56 rejected
+6 57 rejected
+6 58 rejected
+6 59 rejected
+6 60 1100 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 61 rejected
+6 62 rejected
+6 63 rejected
+6 64 rejected
+6 65 rejected
+6 66 1111 rho=111111 J=111111 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 67 rejected
+6 68 rejected
+6 69 rejected
+6 70 rejected
+6 71 rejected
+6 72 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 73 rejected
+6 74 rejected
+6 75 rejected
+6 76 rejected
+6 77 rejected
+6 78 1100 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 79 rejected
+6 80 rejected
+6 81 rejected
+6 82 rejected
+6 83 rejected
+6 84 rejected
+6 85 rejected
+6 86 rejected
+6 87 rejected
+6 88 rejected
+6 89 rejected
+6 90 1100 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 91 rejected
+6 92 rejected
+6 93 rejected
+6 94 rejected
+6 95 rejected
+6 96 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 97 1100 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=100000
+6 98 rejected
+6 99 rejected
+6 100 rejected
+6 101 rejected
+6 102 rejected
+6 103 1000 rho=000000 J=000000 P=000000,000000,111111,000000,000000,000000 Ptot=000000
+6 104 rejected
+6 105 rejected
+6 106 rejected
+6 107 rejected
+6 108 1100 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 109 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 110 rejected
+6 111 rejected
+6 112 rejected
+6 113 rejected
+6 114 1111 rho=111111 J=111111 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 115 0000 rho=000000 J=000000 P=000000,000000,000000,000010,000000,000000 Ptot=000000
+6 116 rejected
+6 117 rejected
+6 118 rejected
+6 119 rejected
+6 120 1100 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 121 rejected
+6 122 rejected
+6 123 rejected
+6 124 rejected
+6 125 rejected
+6 126 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 127 1000 rho=111111 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 128 rejected
+6 129 rejected
+6 130 rejected
+6 131 rejected
+6 132 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 133 rejected
+6 134 rejected
+6 135 rejected
+6 136 rejected
+6 137 rejected
+6 138 rejected
+6 139 rejected
+6 140 rejected
+6 141 rejected
+6 142 rejected
+6 143 rejected
+6 144 1100 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 145 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 146 rejected
+6 147 rejected
+6 148 rejected
+6 149 rejected
+6 150 rejected
+6 151 rejected
+6 152 rejected
+6 153 rejected
+6 154 rejected
+6 155 rejected
+6 156 1111 rho=111111 J=111111 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 157 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000001
+6 158 rejected
+6 159 rejected
+6 160 rejected
+6 161 rejected
+6 162 1111 rho=111111 J=111111 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 163 rejected
+6 164 rejected
+6 165 rejected
+6 166 rejected
+6 167 rejected
+6 168 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 169 rejected
+6 170 rejected
+6 171 rejected
+6 172 rejected
+6 173 rejected
+6 174 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 175 rejected
+6 176 rejected
+6 177 rejected
+6 178 rejected
+6 179 rejected
+6 180 1111 rho=111111 J=111111 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 181 rejected
+6 182 rejected
+6 183 rejected
+6 184 rejected
+6 185 rejected
+6 186 rejected
+6 187 rejected
+6 188 rejected
+6 189 rejected
+6 190 rejected
+6 191 rejected
+6 192 rejected
+6 193 rejected
+6 194 rejected
+6 195 rejected
+6 196 rejected
+6 197 rejected
+6 198 1000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+6 199 0000 rho=000000 J=000000 P=000000,000000,000000,000000,000000,000000 Ptot=000000
+7 0 1100 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 1 1100 rho=0010000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 2 rejected
+7 3 rejected
+7 4 rejected
+7 5 rejected
+7 6 1000 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 7 rejected
+7 8 rejected
+7 9 rejected
+7 10 rejected
+7 11 rejected
+7 12 1111 rho=1111111 J=1111111 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 13 1000 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,1111111,0000000 Ptot=000000
+7 14 rejected
+7 15 rejected
+7 16 rejected
+7 17 rejected
+7 18 1111 rho=1111111 J=1111111 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 19 rejected
+7 20 rejected
+7 21 rejected
+7 22 rejected
+7 23 rejected
+7 24 1000 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 25 rejected
+7 26 rejected
+7 27 rejected
+7 28 rejected
+7 29 rejected
+7 30 rejected
+7 31 rejected
+7 32 rejected
+7 33 rejected
+7 34 rejected
+7 35 rejected
+7 36 1000 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 37 rejected
+7 38 rejected
+7 39 rejected
+7 40 rejected
+7 41 rejected
+7 42 1111 rho=1111111 J=1111111 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 43 1000 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 44 rejected
+7 45 rejected
+7 46 rejected
+7 47 rejected
+7 48 1111 rho=1111111 J=1111111 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 49 0000 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 50 rejected
+7 51 rejected
+7 52 rejected
+7 53 rejected
+7 54 1111 rho=1111111 J=1111111 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 55 1100 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 56 rejected
+7 57 rejected
+7 58 rejected
+7 59 rejected
+7 60 1111 rho=1111111 J=1111111 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 61 rejected
+7 62 rejected
+7 63 rejected
+7 64 rejected
+7 65 rejected
+7 66 1100 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 67 1000 rho=1000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 68 rejected
+7 69 rejected
+7 70 rejected
+7 71 rejected
+7 72 1100 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 73 1000 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 74 rejected
+7 75 rejected
+7 76 rejected
+7 77 rejected
+7 78 1111 rho=1111111 J=1111111 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 79 rejected
+7 80 rejected
+7 81 rejected
+7 82 rejected
+7 83 rejected
+7 84 rejected
+7 85 1100 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 86 rejected
+7 87 rejected
+7 88 rejected
+7 89 rejected
+7 90 1000 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 91 1000 rho=1000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 92 rejected
+7 93 rejected
+7 94 rejected
+7 95 rejected
+7 96 rejected
+7 97 0000 rho=0000000 J=0000000 P=1000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 98 rejected
+7 99 rejected
+7 100 rejected
+7 101 rejected
+7 102 1111 rho=1111111 J=1111111 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 103 rejected
+7 104 rejected
+7 105 rejected
+7 106 rejected
+7 107 rejected
+7 108 rejected
+7 109 rejected
+7 110 rejected
+7 111 rejected
+7 112 rejected
+7 113 rejected
+7 114 1111 rho=1111111 J=1111111 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 115 1000 rho=1111111 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 116 rejected
+7 117 rejected
+7 118 rejected
+7 119 rejected
+7 120 1000 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 121 1010 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 122 rejected
+7 123 rejected
+7 124 rejected
+7 125 rejected
+7 126 rejected
+7 127 rejected
+7 128 rejected
+7 129 rejected
+7 130 rejected
+7 131 rejected
+7 132 rejected
+7 133 rejected
+7 134 rejected
+7 135 rejected
+7 136 rejected
+7 137 rejected
+7 138 1100 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 139 rejected
+7 140 rejected
+7 141 rejected
+7 142 rejected
+7 143 rejected
+7 144 1000 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 145 1000 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 146 1100 rho=0010000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 147 rejected
+7 148 rejected
+7 149 rejected
+7 150 1100 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 151 rejected
+7 152 rejected
+7 153 rejected
+7 154 rejected
+7 155 rejected
+7 156 rejected
+7 157 rejected
+7 158 rejected
+7 159 rejected
+7 160 rejected
+7 161 rejected
+7 162 rejected
+7 163 rejected
+7 164 rejected
+7 165 rejected
+7 166 rejected
+7 167 rejected
+7 168 1111 rho=1111111 J=1111111 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 169 1000 rho=0010000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 170 rejected
+7 171 rejected
+7 172 rejected
+7 173 rejected
+7 174 rejected
+7 175 1100 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 176 rejected
+7 177 rejected
+7 178 rejected
+7 179 rejected
+7 180 1111 rho=1111111 J=1111111 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 181 rejected
+7 182 rejected
+7 183 rejected
+7 184 rejected
+7 185 rejected
+7 186 1111 rho=1111111 J=1111111 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 187 rejected
+7 188 rejected
+7 189 rejected
+7 190 rejected
+7 191 rejected
+7 192 rejected
+7 193 0000 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 194 rejected
+7 195 rejected
+7 196 rejected
+7 197 rejected
+7 198 1100 rho=0000000 J=0000000 P=0000000,0000000,0000000,0000000,0000000,0000000 Ptot=000000
+7 199 rejected
+8 0 1000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 1 rejected
+8 2 rejected
+8 3 rejected
+8 4 rejected
+8 5 rejected
+8 6 rejected
+8 7 rejected
+8 8 rejected
+8 9 rejected
+8 10 rejected
+8 11 rejected
+8 12 1100 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 13 0000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 14 rejected
+8 15 rejected
+8 16 rejected
+8 17 rejected
+8 18 1100 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 19 1000 rho=00000000 J=00000000 P=00000000,00000000,11111111,00000000,00000000,00000000 Ptot=000000
+8 20 rejected
+8 21 rejected
+8 22 rejected
+8 23 rejected
+8 24 1100 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 25 1100 rho=00000000 J=00000000 P=00000000,00000000,00000000,00001000,00000000,00000000 Ptot=000000
+8 26 rejected
+8 27 rejected
+8 28 rejected
+8 29 rejected
+8 30 rejected
+8 31 0000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000001
+8 32 rejected
+8 33 rejected
+8 34 rejected
+8 35 rejected
+8 36 1000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 37 1000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00001000,00000000,00000000 Ptot=000000
+8 38 rejected
+8 39 rejected
+8 40 rejected
+8 41 rejected
+8 42 1100 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 43 rejected
+8 44 rejected
+8 45 rejected
+8 46 rejected
+8 47 rejected
+8 48 rejected
+8 49 1000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00001000,00000000,00000000 Ptot=000000
+8 50 rejected
+8 51 rejected
+8 52 rejected
+8 53 rejected
+8 54 1111 rho=11111111 J=11111111 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 55 0000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00001000,00000000,00000000 Ptot=000000
+8 56 rejected
+8 57 rejected
+8 58 rejected
+8 59 rejected
+8 60 1111 rho=11111111 J=11111111 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 61 rejected
+8 62 rejected
+8 63 rejected
+8 64 rejected
+8 65 rejected
+8 66 rejected
+8 67 1100 rho=10000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 68 rejected
+8 69 rejected
+8 70 rejected
+8 71 rejected
+8 72 1100 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 73 rejected
+8 74 rejected
+8 75 rejected
+8 76 rejected
+8 77 rejected
+8 78 rejected
+8 79 rejected
+8 80 rejected
+8 81 rejected
+8 82 rejected
+8 83 rejected
+8 84 rejected
+8 85 0000 rho=10000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 86 rejected
+8 87 rejected
+8 88 rejected
+8 89 rejected
+8 90 1100 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 91 rejected
+8 92 rejected
+8 93 rejected
+8 94 rejected
+8 95 rejected
+8 96 rejected
+8 97 0000 rho=00000000 J=00000000 P=00000000,01000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 98 rejected
+8 99 rejected
+8 100 rejected
+8 101 rejected
+8 102 1000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 103 1000 rho=00000000 J=11111111 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 104 rejected
+8 105 rejected
+8 106 rejected
+8 107 rejected
+8 108 1100 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 109 rejected
+8 110 rejected
+8 111 rejected
+8 112 rejected
+8 113 rejected
+8 114 rejected
+8 115 rejected
+8 116 rejected
+8 117 rejected
+8 118 rejected
+8 119 rejected
+8 120 rejected
+8 121 1000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 122 rejected
+8 123 rejected
+8 124 rejected
+8 125 rejected
+8 126 1000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 127 1000 rho=00100000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 128 rejected
+8 129 rejected
+8 130 rejected
+8 131 rejected
+8 132 1111 rho=11111111 J=11111111 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 133 1000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 134 rejected
+8 135 rejected
+8 136 rejected
+8 137 rejected
+8 138 rejected
+8 139 rejected
+8 140 rejected
+8 141 rejected
+8 142 rejected
+8 143 rejected
+8 144 rejected
+8 145 rejected
+8 146 rejected
+8 147 rejected
+8 148 rejected
+8 149 rejected
+8 150 rejected
+8 151 0000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 152 rejected
+8 153 rejected
+8 154 rejected
+8 155 rejected
+8 156 rejected
+8 157 1100 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=100000
+8 158 rejected
+8 159 rejected
+8 160 rejected
+8 161 rejected
+8 162 1111 rho=11111111 J=11111111 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 163 rejected
+8 164 rejected
+8 165 rejected
+8 166 rejected
+8 167 rejected
+8 168 rejected
+8 169 0000 rho=00000000 J=00000000 P=00000000,01000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 170 rejected
+8 171 rejected
+8 172 rejected
+8 173 rejected
+8 174 1000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 175 0000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000001
+8 176 rejected
+8 177 rejected
+8 178 rejected
+8 179 rejected
+8 180 1111 rho=11111111 J=11111111 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 181 1000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000001
+8 182 rejected
+8 183 rejected
+8 184 rejected
+8 185 rejected
+8 186 rejected
+8 187 rejected
+8 188 rejected
+8 189 rejected
+8 190 rejected
+8 191 rejected
+8 192 1000 rho=00000000 J=00000000 P=00000000,00000000,00000000,00000000,00000000,00000000 Ptot=000000
+8 193 rejected
+8 194 rejected
+8 195 rejected
+8 196 rejected
+8 197 rejected
+8 198 rejected
+8 199 1000 rho=00000000 J=00000000 P=00000000,00000000,11111111,00000000,00000000,00000000 Ptot=000000
+9 0 rejected
+9 1 rejected
+9 2 rejected
+9 3 rejected
+9 4 rejected
+9 5 rejected
+9 6 1111 rho=111111111 J=111111111 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 7 rejected
+9 8 rejected
+9 9 rejected
+9 10 rejected
+9 11 rejected
+9 12 rejected
+9 13 rejected
+9 14 rejected
+9 15 rejected
+9 16 rejected
+9 17 rejected
+9 18 1000 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 19 0000 rho=000000000 J=111111111 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 20 rejected
+9 21 rejected
+9 22 rejected
+9 23 rejected
+9 24 1111 rho=111111111 J=111111111 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 25 rejected
+9 26 rejected
+9 27 rejected
+9 28 rejected
+9 29 rejected
+9 30 rejected
+9 31 rejected
+9 32 rejected
+9 33 rejected
+9 34 rejected
+9 35 rejected
+9 36 1000 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 37 rejected
+9 38 rejected
+9 39 rejected
+9 40 rejected
+9 41 rejected
+9 42 rejected
+9 43 0000 rho=000000000 J=111111111 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 44 rejected
+9 45 rejected
+9 46 rejected
+9 47 rejected
+9 48 1111 rho=111111111 J=111111111 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 49 1100 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 50 rejected
+9 51 rejected
+9 52 rejected
+9 53 rejected
+9 54 1111 rho=111111111 J=111111111 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 55 0000 rho=111111111 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 56 rejected
+9 57 rejected
+9 58 rejected
+9 59 rejected
+9 60 rejected
+9 61 1000 rho=001000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 62 rejected
+9 63 rejected
+9 64 rejected
+9 65 rejected
+9 66 rejected
+9 67 1000 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 68 rejected
+9 69 rejected
+9 70 rejected
+9 71 rejected
+9 72 1100 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 73 rejected
+9 74 rejected
+9 75 rejected
+9 76 rejected
+9 77 rejected
+9 78 1111 rho=111111111 J=111111111 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 79 overflow
+9 80 rejected
+9 81 rejected
+9 82 rejected
+9 83 rejected
+9 84 rejected
+9 85 rejected
+9 86 rejected
+9 87 rejected
+9 88 rejected
+9 89 rejected
+9 90 rejected
+9 91 1111 rho=111111111 J=111111111 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 92 rejected
+9 93 rejected
+9 94 rejected
+9 95 rejected
+9 96 rejected
+9 97 rejected
+9 98 rejected
+9 99 rejected
+9 100 rejected
+9 101 rejected
+9 102 rejected
+9 103 rejected
+9 104 rejected
+9 105 rejected
+9 106 rejected
+9 107 rejected
+9 108 rejected
+9 109 rejected
+9 110 rejected
+9 111 rejected
+9 112 rejected
+9 113 rejected
+9 114 rejected
+9 115 rejected
+9 116 rejected
+9 117 rejected
+9 118 rejected
+9 119 rejected
+9 120 1100 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 121 1000 rho=000000000 J=000000000 P=111111111,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 122 rejected
+9 123 rejected
+9 124 rejected
+9 125 rejected
+9 126 1100 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 127 1111 rho=111111111 J=111111111 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 128 rejected
+9 129 rejected
+9 130 rejected
+9 131 rejected
+9 132 rejected
+9 133 0000 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 134 rejected
+9 135 rejected
+9 136 rejected
+9 137 rejected
+9 138 1000 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 139 rejected
+9 140 rejected
+9 141 rejected
+9 142 rejected
+9 143 rejected
+9 144 1100 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 145 rejected
+9 146 rejected
+9 147 rejected
+9 148 rejected
+9 149 rejected
+9 150 1000 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 151 rejected
+9 152 rejected
+9 153 rejected
+9 154 rejected
+9 155 rejected
+9 156 1000 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 157 rejected
+9 158 rejected
+9 159 rejected
+9 160 rejected
+9 161 rejected
+9 162 1111 rho=111111111 J=111111111 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 163 0000 rho=000000000 J=000000000 P=000000000,000000000,111111111,000000000,000000000,000000000 Ptot=000000
+9 164 rejected
+9 165 rejected
+9 166 rejected
+9 167 rejected
+9 168 1100 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 169 rejected
+9 170 rejected
+9 171 rejected
+9 172 rejected
+9 173 rejected
+9 174 rejected
+9 175 0000 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000001
+9 176 rejected
+9 177 rejected
+9 178 rejected
+9 179 rejected
+9 180 rejected
+9 181 rejected
+9 182 rejected
+9 183 rejected
+9 184 rejected
+9 185 rejected
+9 186 rejected
+9 187 rejected
+9 188 rejected
+9 189 rejected
+9 190 rejected
+9 191 rejected
+9 192 1000 rho=000000000 J=000000000 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 193 rejected
+9 194 rejected
+9 195 rejected
+9 196 rejected
+9 197 rejected
+9 198 1111 rho=111111111 J=111111111 P=000000000,000000000,000000000,000000000,000000000,000000000 Ptot=000000
+9 199 rejected
+10 0 1000 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 1 rejected
+10 2 rejected
+10 3 rejected
+10 4 rejected
+10 5 rejected
+10 6 1000 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 7 rejected
+10 8 rejected
+10 9 rejected
+10 10 rejected
+10 11 rejected
+10 12 1111 rho=1111111111 J=1111111111 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 13 0000 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 14 rejected
+10 15 rejected
+10 16 rejected
+10 17 rejected
+10 18 1111 rho=1111111111 J=1111111111 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 19 rejected
+10 20 rejected
+10 21 rejected
+10 22 rejected
+10 23 rejected
+10 24 rejected
+10 25 1100 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=100000
+10 26 rejected
+10 27 rejected
+10 28 rejected
+10 29 rejected
+10 30 rejected
+10 31 rejected
+10 32 rejected
+10 33 rejected
+10 34 rejected
+10 35 rejected
+10 36 1100 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 37 0001 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 38 rejected
+10 39 rejected
+10 40 rejected
+10 41 rejected
+10 42 1100 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 43 overflow
+10 44 rejected
+10 45 rejected
+10 46 rejected
+10 47 rejected
+10 48 1100 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 49 rejected
+10 50 rejected
+10 51 rejected
+10 52 rejected
+10 53 rejected
+10 54 1000 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 55 rejected
+10 56 rejected
+10 57 rejected
+10 58 rejected
+10 59 rejected
+10 60 rejected
+10 61 1000 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,1111111111,0000000000 Ptot=000000
+10 62 rejected
+10 63 rejected
+10 64 rejected
+10 65 rejected
+10 66 rejected
+10 67 rejected
+10 68 rejected
+10 69 rejected
+10 70 rejected
+10 71 rejected
+10 72 1111 rho=1111111111 J=1111111111 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 73 rejected
+10 74 rejected
+10 75 rejected
+10 76 rejected
+10 77 rejected
+10 78 1100 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 79 rejected
+10 80 rejected
+10 81 rejected
+10 82 rejected
+10 83 rejected
+10 84 rejected
+10 85 rejected
+10 86 rejected
+10 87 rejected
+10 88 rejected
+10 89 rejected
+10 90 1100 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 91 rejected
+10 92 rejected
+10 93 rejected
+10 94 rejected
+10 95 rejected
+10 96 1100 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 97 0001 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 98 rejected
+10 99 rejected
+10 100 rejected
+10 101 rejected
+10 102 rejected
+10 103 1000 rho=0000000000 J=1111111111 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 104 rejected
+10 105 rejected
+10 106 overflow
+10 107 rejected
+10 108 1000 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 109 rejected
+10 110 rejected
+10 111 rejected
+10 112 rejected
+10 113 rejected
+10 114 rejected
+10 115 rejected
+10 116 rejected
+10 117 rejected
+10 118 rejected
+10 119 rejected
+10 120 rejected
+10 121 rejected
+10 122 rejected
+10 123 rejected
+10 124 rejected
+10 125 rejected
+10 126 rejected
+10 127 rejected
+10 128 rejected
+10 129 rejected
+10 130 rejected
+10 131 rejected
+10 132 rejected
+10 133 1100 rho=1000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 134 rejected
+10 135 rejected
+10 136 rejected
+10 137 rejected
+10 138 rejected
+10 139 rejected
+10 140 rejected
+10 141 rejected
+10 142 rejected
+10 143 rejected
+10 144 rejected
+10 145 1100 rho=0010000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 146 rejected
+10 147 rejected
+10 148 rejected
+10 149 rejected
+10 150 1000 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 151 1100 rho=1111111111 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 152 rejected
+10 153 rejected
+10 154 rejected
+10 155 rejected
+10 156 1100 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 157 rejected
+10 158 rejected
+10 159 rejected
+10 160 rejected
+10 161 rejected
+10 162 1000 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 163 rejected
+10 164 rejected
+10 165 rejected
+10 166 rejected
+10 167 rejected
+10 168 1000 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 169 rejected
+10 170 rejected
+10 171 rejected
+10 172 rejected
+10 173 rejected
+10 174 rejected
+10 175 1111 rho=1111111111 J=1111111111 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 176 rejected
+10 177 rejected
+10 178 rejected
+10 179 rejected
+10 180 1111 rho=1111111111 J=1111111111 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 181 1000 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=100000
+10 182 rejected
+10 183 rejected
+10 184 rejected
+10 185 rejected
+10 186 1100 rho=0000000000 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 187 rejected
+10 188 rejected
+10 189 rejected
+10 190 rejected
+10 191 rejected
+10 192 rejected
+10 193 1100 rho=1111111111 J=0000000000 P=0000000000,0000000000,0000000000,0000000000,0000000000,0000000000 Ptot=000000
+10 194 rejected
+10 195 rejected
+10 196 rejected
+10 197 rejected
+10 198 rejected
+10 199 rejected

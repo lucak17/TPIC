@@ -1,0 +1,133 @@
+# Plasmoid-chain initialization based on Markidis et al.,
+# Physics of Plasmas 20, 082105 (2013).
+#
+# Normalization:
+#   length = d_i, time = 1/omega_pi, velocity = c, c = 1
+#   q_i/m_i = 1, q_e/m_e = -256, B0 = Omega_ci/omega_pi = 1/103
+#
+# Density is represented with two populations per charge sign:
+#   species 0,1: main Harris sheet, 0.2 sech^2((y-Ly/2)/delta)
+#   species 2,3: uniform background, 0.2
+# Total physical density per charge sign:
+#   n(y) = 0.2 sech^2((y-7.5)/0.5) + 0.2
+
+SaveDirName    = data/plasmoidChain
+RestartDirName = data/plasmoidChain
+
+Case              = plasmoidChain
+WriteMethod       = pvtk    # pvtk (parallel VTK), adios2 or hdf5
+# Per-channel overrides of WriteMethod (same values); commented out, the channel inherits WriteMethod.
+# FieldWriteMethod     = pvtk
+# ParticlesWriteMethod = pvtk
+RestartWriteMethod = default   # Checkpoint engine: adios2 or hdf5; default: ADIOS2 if built, else HDF5, else none
+SimulationName    = plasmoidChain
+
+# Harris reconnecting field: Bx = HarrisB0x*tanh((y-Ly/2)/delta).
+# Antiparallel run: B0z = 0.0
+# Guide-field run: set B0z = 0.0032362459546925564 (= HarrisB0x/3).
+B0x = 0.0
+B0y = 0.0
+B0z = 0.0
+HarrisB0x = 0.009708737864077669
+delta = 0.5
+
+dt = 0.125
+ncycles = 4000
+th = 0.5
+c = 1.0
+
+# ECSimSmoothing = none (off) or energy_conserving; ECSimSmoothingOperator = face7 or binomial27.
+# face7: each pass gives Smooth*f + (1-Smooth)/6 * (sum of the six face neighbours); binomial27: fixed
+# [1,2,1]^3/64 weights. Active only with energy_conserving, SmoothNiter > 0 and Smooth < 1 (Smooth in [0, 1]).
+Smooth = 0.2
+SmoothNiter = 6
+ECSimSmoothing = none
+ECSimSmoothingOperator = face7
+
+Lx = 40.0
+Ly = 15.0
+Lz = 10.0
+nxc = 512
+nyc = 192
+nzc = 128
+
+# MPI topology. Adjust these to the launch size; XLEN*YLEN*ZLEN must equal MPI ranks.
+XLEN = 1
+YLEN = 1
+ZLEN = 1
+
+# Periodic x/z, conducting/reflecting y.
+PERIODICX = true
+PERIODICY = false
+PERIODICZ = true
+# Particle periodicity (defaults to the field value when omitted).
+PERIODICX_P = true
+PERIODICY_P = false
+PERIODICZ_P = true
+
+ns = 4
+
+# Species order:
+#   0 main electrons, 1 main ions, 2 background electrons, 3 background ions.
+qom = -256.0 1.0 -256.0 1.0
+rhoINIT = 0.2 0.2 0.2 0.2
+
+# 4x4x4 per component gives 256 macroparticles per cell total
+# (=128 per physical charge sign), close to the paper average 119.2 per sign.
+npcelx = 4 4 4 4
+npcely = 4 4 4 4
+npcelz = 4 4 4 4
+
+# One-dimensional thermal speeds: electrons v_the/c = 0.045,
+# ions v_thi/c = sqrt(5/256)*0.045.
+uth = 0.045 0.006288941187 0.045 0.006288941187
+vth = 0.045 0.006288941187 0.045 0.006288941187
+wth = 0.045 0.006288941187 0.045 0.006288941187
+
+# Deliberately no Harris drift current. The magnetic field curl is unsupported
+# at t=0, which is the non-equilibrium trigger for the plasmoid chain.
+u0 = 0.0 0.0 0.0 0.0
+v0 = 0.0 0.0 0.0 0.0
+w0 = 0.0 0.0 0.0 0.0
+CenterInitialVelocity = true true true true
+
+# Particle positions: QuietStart = true places every particle at the centre of its subcell (npcelx*npcely*npcelz
+# subcells per cell), the same points for every species, so species with equal npcel* sit on one another;
+# false (the default) draws a random point in each subcell, a different one for every species.
+QuietStart = true
+
+# EM boundaries: periodic topology overrides x/z values; y uses perfect electric conductor (PEC).
+bcEMfaceXright = 0
+bcEMfaceXleft  = 0
+bcEMfaceYright = 0
+bcEMfaceYleft  = 0
+bcEMfaceZright = 0
+bcEMfaceZleft  = 0
+
+# Particle boundaries: periodic topology overrides x/z values; y uses mirror reflection.
+bcPfaceXright = 1
+bcPfaceXleft  = 1
+bcPfaceYright = 1
+bcPfaceYleft  = 1
+bcPfaceZright = 1
+bcPfaceZleft  = 1
+
+GMREStol = 1E-10
+
+FieldOutputCycle = 100
+# FieldOutputTag: B, E and Gauss (cell residual) joined by +. MomentsOutputTag: rho, J, PXX, PXY, PXZ, PYY, PYZ, PZZ joined by +;
+# <name> selects every species, <name>_tot the total, <name><s> species s. Pressure is off unless named.
+# With both tags omitted, B, E, rho and J (total and per species) are written.
+FieldOutputTag = B+E
+MomentsOutputTag = rho+J
+# Particle snapshots, checkpoints, diagnostics.csv and console energy cadences;
+# 0 disables (console energy then reports only the final state).
+# CallFinalize also checkpoints the final state when RestartOutputCycle > 0.
+ParticlesOutputCycle = 0
+# ParticlesOutputTag has no effect: a particle snapshot always holds position, velocity, charge and id.
+ParticlesOutputTag = position+velocity+q
+RestartOutputCycle = 0
+CallFinalize = 1
+DiagnosticsOutputCycle = 10
+DiagnosticEnergyCycle = 1
+DiagnosticGaussCycle = 0
