@@ -1,0 +1,194 @@
+# INPUT FILE for a 2D3V whistler dispersion test with anisotropic electrons
+#
+# The whistler test of D. Gonzalez-Herrero, E. Boella and G. Lapenta,
+# Computer Physics Communications 229, 162 (2018), section 5, at a mass ratio
+# of 1000: a uniform magnetized plasma whose electrons are hotter across the
+# field than along it. No wave is seeded: the particle noise excites the waves
+# along the field, and the result is the frequency-wavenumber spectrum of the
+# transverse magnetic field, compared with the cold relations of the whistler,
+# the ion-cyclotron wave and the two light waves. The cold electron whistler
+# relation is
+#   c^2 k^2 / omega^2 = 1 - omega_pe^2 / (omega * (omega - Omega_ce)).
+# At the electron beta of this deck the anisotropy drives no visible growth of
+# the whistlers over the run.
+#
+# Normalization:
+#   x is normalized to d_i = c / omega_pi
+#   t is normalized to omega_pi^-1
+#   c = 1, omega_pi = 1, d_i = 1
+#   qom_i = +1, qom_e = -mu = -1000
+#   omega_pe = sqrt(mu) = 31.6228, d_e = 1/sqrt(mu) = 0.031623
+#   B0x = Omega_ci / omega_pi = 0.015, so Omega_ce = mu*B0 = 15 and omega_pe/Omega_ce = 2.108
+#   B0, the box in d_i and the thermal speeds are those of the paper, whose mass ratio is 100. With mu = 1000
+#   the electron quantities differ from it: omega_pe/Omega_ce = 2.108 (paper 6.667), box 632.5 d_e x 39.5 d_e
+#   (paper 200 x 12.5), electron beta 8.9e-4 along the field and 8.0e-3 across it (paper 8.9e-3 and 8.0e-2).
+
+# %%%%%%%%%%%%%%%%%%% Input / output %%%%%%%%%%%%%%%%%%%
+SaveDirName    = data_whistlerAnisotropy2D_ecsim_mu1000
+RestartDirName = restart_whistlerAnisotropy2D_ecsim_mu1000
+
+# Case = Uniform: no seed field and uniform loading.
+Case              = Uniform
+WriteMethod       = pvtk    # pvtk (parallel VTK), adios2 or hdf5
+# Per-channel overrides of WriteMethod (same values); commented out, the channel inherits WriteMethod.
+# FieldWriteMethod     = pvtk
+# ParticlesWriteMethod = pvtk
+RestartWriteMethod = default   # Checkpoint engine: adios2 or hdf5; default: ADIOS2 if built, else HDF5, else none
+SimulationName    = whistlerAnisotropy2D_mu1000
+
+# %%%%%%%%%%%%%%%%%%% Initial electromagnetic fields %%%%%%%%%%%%%%%%%%%
+# Uniform background magnetic field along x, the long axis of the box: the
+# spectrum is taken along x, and the electron distribution below is symmetric
+# about x. The paper prints the field as By.
+B0x = 0.015
+B0y = 0.0
+B0z = 0.0
+
+# %%%%%%%%%%%%%%%%%%% Time integration %%%%%%%%%%%%%%%%%%%
+# 6000 cycles at dt = 0.015 reach t = 90 omega_pi^-1 = 1350 Omega_ce^-1, with Omega_ce*dt = 0.225 and
+# omega_pe*dt = 0.474. The paper, at mass ratio 100, runs to t = 160 omega_pi^-1 = 240 Omega_ce^-1 with
+# dt = 0.1 (Omega_ce*dt = 0.15) on 1024 cells; its other runs: 512, 256 and 128 cells in x at
+# dt = 0.1, and dt = 0.125, 0.5, 1 and 2 over the same time on 512 cells.
+# th = 0.5 conserves the energy exactly and keeps the light waves. The paper
+# uses th = 1, which damps them.
+dt      = 0.015
+ncycles = 6000
+th      = 0.5
+c       = 1.0
+
+# No smoothing, as in the paper.
+# ECSimSmoothing = none (off) or energy_conserving; ECSimSmoothingOperator = face7 or binomial27.
+# face7: each pass gives Smooth*f + (1-Smooth)/6 * (sum of the six face neighbours); binomial27: fixed
+# [1,2,1]^3/64 weights. Active only with energy_conserving, SmoothNiter > 0 and Smooth < 1 (Smooth in [0, 1]).
+Smooth                 = 0.0
+SmoothNiter            = 0
+ECSimSmoothing         = none
+ECSimSmoothingOperator = face7
+
+# %%%%%%%%%%%%%%%%%%% 2D3V domain in ion-normalized units %%%%%%%%%%%%%%%%%%%
+# 20 d_i x 1.25 d_i = 632.5 d_e x 39.5 d_e.
+# nxc = 1024 -> dx = 0.01953125 = 0.6176 d_e, resolving k*d_e up to pi/dx = 5.09
+# nyc = 64   -> dy = 0.01953125
+# The parallel modes are spaced by 2*pi/Lx: 0.00993 in k*d_e.
+Lx = 20
+Ly = 1.25
+Lz = 1.0
+
+nxc = 1024
+nyc = 64
+nzc = 1
+
+# %%%%%%%%%%%%%%%%%%% MPI topology %%%%%%%%%%%%%%%%%%%
+# Default is single-rank. If running with more MPI ranks, XLEN*YLEN*ZLEN must
+# equal mpirun -np and each dimension must keep enough cells per rank.
+XLEN = 1
+YLEN = 1
+ZLEN = 1
+
+# Periodic fields and particles: the spectrum is a Fourier transform along x.
+PERIODICX = true
+PERIODICY = true
+PERIODICZ = true
+
+PERIODICX_P = true
+PERIODICY_P = true
+PERIODICZ_P = true
+
+# %%%%%%%%%%%%%%%%%%% Species %%%%%%%%%%%%%%%%%%%
+# Species 0 = electrons, species 1 = ions.
+# qom = q/m. With qom_i = +1 and qom_e = -1000, mu = mi/me = 1000.
+ns = 2
+
+# rhoINIT = 1 for both species gives quasi-neutral n_i = n_e = n0 = 1.
+# The macroparticle charge carries the 1/(4*pi) factor; keep input rho at 1.
+rhoINIT   = 1.0  1.0
+
+# 8 x 8 x 4 = 256 particles/cell/species; the paper uses 50 particles per cell.
+npcelx = 8 8
+npcely = 8 8
+npcelz = 4 4
+
+qom = -1000.0  1.0
+
+# Electrons: 0.01 along the field and 0.03 across it, T_perp/T_par = 9, which
+# drives the whistlers. Ions: isotropic, 0.03/sqrt(mu) = 0.00094868, which gives them the temperature of the
+# electrons across the field, T_i = T_e_perp, as in the paper (0.003 at its mass ratio of 100). A thermal speed
+# in units of c depends on the temperature and the mass only, not on B0. Ion beta 8.0e-3, ion gyroradius
+# 0.063 d_i = 3.2 cells.
+# uth, vth and wth are Gaussian standard deviations, sqrt(kT/m) per component.
+uth = 0.01  0.0009486832980505138
+vth = 0.03  0.0009486832980505138
+wth = 0.03  0.0009486832980505138
+
+# No bulk drift.
+u0 = 0.0  0.0
+v0 = 0.0  0.0
+w0 = 0.0  0.0
+
+# Remove sampled residual global mean velocity while preserving target zero mean.
+CenterInitialVelocity = true  true
+
+# Particle positions: QuietStart = true places every particle at the centre of its subcell (npcelx*npcely*npcelz
+# subcells per cell), the same points for every species, so species with equal npcel* sit on one another;
+# false (the default) draws a random point in each subcell, a different one for every species.
+QuietStart = false
+
+# %%%%%%%%%%%%%%%%%%% Boundary conditions %%%%%%%%%%%%%%%%%%%
+# With PERIODIC*=true, periodicity governs the actual boundary behavior. These
+# face values remain present for completeness.
+
+# Electromagnetic field: 0 = perfect electric conductor (PEC), 1 = perfect magnetic conductor (PMC),
+# 2 = open (--check-input admits it; --initialize and --run reject it)
+bcEMfaceXright = 0
+bcEMfaceXleft  = 0
+bcEMfaceYright = 0
+bcEMfaceYleft  = 0
+bcEMfaceZright = 0
+bcEMfaceZleft  = 0
+
+# Particles: 1 = perfect mirror; 0 = exit, 2 = reemission, 3 = open out and 4 = open in
+# are not implemented and are refused on a wall
+bcPfaceXright = 1
+bcPfaceXleft  = 1
+bcPfaceYright = 1
+bcPfaceYleft  = 1
+bcPfaceZright = 1
+bcPfaceZleft  = 1
+
+# %%%%%%%%%%%%%%%%%%% Numerics and output %%%%%%%%%%%%%%%%%%%
+GMREStol   = 1.0e-16
+
+# Write B every cycle: dt_out = dt resolves frequencies up to pi/dt = 209.4 = 13.96 Omega_ce, above the light
+# waves as the scheme propagates them (24.7 to 87.9, that is 1.65 to 5.86 Omega_ce). The 6001 snapshots, with
+# the moments below, take about 42 GB.
+FieldOutputCycle = 1
+# FieldOutputTag: B, E and Gauss (cell residual) joined by +.
+FieldOutputTag   = B
+# MomentsOutputTag: rho, J, PXX, PXY, PXZ, PYY, PYZ, PZZ joined by +; <name> selects every species,
+# <name>_tot the total, <name><s> species s. Here: density and diagonal pressure of the electrons (species 0),
+# their second moments along (PXX0; B0 is along x) and across the field (PYY0, PZZ0).
+# Commented out, no moment is written.
+MomentsOutputTag = rho0+PXX0+PYY0+PZZ0
+
+# Cadence of diagnostics.csv.
+DiagnosticsOutputCycle = 1
+# Console energy cadence (0 reports only the final state)
+DiagnosticEnergyCycle = 1
+# Gauss-law residual cadence: gauss.csv and one log line per sample (0 disables)
+DiagnosticGaussCycle = 0
+
+ParticlesOutputCycle = 0       # particle snapshots (0 disables)
+# ParticlesOutputTag has no effect: a particle snapshot always holds position, velocity, charge and id.
+# ParticlesOutputTag = position+velocity+q
+RestartOutputCycle   = 0       # checkpoint cadence (0 disables)
+CallFinalize         = 1       # also checkpoint the final state when RestartOutputCycle > 0
+
+# From the repository root, plot the spectrum against the whistler relation with:
+#   python3 tools/postprocessing/analyze_whistler_spectrum.py \
+#     --run-dir <run-dir> --input input/whistlerAnisotropy2D.inp
+# Here <run-dir> is the directory from which the simulation was launched; the
+# analyzer resolves SaveDirName relative to it. It applies no window in time and also writes the waves plot
+# (the four cold waves on the spectrum), the travelling plot (the whistlers of one band of wavenumbers,
+# --travel-k, moving through the box) and the crossing plot (one wave packet of the band --crossing-k across
+# the whole box); --output, --csv, --waves-plot, --travel-plot and --crossing-plot name the files, and the
+# waves, travelling and crossing plots are also written as PDFs beside them.

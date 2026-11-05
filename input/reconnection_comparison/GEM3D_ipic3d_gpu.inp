@@ -1,0 +1,177 @@
+# Publications that use results from iPIC3D need to properly cite
+ # 'S. Markidis, G. Lapenta, and Rizwan-uddin. "Multi-scale simulations of
+ # plasma with iPIC3D." Mathematics and Computers in Simulation 80.7 (2010): 1509-1519.'
+ #
+ #        Copyright 2015 KTH Royal Institute of Technology
+ # Licensed under the Apache License, Version 2.0 (the "License");
+ # you may not use this file except in compliance with the License.
+ # You may obtain a copy of the License at
+ #
+ #         http://www.apache.org/licenses/LICENSE-2.0
+ #
+ # Unless required by applicable law or agreed to in writing, software
+ # distributed under the License is distributed on an "AS IS" BASIS,
+ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+
+# INPUT FILE for single Harris GEM challenge case for iPIC3D-GPU
+
+# %%%%%%%%%%%%%%%%%%%% RUN AND I/O %%%%%%%%%%%%%%%%%%%%
+SaveDirName    = data_ipic3d_gpu_gemharris  # Fresh-run output directory [default: data]
+RestartDirName = data_ipic3d_gpu_gemharris  # Checkpoint directory [default: data]
+Case           = GEMHarris              # Case-sensitive initialization case [required]
+SimulationName = testGEM3D              # Output dataset name [required]
+# Field backends (build-dependent): shdf5, phdf5, pvtk, nbcvtk, H5hut, adios2.
+WriteMethod    = pvtk                   # [required]
+
+# %%%%%%%%%%%%%%%%%%%% TIME INTEGRATION %%%%%%%%%%%%%%%%%%%%
+dt      = 0.1                           # Time step [required]
+ncycles = 7000                          # Cycles in this run [required]
+th      = 1.0                           # Implicit decentering parameter [default: 1.0]
+c       = 1.0                           # Normalized light speed [default: 1.0]
+
+# %%%%%%%%%%%%%%%%%%%% INITIAL FIELDS %%%%%%%%%%%%%%%%%%%%
+# Harris-sheet asymptotic field (B0x, HarrisB0x in the TPIC deck) and guide field (B0z).
+B0x = 0.0195                            # [default: 0.0]
+B0y = 0.0                               # [default: 0.0]
+B0z = 0.0                               # [default: 0.0]
+
+delta = 0.5                             # Current-sheet half-thickness [default: 0.5]
+
+# GEMHarris seed. The hump below is the X-point seed of Case = GEM:
+# 0.4*pi/10, widths of one delta, pi/(10*delta).
+pertGEM                 = 0.0                   # Box-scale tearing seed, fraction of B0x [default: 0.0]
+pertHump                = 0.12566370614359174   # Gaussian hump amplitude; 0 disables [default: 0.0]
+deltaxHump              = 1.0                   # Hump x width in units of delta [default: 8.0]
+deltayHump              = 1.0                   # Hump y width in units of delta [default: 4.0]
+kxHump                  = 0.6283185307179586    # Hump x wavenumber; <0 uses 2*PI/Lx [default: -1.0]
+kyHump                  = 0.6283185307179586    # Hump y wavenumber; <0 uses PI/Ly [default: -1.0]
+currentFromAmpere       = 1                     # Drifts from curl(B), shared by the w0 weights [default: 0]
+spatiallyVaryingThermal = 0                     # Local thermal speed from the pressure state [default: 0]
+
+Smooth      = 0.2                       # Smoothing coefficient; 1 disables [default: 1.0]
+SmoothNiter = 6                         # Smoothing passes [default: 6]
+
+PoissonCorrection      = no             # Exact "yes" enables div(E) cleaning [default: no]
+PoissonCorrectionCycle = 10             # div(E) cleaning interval [default: 10]
+divBCorrection         = no             # Exact "yes" enables div(B) cleaning [default: no]
+divBCorrectionCycle    = 10             # div(B) cleaning interval [default: 10]
+
+# %%%%%%%%%%%%%%%%%%%% DOMAIN AND TOPOLOGY %%%%%%%%%%%%%%%%%%%%
+Lx = 40                                 # Global x length [default: 10.0]
+Ly = 20                                 # Global y length [default: 10.0]
+Lz = 1                                  # Global z length [default: 10.0]
+
+nxc = 400                               # Global x cells [default: 64]
+nyc = 200                               # Global y cells [default: 64]
+nzc = 1                                 # Global z cells [default: 64]
+
+# XLEN*YLEN*ZLEN must equal the MPI process count.
+XLEN = 1                                # MPI subdomains in x [default: 1]
+YLEN = 1                                # MPI subdomains in y [default: 1]
+ZLEN = 1                                # MPI subdomains in z [default: 1]
+
+# Periodicity; omitted particle flags inherit these values. 1=periodic, 0=nonperiodic.
+PERIODICX = 1                           # [default: true]
+PERIODICY = 0                           # [default: true]
+PERIODICZ = 1                           # [default: true]
+
+# %%%%%%%%%%%%%%%%%%%% PARTICLES %%%%%%%%%%%%%%%%%%%%
+# Species: current-sheet e-, i+; background e-, i+.
+ns = 4                                  # Total species count [required]
+
+# Initial density
+rhoINIT   = 1.0  1.0  0.1  0.1          # Initial densities [required]
+rhoINJECT = 0.0  0.0  0.0  0.0          # Boundary injection densities [required]
+
+npcelx = 4  4  4  4                     # Particles per cell in x [required]
+npcely = 4  4  4  4                     # Particles per cell in y [required]
+npcelz = 4  4  4  4                     # Particles per cell in z [required]
+
+# qom = charge to mass ratio for different species
+#     e_sheet  i_sheet  e_bg   i_bg
+qom = -64.0    1.0      -64.0  1.0      # [required]
+
+# Thermal velocity
+uth = 0.045  0.0126  0.045  0.0126      # x thermal speeds [required]
+vth = 0.045  0.0126  0.045  0.0126      # y thermal speeds [required]
+wth = 0.045  0.0126  0.045  0.0126      # z thermal speeds [required]
+
+# Drift velocity
+u0 = 0.0     0.0      0.0  0.0          # x drift speeds [required]
+v0 = 0.0     0.0      0.0  0.0          # y drift speeds [required]
+w0 = 0.0065  -0.0325  0.0  0.0          # z drift speeds [required]
+
+TrackParticleID = 0  0  0  0            # Per-species ID mask [default: all 0]
+
+SortingCycle = 1                        # GPU cell-sort interval; 0 disables [default: 0]
+
+# %%%%%%%%%%%%%%%%%%%% VELOCITY SPECTRA %%%%%%%%%%%%%%%%%%%%
+VelocitySpectra        = 0              # Runtime master switch; 0 disables [default: 0]
+MacrocellNx            = 0              # Macrocell x size in local cells [default: 0]
+MacrocellNy            = 0              # Macrocell y size in local cells [default: 0]
+MacrocellNz            = 0              # Macrocell z size in local cells [default: 0]
+VelocitySpectraSpecies = 0 0 0 0        # Per-species enable mask [default: all 0]
+
+# %%%%%%%%%%%%%%%%%%%% BOUNDARY CONDITIONS %%%%%%%%%%%%%%%%%%%%
+# Phi BC: 0/1=Dirichlet, 2=Neumann; periodicity overrides face values.
+bcPHIfaceXright = 1                     # [default: 1]
+bcPHIfaceXleft  = 1                     # [default: 1]
+bcPHIfaceYright = 1                     # [default: 1]
+bcPHIfaceYleft  = 1                     # [default: 1]
+bcPHIfaceZright = 1                     # [default: 1]
+bcPHIfaceZleft  = 1                     # [default: 1]
+
+# EM BC: 0=conductor, 1=magnetic mirror, 2=open/inflow.
+bcEMfaceXright = 0                      # [required]
+bcEMfaceXleft  = 0                      # [required]
+bcEMfaceYright = 0                      # [required]
+bcEMfaceYleft  = 0                      # [required]
+bcEMfaceZright = 0                      # [required]
+bcEMfaceZleft  = 0                      # [required]
+
+yes_sal      = 0                        # Enable absorbing layers [default: 0]
+n_layers_sal = 3                        # Layer thickness in cells [default: 3]
+
+# Particle BC: 0=exit, 1=mirror, 2=reemit, 3=open outflow, 4=open inflow.
+bcPfaceXright = 1                       # [default: 1]
+bcPfaceXleft  = 1                       # [default: 1]
+bcPfaceYright = 1                       # [default: 1]
+bcPfaceYleft  = 1                       # [default: 1]
+bcPfaceZright = 1                       # [default: 1]
+bcPfaceZleft  = 1                       # [default: 1]
+
+ApplyInflowBcsEImage = 1                # Include inflow E terms [default: 1]
+
+# %%%%%%%%%%%%%%%%%%%% NUMERICAL SOLVERS %%%%%%%%%%%%%%%%%%%%
+CGtol      = 1E-3                       # CG tolerance; current call disabled [default: 1e-3]
+GMREStol   = 1E-10                      # Maxwell GMRES/FGMRES tolerance [default: 1e-3]
+NiterMover = 3                          # Predictor-corrector iterations [default: 3]
+
+# GPU Maxwell solver:
+SolverType = GMRES                      # [default: GMRES]
+
+# GPU Chebyshev preconditioner for
+# Poisson problems div(E)/div(B) cleaning.
+PoissonChebMaxIter       = 10           # Preconditioner iterations [default: 10]
+PoissonChebRescaleEigMin = 1.0          # Lower-bound multiplier [default: 1.0]
+PoissonChebRescaleEigMax = 1.0          # Upper-bound multiplier [default: 1.0]
+
+# %%%%%%%%%%%%%%%%%%%% OUTPUT AND RESTART %%%%%%%%%%%%%%%%%%%%
+# Tags are joined with +; an empty tag writes nothing.
+# FieldOutputTag: B, E, Gauss (cell residual).
+# MomentsOutputTag: rho, J, P (PXX..PZZ), Q (heat flux) or one component
+# (PXX, Qxyz, ...) for all species; append a species index (rho0, J1, P2)
+# for one species or _tot (rho_tot, J_tot, P_tot, Q_tot) for the sum.
+# ParticlesOutputTag: position, velocity, q, ID.
+FieldOutputCycle       = 20                   # Field/moment interval; <=0 disables [default: 100]
+FieldOutputTag         = B+E                  # Grid fields [default: empty]
+MomentsOutputTag       = rho                  # Species moments [default: empty]
+ParticlesOutputCycle   = 0                    # Particle interval; <=0 disables [default: 0]
+ParticlesOutputTag     = position+velocity+q  # Particle fields [default: empty]
+DiagnosticsOutputCycle = 20                   # Scalar interval [default: FieldOutputCycle]
+DiagnosticEnergyCycle  = 1                    # Console energy interval; <=0 reports only the final state [default: 1]
+DiagnosticGaussCycle   = 0                    # Gauss-law residual interval (gauss.csv and log); <=0 disables [default: 0]
+RestartOutputCycle     = 0                    # Checkpoint interval; <=0 disables [default: 5000]
+CallFinalize           = 0                    # Final checkpoint if restart output enabled [default: true]

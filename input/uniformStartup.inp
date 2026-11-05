@@ -1,0 +1,129 @@
+# INPUT FILE for a small uniform periodic plasma, the quick-start case
+#
+# Small all-double periodic case. --run advances three timesteps;
+# --initialize only prepares the same state and does not advance ncycles.
+# For two MPI ranks change XLEN to 2; the seven x cells split nonuniformly.
+
+# %%%%%%%%%%%%%%%%%%% Input / output %%%%%%%%%%%%%%%%%%%
+SaveDirName    = data
+RestartDirName = data
+
+Case              = Uniform
+WriteMethod       = pvtk    # pvtk (parallel VTK), adios2 or hdf5
+# Per-channel overrides of WriteMethod (same values); commented out, the channel inherits WriteMethod.
+# FieldWriteMethod     = pvtk
+# ParticlesWriteMethod = pvtk
+RestartWriteMethod = default   # Checkpoint engine: adios2 or hdf5; default: ADIOS2 if built, else HDF5, else none
+SimulationName    = uniformStartup
+
+# %%%%%%%%%%%%%%%%%%% Initial electromagnetic fields %%%%%%%%%%%%%%%%%%%
+# Uniform background magnetic field.
+B0x = 0.25
+B0y = 0.125
+B0z = -0.0625
+
+# %%%%%%%%%%%%%%%%%%% Time integration %%%%%%%%%%%%%%%%%%%
+dt      = 0.125
+ncycles = 3
+th      = 0.5
+c       = 1
+
+# ECSimSmoothing = none (off) or energy_conserving; ECSimSmoothingOperator = face7 or binomial27.
+# face7: each pass gives Smooth*f + (1-Smooth)/6 * (sum of the six face neighbours); binomial27: fixed
+# [1,2,1]^3/64 weights. Active only with energy_conserving, SmoothNiter > 0 and Smooth < 1 (Smooth in [0, 1]).
+Smooth                 = 1.0
+SmoothNiter            = 6
+ECSimSmoothing         = none
+ECSimSmoothingOperator = face7
+
+# %%%%%%%%%%%%%%%%%%% Periodic domain %%%%%%%%%%%%%%%%%%%
+Lx = 7
+Ly = 3
+Lz = 2
+
+nxc = 7
+nyc = 3
+nzc = 2
+
+# %%%%%%%%%%%%%%%%%%% MPI topology %%%%%%%%%%%%%%%%%%%
+XLEN = 1
+YLEN = 1
+ZLEN = 1
+
+PERIODICX = true
+PERIODICY = true
+PERIODICZ = true
+
+PERIODICX_P = true
+PERIODICY_P = true
+PERIODICZ_P = true
+
+# %%%%%%%%%%%%%%%%%%% Species %%%%%%%%%%%%%%%%%%%
+ns = 3
+
+rhoINIT = 1 0.5 0.5
+qom     = -1 1 0.5
+
+npcelx = 2 2 2
+npcely = 2 2 2
+npcelz = 2 2 2
+
+uth = 0.1 0.05 0.025
+vth = 0.1 0.05 0.025
+wth = 0.1 0.05 0.025
+
+u0 = 0.125 -0.125 0
+v0 = 0 0 0.0625
+w0 = 0 0 0
+
+# Per species: shift the loaded velocities so that the species mean equals (u0, v0, w0).
+CenterInitialVelocity = true true true
+
+# Particle positions: QuietStart = true places every particle at the centre of its subcell (npcelx*npcely*npcelz
+# subcells per cell), the same points for every species, so species with equal npcel* sit on one another;
+# false (the default) draws a random point in each subcell, a different one for every species.
+QuietStart = false
+
+# %%%%%%%%%%%%%%%%%%% Boundary conditions %%%%%%%%%%%%%%%%%%%
+# PERIODIC*=true and PERIODIC*_P=true govern the actual boundary behavior.  The
+# face values are retained because they are part of a complete deck.
+
+# Electromagnetic field: 0 = perfect electric conductor (PEC); 1 = perfect magnetic conductor (PMC);
+# 2 = open (--check-input admits it; --initialize and --run reject it).
+bcEMfaceXright = 0
+bcEMfaceXleft  = 0
+bcEMfaceYright = 0
+bcEMfaceYleft  = 0
+bcEMfaceZright = 0
+bcEMfaceZleft  = 0
+
+# Particles: 1 = perfect mirror; 0 = exit, 2 = reemission and 3/4 = open out/in
+# are not implemented and are refused on a wall.
+bcPfaceXright = 1
+bcPfaceXleft  = 1
+bcPfaceYright = 1
+bcPfaceYleft  = 1
+bcPfaceZright = 1
+bcPfaceZleft  = 1
+
+# %%%%%%%%%%%%%%%%%%% Numerics and output %%%%%%%%%%%%%%%%%%%
+GMREStol = 1e-10
+
+FieldOutputCycle = 0
+# FieldOutputTag: B, E and Gauss (cell residual) joined by +.
+FieldOutputTag   = B+E
+# MomentsOutputTag: rho, J, PXX, PXY, PXZ, PYY, PYZ, PZZ joined by +; <name> selects every species,
+# <name>_tot the total, <name><s> species s.
+MomentsOutputTag = rho+rho_tot+J+J_tot
+
+DiagnosticsOutputCycle = 0
+# Console energy cadence (0 reports only the final state)
+DiagnosticEnergyCycle = 1
+# Gauss-law residual cadence: gauss.csv and one log line per sample (0 disables)
+DiagnosticGaussCycle = 0
+
+ParticlesOutputCycle = 0
+# ParticlesOutputTag has no effect: a particle snapshot always holds position, velocity, charge and id.
+# ParticlesOutputTag = position+velocity+q
+RestartOutputCycle   = 0
+CallFinalize         = 1       # also checkpoint the final state when RestartOutputCycle > 0

@@ -1,0 +1,202 @@
+# INPUT FILE for a 2D3V parallel whistler validation with ECSIM
+#
+# Normalization:
+#   x is normalized to d_i = c / omega_pi
+#   t is normalized to omega_pi^-1
+#   c = 1, omega_pi = 1, d_i = 1
+#   qom_i = +1, qom_e = -mu = -100
+#   omega_pe = sqrt(mu) = 10, d_e = 1/sqrt(mu) = 0.1
+#   B0x = Omega_ci / omega_pi = 0.1, so |Omega_ce| = mu*B0 = 10
+#
+# Case = Whistler initializes a homogeneous plasma with a configurable parallel
+# whistler seed mode.
+
+# %%%%%%%%%%%%%%%%%%% Input / output %%%%%%%%%%%%%%%%%%%
+SaveDirName    = data_whistler2D_ecsim
+RestartDirName = restart_whistler2D_ecsim
+
+Case              = Whistler
+WriteMethod       = pvtk    # pvtk (parallel VTK), adios2 or hdf5
+# Per-channel overrides of WriteMethod (same values); commented out, the channel inherits WriteMethod.
+# FieldWriteMethod     = pvtk
+# ParticlesWriteMethod = pvtk
+RestartWriteMethod = default   # Checkpoint engine: adios2 or hdf5; default: ADIOS2 if built, else HDF5, else none
+SimulationName    = whistler2D_parallel_mu100
+
+# %%%%%%%%%%%%%%%%%%% Target whistler metadata %%%%%%%%%%%%%%%%%%%
+# Parallel right-hand whistler:
+#   B0 = B0x xhat is the uniform background field, k = kx xhat, ky = kz = 0
+#   Lx = 6 d_i, mode m = 4 -> kx = 2*pi*m/Lx = 4.1887902048
+#   epsilon = deltaB / B0 = 1e-3 -> deltaB = 1e-4
+#
+# Derived exact cold right-hand dispersion root for mu=100, B0=0.1, k=4.1887902048:
+#   omega = 1.4147245488
+#   omega/k = 0.3377406076
+#   k - omega^2/k = 3.7109802761
+#   wave period = 4.4412782067
+#
+# WhistlerSeedMode options:
+#   eigenmode     = seed B/E and matching electron drift using cold whistler omega
+#   magnetic_only = seed only the single By/Bz mode, with E=0 and no drift
+#   noise         = seed deterministic transverse magnetic noise, with E=0 and no drift
+# WhistlerModeY and WhistlerModeZ must stay 0: only parallel propagation (ky = kz = 0) is implemented.
+WhistlerModeX              = 4
+WhistlerModeY              = 0
+WhistlerModeZ              = 0
+WhistlerSeedEpsilon        = 1.0e-3
+WhistlerPhase              = 0.0
+WhistlerSeedMode           = eigenmode
+WhistlerUseExactColdRoot   = true
+WhistlerNoiseSeed          = 12345
+WhistlerNoiseModeMax       = 16
+WhistlerFieldTimeOffset    = 0.0
+WhistlerParticleTimeOffset = 0.0
+
+# Field seed at t=0:
+#   Bx = B0
+#   By = deltaB*cos(kx*x)
+#   Bz = -deltaB*sin(kx*x)
+#   Ex = 0
+#   Ey = -(omega/k)*deltaB*sin(kx*x)
+#   Ez = -(omega/k)*deltaB*cos(kx*x)
+#
+# Electron drift seed for n0=1 and ion wave drift zero:
+#   Jy =  deltaB*(k - omega^2/k)*cos(kx*x)
+#   Jz = -deltaB*(k - omega^2/k)*sin(kx*x)
+#   uey = -Jy
+#   uez = -Jz
+
+# %%%%%%%%%%%%%%%%%%% Initial electromagnetic fields %%%%%%%%%%%%%%%%%%%
+# Uniform background magnetic field. Parallel Whistler requires
+# B0x > 0 and B0y = B0z = 0; the wave seed is set by WhistlerSeedEpsilon.
+B0x = 0.1
+B0y = 0.0
+B0z = 0.0
+
+# %%%%%%%%%%%%%%%%%%% Time integration %%%%%%%%%%%%%%%%%%%
+dt      = 0.008
+ncycles = 6000
+th      = 0.5
+c       = 1.0
+
+# No ECSIM smoothing for the first frequency/polarization validation.
+# ECSimSmoothing = none (off) or energy_conserving; ECSimSmoothingOperator = face7 or binomial27.
+# face7: each pass gives Smooth*f + (1-Smooth)/6 * (sum of the six face neighbours); binomial27: fixed
+# [1,2,1]^3/64 weights. Active only with energy_conserving, SmoothNiter > 0 and Smooth < 1 (Smooth in [0, 1]).
+Smooth                 = 0.0
+SmoothNiter            = 0
+ECSimSmoothing         = none
+ECSimSmoothingOperator = face7
+
+# %%%%%%%%%%%%%%%%%%% 2D3V domain in ion-normalized units %%%%%%%%%%%%%%%%%%%
+# Lx = 6 d_i keeps the box length an integer in ion skin depths. Ly = 1 = 10 d_e.
+# nxc = 1024 -> dx = 0.005859375 = 0.05859375 d_e
+# nyc = 128  -> dy = 0.0078125   = 0.07813 d_e
+# c*dt*sqrt(dx^-2 + dy^-2) ~= 1.707 for c=1.
+Lx = 6.0
+Ly = 1.0
+Lz = 1.0
+
+nxc = 1024
+nyc = 128
+nzc = 1
+
+# %%%%%%%%%%%%%%%%%%% MPI topology %%%%%%%%%%%%%%%%%%%
+# Default is single-rank. If running with more MPI ranks, XLEN*YLEN*ZLEN must
+# equal mpirun -np and each dimension must keep enough cells per rank.
+XLEN = 1
+YLEN = 1
+ZLEN = 1
+
+# Periodic fields and particles are required for a single Fourier eigenmode.
+PERIODICX = true
+PERIODICY = true
+PERIODICZ = true
+
+PERIODICX_P = true
+PERIODICY_P = true
+PERIODICZ_P = true
+
+# %%%%%%%%%%%%%%%%%%% Species %%%%%%%%%%%%%%%%%%%
+# Species 0 = electrons, species 1 = ions.
+# qom = q/m. With qom_i = +1 and qom_e = -100, mu = mi/me = 100.
+ns = 2
+
+# rhoINIT = 1 for both species gives quasi-neutral n_i = n_e = n0 = 1.
+# The macroparticle charge carries the 1/(4*pi) factor; keep input rho at 1.
+rhoINIT   = 1.0  1.0
+
+# 8 x 8 x 4 = 256 particles/cell/species for a first clean spectral run.
+npcelx = 8  8
+npcely = 8  8
+npcelz = 4  4
+
+qom = -100.0  1.0
+
+# Isotropic low-beta Maxwellians with beta_i = beta_e = 0.02:
+#   vth_i = B0*sqrt(beta_i/2) = 0.01
+#   vth_e = B0*sqrt(mu*beta_e/2) = 0.1
+# uth, vth and wth are Gaussian standard deviations, sqrt(kT/m) per component.
+uth = 0.10  0.01
+vth = 0.10  0.01
+wth = 0.10  0.01
+
+# No global bulk drift. The required whistler electron drift is spatially
+# varying and is added by the Whistler particle initializer for electrons.
+u0 = 0.0  0.0
+v0 = 0.0  0.0
+w0 = 0.0  0.0
+
+# Remove sampled residual global mean velocity while preserving target zero mean.
+CenterInitialVelocity = true  true
+
+# Particle positions: QuietStart = true places every particle at the centre of its subcell (npcelx*npcely*npcelz
+# subcells per cell), the same points for every species, so species with equal npcel* sit on one another;
+# false (the default) draws a random point in each subcell, a different one for every species.
+QuietStart = false
+
+# %%%%%%%%%%%%%%%%%%% Boundary conditions %%%%%%%%%%%%%%%%%%%
+# With PERIODIC*=true, periodicity governs the actual boundary behavior. These
+# face values remain present for completeness.
+
+# Electromagnetic field: 0 = perfect electric conductor (PEC), 1 = perfect magnetic conductor (PMC),
+# 2 = open (--check-input admits it; --initialize and --run reject it)
+bcEMfaceXright = 0
+bcEMfaceXleft  = 0
+bcEMfaceYright = 0
+bcEMfaceYleft  = 0
+bcEMfaceZright = 0
+bcEMfaceZleft  = 0
+
+# Particles: 1 = perfect mirror; 0 = exit, 2 = reemission, 3 = open out and 4 = open in
+# are not implemented and are refused on a wall
+bcPfaceXright = 1
+bcPfaceXleft  = 1
+bcPfaceYright = 1
+bcPfaceYleft  = 1
+bcPfaceZright = 1
+bcPfaceZleft  = 1
+
+# %%%%%%%%%%%%%%%%%%% Numerics and output %%%%%%%%%%%%%%%%%%%
+GMREStol   = 1.0e-10
+
+# Output every 100 cycles: dt_out = 0.8, about 5.6 samples per whistler period.
+FieldOutputCycle = 100
+# FieldOutputTag: B, E and Gauss (cell residual) joined by +. MomentsOutputTag: rho, J, PXX, PXY, PXZ, PYY, PYZ, PZZ joined by +;
+# <name> selects every species, <name>_tot the total, <name><s> species s. Pressure is off unless named.
+# With both tags omitted, B, E, rho and J (total and per species) are written.
+FieldOutputTag   = B+E
+MomentsOutputTag = rho+rho_tot+J+J_tot
+
+# Cadence of diagnostics.csv.
+DiagnosticsOutputCycle = 10
+# Console energy cadence (0 reports only the final state)
+DiagnosticEnergyCycle = 1
+# Gauss-law residual cadence: gauss.csv and one log line per sample (0 disables)
+DiagnosticGaussCycle = 0
+
+ParticlesOutputCycle = 0       # particle snapshots (0 disables)
+# ParticlesOutputTag has no effect: a particle snapshot always holds position, velocity, charge and id.
+# ParticlesOutputTag = position+velocity+q
+RestartOutputCycle   = 0       # checkpoint cadence (0 disables)
+CallFinalize         = 1       # also checkpoint the final state when RestartOutputCycle > 0

@@ -1,0 +1,636 @@
+Weibel	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.4ed916872b021p-2
+Weibel	0	E	0x0p+0	0x0p+0	0x0p+0
+Weibel	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.a6e978d4fdf3bp-2
+Weibel	1	E	0x0p+0	0x1.a11ebe2baf2e2p-58	0x0p+0
+Weibel	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.5d617b6315314p-2
+Weibel	2	E	0x0p+0	-0x1.76518156ff4ccp-7	0x0p+0
+Weibel	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.6178db6888dafp-2
+Weibel	3	E	0x0p+0	0x1.9bc98e9892bbbp-7	0x0p+0
+Weibel	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.4ed955a47c40cp-2
+Weibel	4	E	0x0p+0	0x1.aad6546371ab8p-14	0x0p+0
+Weibel	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.a5748e5f6861bp-2
+Weibel	5	E	0x0p+0	-0x1.013b29fc5061bp-8	0x0p+0
+TwoStream	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream	0	E	0x1.14432bf200e94p-5	0x0p+0	0x0p+0
+TwoStream	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream	1	E	0x1.14432bf200e9p-5	0x0p+0	0x0p+0
+TwoStream	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream	2	E	-0x1.5386f45df8bd7p-4	0x0p+0	0x0p+0
+TwoStream	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream	3	E	0x1.cedac942eb1p-7	0x0p+0	0x0p+0
+TwoStream	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream	4	E	-0x1.d66ce4ebc4299p-4	0x0p+0	0x0p+0
+TwoStream	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream	5	E	0x1.ae99df0e88a1cp-5	0x0p+0	0x0p+0
+Whistler	0	B	0x1.851eb851eb852p-3	0x1.c3239ac95a2e4p-8	-0x1.75d688a3cba6dp-10
+Whistler	0	E	0x0p+0	-0x1.296637e292783p-11	-0x1.66e50399aadebp-9
+Whistler	1	B	0x1.851eb851eb852p-3	0x1.c3239ac95a2e4p-8	-0x1.75d688a3cba77p-10
+Whistler	1	E	0x0p+0	-0x1.296637e29278bp-11	-0x1.66e50399aadebp-9
+Whistler	2	B	0x1.851eb851eb852p-3	-0x1.623d3c6bdeb78p-8	0x1.2693c46c7bb25p-8
+Whistler	2	E	0x0p+0	0x1.d4b09e141e063p-10	0x1.19cecef37483fp-9
+Whistler	3	B	0x1.851eb851eb852p-3	-0x1.c2ff4725f44c8p-8	-0x1.789148c9caa3p-10
+Whistler	3	E	0x0p+0	-0x1.2b9218600bdap-11	0x1.66c81d75f7db3p-9
+Whistler	4	B	0x1.851eb851eb852p-3	-0x1.1d66f7496f9f9p-9	0x1.b60fa57a66353p-8
+Whistler	4	E	0x0p+0	0x1.5c7d9d0dbb84fp-9	0x1.c61788d9de724p-11
+Whistler	5	B	0x1.851eb851eb852p-3	0x1.ac7e3551abb1fp-8	-0x1.528e1e41e8262p-9
+Whistler	5	E	0x0p+0	-0x1.0d54a998c9488p-10	-0x1.54e103301226bp-9
+TaylorGreenVortex	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TaylorGreenVortex	0	E	-0x0p+0	-0x0p+0	-0x0p+0
+TaylorGreenVortex	1	B	0x1.851eb851eb854p-3	-0x1.d70a3d70a3d73p-3	0x1.7ae147ae147aep-2
+TaylorGreenVortex	1	E	-0x1.0d906764a4536p-54	-0x1.676b3486306f3p-55	0x1.ab6abb0070f34p-58
+TaylorGreenVortex	2	B	0x1.a520f2877fb15p-3	-0x1.54e38ef285124p-2	0x1.7ae147ae147aep-2
+TaylorGreenVortex	2	E	-0x1.8a739a7d1c3f9p-4	-0x1.df4d53271d334p-7	0x1.4aa055337e872p-5
+TaylorGreenVortex	3	B	0x1.a774a60b98742p-3	-0x1.85560126135acp-2	0x1.7ae147ae147aep-2
+TaylorGreenVortex	3	E	-0x1.1fe8433a76699p-3	-0x1.0112b66c5b438p-6	0x1.ff79dbc51c0c8p-5
+TaylorGreenVortex	4	B	0x1.7fa8daa7fdb14p-3	-0x1.814aeb720b9a4p-3	0x1.7ae147ae147aep-2
+TaylorGreenVortex	4	E	0x1.40ff69c3529a5p-5	0x1.470f3b72a3399p-9	-0x1.304289bb5ea38p-6
+TaylorGreenVortex	5	B	0x1.54b54402501cep-3	-0x1.23c570b34bbfdp-2	0x1.7ae147ae147aep-2
+TaylorGreenVortex	5	E	-0x1.a5280b705ec01p-5	0x1.6a76858c0aa39p-6	0x1.48ed4b0ebe573p-5
+ForceFree	0	B	-0x1.5c24231d1d97fp-2	-0x1.d70a3d70a3d71p-3	0x1.75ace95313639p-2
+ForceFree	0	E	0x0p+0	0x0p+0	0x0p+0
+ForceFree	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	-0x1.eb851eb851eb8p-3
+ForceFree	1	E	0x0p+0	0x0p+0	0x0p+0
+ForceFree	2	B	-0x1.58e56f49811afp-2	-0x1.d70a3d70a3d71p-3	0x1.367a9c62c171cp-2
+ForceFree	2	E	0x0p+0	0x0p+0	0x0p+0
+ForceFree	3	B	0x1.6ef51054e6f98p-1	-0x1.d70a3d70a3d71p-3	0x1.356ccdbb10a2ap-2
+ForceFree	3	E	0x0p+0	0x0p+0	0x0p+0
+ForceFree	4	B	-0x1.96394259c9cbcp-3	-0x1.d70a3d70a3d71p-3	-0x1.718d3fd5e6c7p-5
+ForceFree	4	E	0x0p+0	0x0p+0	0x0p+0
+ForceFree	5	B	0x1.2dd7d17a24534p-4	-0x1.d70a3d70a3d71p-3	-0x1.cd114ce5bdff8p-3
+ForceFree	5	E	0x0p+0	0x0p+0	0x0p+0
+fluxRope	0	B	0x1.088c147a4581bp-3	-0x1.9438c512321a8p-3	-0x1.9999999999998p-4
+fluxRope	0	E	0x0p+0	0x0p+0	0x0p+0
+fluxRope	1	B	0x1.4000bdda04c48p-2	-0x1.8ea5bb41dc7b4p-2	-0x1.9999999999998p-4
+fluxRope	1	E	0x0p+0	0x0p+0	0x0p+0
+fluxRope	2	B	0x1.c7527171e663p-6	-0x1.9fd5bcb1878e6p-3	-0x1.9999999999998p-4
+fluxRope	2	E	0x0p+0	0x0p+0	0x0p+0
+fluxRope	3	B	0x1.006a40c126afap-2	-0x1.18e84810ee699p-2	-0x1.9999999999998p-4
+fluxRope	3	E	0x0p+0	0x0p+0	0x0p+0
+fluxRope	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	-0x1.9999999999998p-4
+fluxRope	4	E	0x0p+0	0x0p+0	0x0p+0
+fluxRope	5	B	0x1.262f3399913d9p-2	-0x1.a3b0c32217672p-2	-0x1.9999999999998p-4
+fluxRope	5	E	0x0p+0	0x0p+0	0x0p+0
+plasmoidChain	0	B	0x1.51e961aeb897ep-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+plasmoidChain	0	E	0x0p+0	0x0p+0	0x0p+0
+plasmoidChain	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+plasmoidChain	1	E	0x0p+0	0x0p+0	0x0p+0
+plasmoidChain	2	B	0x1.50790d1e2d2b6p-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+plasmoidChain	2	E	0x0p+0	0x0p+0	0x0p+0
+plasmoidChain	3	B	-0x1.1bbc4d4477d76p-2	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+plasmoidChain	3	E	0x0p+0	0x0p+0	0x0p+0
+plasmoidChain	4	B	0x1.119b2f504882ep-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+plasmoidChain	4	E	0x0p+0	0x0p+0	0x0p+0
+plasmoidChain	5	B	0x1.2c2d227708da4p-2	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+plasmoidChain	5	E	0x0p+0	0x0p+0	0x0p+0
+DoubleGEM	0	B	0x1.4fead37520389p-1	-0x1.d706311a9e05fp-3	0x1.7ae147ae147aep-2
+DoubleGEM	0	E	0x0p+0	0x0p+0	0x0p+0
+DoubleGEM	1	B	-0x1.16b58225ac92bp-2	-0x1.d712561caf795p-3	0x1.7ae147ae147aep-2
+DoubleGEM	1	E	0x0p+0	0x0p+0	0x0p+0
+DoubleGEM	2	B	0x1.aaa3006dbc5a1p-3	-0x1.524cd66905faap-2	0x1.7ae147ae147aep-2
+DoubleGEM	2	E	0x0p+0	0x0p+0	0x0p+0
+DoubleGEM	3	B	0x1.a409b535c2d8ap-3	-0x1.44477c4e008a6p-2	0x1.7ae147ae147aep-2
+DoubleGEM	3	E	0x0p+0	0x0p+0	0x0p+0
+DoubleGEM	4	B	-0x1.e982f09dc5264p-3	-0x1.e1d7806f869d1p-3	0x1.7ae147ae147aep-2
+DoubleGEM	4	E	0x0p+0	0x0p+0	0x0p+0
+DoubleGEM	5	B	-0x1.15e7a739e45aap-2	-0x1.d715b0d589766p-3	0x1.7ae147ae147aep-2
+DoubleGEM	5	E	0x0p+0	0x0p+0	0x0p+0
+DoubleGEMnoPert	0	B	0x1.4fec5c2cdaa92p-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+DoubleGEMnoPert	0	E	0x0p+0	0x0p+0	0x0p+0
+DoubleGEMnoPert	1	B	-0x1.16bba5049654fp-2	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+DoubleGEMnoPert	1	E	0x0p+0	0x0p+0	0x0p+0
+DoubleGEMnoPert	2	B	0x1.0fa5e7899c6bap-2	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+DoubleGEMnoPert	2	E	0x0p+0	0x0p+0	0x0p+0
+DoubleGEMnoPert	3	B	0x1.086ab2a4352cap-2	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+DoubleGEMnoPert	3	E	0x0p+0	0x0p+0	0x0p+0
+DoubleGEMnoPert	4	B	-0x1.04c9611976846p-2	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+DoubleGEMnoPert	4	E	0x0p+0	0x0p+0	0x0p+0
+DoubleGEMnoPert	5	B	-0x1.15ef7c511bb43p-2	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+DoubleGEMnoPert	5	E	0x0p+0	0x0p+0	0x0p+0
+GEM	0	B	0x1.51e961aeb897ep-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEM	0	E	0x0p+0	0x0p+0	0x0p+0
+GEM	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEM	1	E	0x0p+0	0x0p+0	0x0p+0
+GEM	2	B	0x1.50775c072fa32p-1	-0x1.d706b2b8f48b9p-3	0x1.7ae147ae147aep-2
+GEM	2	E	0x0p+0	0x0p+0	0x0p+0
+GEM	3	B	-0x1.1bb91faaa461cp-2	-0x1.d70dafc9c4fc8p-3	0x1.7ae147ae147aep-2
+GEM	3	E	0x0p+0	0x0p+0	0x0p+0
+GEM	4	B	0x1.0199a7619b9fbp-1	-0x1.83b27821ee964p-3	0x1.7ae147ae147aep-2
+GEM	4	E	0x0p+0	0x0p+0	0x0p+0
+GEM	5	B	0x1.af0a4879d9fb7p-3	-0x1.11778d66c74a9p-2	0x1.7ae147ae147aep-2
+GEM	5	E	0x0p+0	0x0p+0	0x0p+0
+GEMnoPert	0	B	0x1.51e961aeb897ep-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMnoPert	0	E	0x0p+0	0x0p+0	0x0p+0
+GEMnoPert	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMnoPert	1	E	0x0p+0	0x0p+0	0x0p+0
+GEMnoPert	2	B	0x1.50790d1e2d2b6p-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMnoPert	2	E	0x0p+0	0x0p+0	0x0p+0
+GEMnoPert	3	B	-0x1.1bbc4d4477d76p-2	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMnoPert	3	E	0x0p+0	0x0p+0	0x0p+0
+GEMnoPert	4	B	0x1.119b2f504882ep-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMnoPert	4	E	0x0p+0	0x0p+0	0x0p+0
+GEMnoPert	5	B	0x1.2c2d227708da4p-2	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMnoPert	5	E	0x0p+0	0x0p+0	0x0p+0
+Uniform	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Uniform	0	E	0x0p+0	0x0p+0	0x0p+0
+Uniform	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Uniform	1	E	0x0p+0	0x0p+0	0x0p+0
+Uniform	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Uniform	2	E	0x0p+0	0x0p+0	0x0p+0
+Uniform	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Uniform	3	E	0x0p+0	0x0p+0	0x0p+0
+Uniform	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Uniform	4	E	0x0p+0	0x0p+0	0x0p+0
+Uniform	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Uniform	5	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris	0	B	0x1.51e961aeb897ep-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMHarris	0	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMHarris	1	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris	2	B	0x1.50790d1e2d2b6p-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMHarris	2	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris	3	B	-0x1.1bbc4d4477d76p-2	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMHarris	3	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris	4	B	0x1.119b2f504882ep-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMHarris	4	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris	5	B	0x1.2c2d227708da4p-2	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMHarris	5	E	0x0p+0	0x0p+0	0x0p+0
+GaussianExpansion	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GaussianExpansion	0	E	0x0p+0	0x0p+0	0x0p+0
+GaussianExpansion	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GaussianExpansion	1	E	0x0p+0	0x0p+0	0x0p+0
+GaussianExpansion	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GaussianExpansion	2	E	0x0p+0	0x0p+0	0x0p+0
+GaussianExpansion	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GaussianExpansion	3	E	0x0p+0	0x0p+0	0x0p+0
+GaussianExpansion	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GaussianExpansion	4	E	0x0p+0	0x0p+0	0x0p+0
+GaussianExpansion	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GaussianExpansion	5	E	0x0p+0	0x0p+0	0x0p+0
+WhistlerTurbulence	0	B	0x1.835dfa1023b7fp-4	0x1.da9ba5af4962ep-4	0x1.70c1c19919565p-2
+WhistlerTurbulence	0	E	-0x1.9a769380a8133p-7	0x1.696fdbe85a8b7p-5	-0x1.36afd15dcf1cdp-9
+WhistlerTurbulence	1	B	-0x1.179446a5ca7b3p-6	-0x1.60e386811ce65p-5	0x1.7b8b28878f33ap-2
+WhistlerTurbulence	1	E	0x1.17c34ece8fd26p-9	0x1.e78245f1b378ap-6	0x1.dbf6942164d01p-6
+WhistlerTurbulence	2	B	-0x1.f9b48cc7067d9p-6	0x1.db2f49404a2fdp-5	0x1.67e0d51bcd75p-2
+WhistlerTurbulence	2	E	0x1.8b4527e43c6a4p-5	-0x1.7e74507458dadp-5	0x1.3f66cd76c1b6ep-9
+WhistlerTurbulence	3	B	0x1.e6caedf775ae1p-5	-0x1.91bcc44ab8909p-6	0x1.722c387925a56p-2
+WhistlerTurbulence	3	E	0x1.9ba8ffbb0e1ddp-5	-0x1.11dd23b8a7296p-4	-0x1.d05fa4247cf4p-6
+WhistlerTurbulence	4	B	0x1.c0e250cb58f57p-5	-0x1.9da2e37900983p-5	0x1.890e27a8a19c8p-2
+WhistlerTurbulence	4	E	-0x1.ece5f514c6e06p-9	-0x1.9f02a8444d0eap-9	-0x1.2183569098f66p-7
+WhistlerTurbulence	5	B	-0x1.90c1664f8ccd5p-6	0x1.e1733d99cf28bp-7	0x1.8e2023f3c935ap-2
+WhistlerTurbulence	5	E	0x1.413e6c4c194efp-7	-0x1.7a214787ef5ap-6	-0x1.5d9f1db35ea71p-8
+Whistler approximate root	0	B	0x1.851eb851eb852p-3	0x1.c30d59401e5cep-8	-0x1.778342addaf54p-10
+Whistler approximate root	0	E	0x0p+0	-0x1.296243844672cp-11	-0x1.6534e24feca29p-9
+Whistler approximate root	1	B	0x1.851eb851eb852p-3	0x1.c30d59401e5cfp-8	-0x1.778342addaf43p-10
+Whistler approximate root	1	E	0x0p+0	-0x1.296243844671ep-11	-0x1.6534e24feca2ap-9
+Whistler approximate root	2	B	0x1.851eb851eb852p-3	-0x1.61f7345cc466p-8	0x1.26e7e73091f4bp-8
+Whistler approximate root	2	E	0x0p+0	0x1.d31890ef05d36p-10	0x1.1851dfcb9cfd1p-9
+Whistler approximate root	3	B	0x1.851eb851eb852p-3	-0x1.c31598b9ba305p-8	-0x1.76e49c1797215p-10
+Whistler approximate root	3	E	0x0p+0	-0x1.28e49f2b72633p-11	0x1.653b6a79b0c36p-9
+Whistler approximate root	4	B	0x1.851eb851eb852p-3	-0x1.1c96c3e78312ep-9	0x1.b6318119f9daep-8
+Whistler approximate root	4	E	0x0p+0	0x1.5b05f035cc699p-9	0x1.c2c15114fab0ep-11
+Whistler approximate root	5	B	0x1.851eb851eb852p-3	0x1.ac55f0af60cf7p-8	-0x1.5359b40a247c6p-9
+Whistler approximate root	5	E	0x0p+0	-0x1.0cbed3abade58p-10	-0x1.53376cce384b7p-9
+Whistler zero eigenmode amplitude	0	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler zero eigenmode amplitude	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler zero eigenmode amplitude	1	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler zero eigenmode amplitude	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler zero eigenmode amplitude	2	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler zero eigenmode amplitude	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler zero eigenmode amplitude	3	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler zero eigenmode amplitude	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler zero eigenmode amplitude	4	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler zero eigenmode amplitude	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler zero eigenmode amplitude	5	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler zero eigenmode amplitude	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler tolerated transverse background	0	B	0x1.851eb851eb852p-3	0x1.c3239ad458ee3p-8	-0x1.75d688cfc6a69p-10
+Whistler tolerated transverse background	0	E	0x0p+0	-0x1.296637e292783p-11	-0x1.66e50399aadebp-9
+Whistler tolerated transverse background	1	B	0x1.851eb851eb852p-3	0x1.c3239ad458ee3p-8	-0x1.75d688cfc6a73p-10
+Whistler tolerated transverse background	1	E	0x0p+0	-0x1.296637e29278bp-11	-0x1.66e50399aadebp-9
+Whistler tolerated transverse background	2	B	0x1.851eb851eb852p-3	-0x1.623d3c60dff79p-8	0x1.2693c4617cf26p-8
+Whistler tolerated transverse background	2	E	0x0p+0	0x1.d4b09e141e063p-10	0x1.19cecef37483fp-9
+Whistler tolerated transverse background	3	B	0x1.851eb851eb852p-3	-0x1.c2ff471af58c9p-8	-0x1.789148f5c5a2cp-10
+Whistler tolerated transverse background	3	E	0x0p+0	-0x1.2b9218600bdap-11	0x1.66c81d75f7db3p-9
+Whistler tolerated transverse background	4	B	0x1.851eb851eb852p-3	-0x1.1d66f733721fbp-9	0x1.b60fa56f67754p-8
+Whistler tolerated transverse background	4	E	0x0p+0	0x1.5c7d9d0dbb84fp-9	0x1.c61788d9de724p-11
+Whistler tolerated transverse background	5	B	0x1.851eb851eb852p-3	0x1.ac7e355caa71ep-8	-0x1.528e1e57e5a6p-9
+Whistler tolerated transverse background	5	E	0x0p+0	-0x1.0d54a998c9488p-10	-0x1.54e103301226bp-9
+Whistler large cancelling phase	0	B	0x1.851eb851eb852p-3	0x1.ccb7d41743e96p-8	0x0p+0
+Whistler large cancelling phase	0	E	0x0p+0	-0x0p+0	-0x1.6e83d4cb600c6p-9
+Whistler large cancelling phase	1	B	0x1.851eb851eb852p-3	0x1.ccb7d41743e96p-8	0x0p+0
+Whistler large cancelling phase	1	E	0x0p+0	-0x0p+0	-0x1.6e83d4cb600c6p-9
+Whistler large cancelling phase	2	B	0x1.851eb851eb852p-3	0x1.ccb7d41743e96p-8	0x0p+0
+Whistler large cancelling phase	2	E	0x0p+0	-0x0p+0	-0x1.6e83d4cb600c6p-9
+Whistler large cancelling phase	3	B	0x1.851eb851eb852p-3	0x1.ccb7d41743e96p-8	0x0p+0
+Whistler large cancelling phase	3	E	0x0p+0	-0x0p+0	-0x1.6e83d4cb600c6p-9
+Whistler large cancelling phase	4	B	0x1.851eb851eb852p-3	0x1.ccb7d41743e96p-8	0x0p+0
+Whistler large cancelling phase	4	E	0x0p+0	-0x0p+0	-0x1.6e83d4cb600c6p-9
+Whistler large cancelling phase	5	B	0x1.851eb851eb852p-3	0x1.ccb7d41743e96p-8	0x0p+0
+Whistler large cancelling phase	5	E	0x0p+0	-0x0p+0	-0x1.6e83d4cb600c6p-9
+Whistler large noise phase	0	B	0x1.851eb851eb852p-3	-0x1.955838be9971p-11	0x1.7c3a61d46286p-9
+Whistler large noise phase	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler large noise phase	1	B	0x1.851eb851eb852p-3	-0x1.16ef19af20abcp-9	0x1.d86994dde3cd8p-10
+Whistler large noise phase	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler large noise phase	2	B	0x1.851eb851eb852p-3	-0x1.8c31a03a520aep-13	0x1.6936490c10374p-8
+Whistler large noise phase	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler large noise phase	3	B	0x1.851eb851eb852p-3	-0x1.8d96e667d178p-10	0x1.a782aa2932217p-8
+Whistler large noise phase	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler large noise phase	4	B	0x1.851eb851eb852p-3	-0x1.002c330f35708p-8	0x1.0e4a42889a5e6p-7
+Whistler large noise phase	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler large noise phase	5	B	0x1.851eb851eb852p-3	-0x1.863d1f2c2b5f8p-8	0x1.524524ecf4ce8p-10
+Whistler large noise phase	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.000000	0	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.000000	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.000000	1	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.000000	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.000000	2	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.000000	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.000000	3	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.000000	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.000000	4	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.000000	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.000000	5	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.000000	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.070000	0	B	0x1.851eb851eb852p-3	0x1.8fb1c83445065p-7	-0x1.5b707a91152c7p-8
+Whistler magnetic-only epsilon=0.070000	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.070000	1	B	0x1.851eb851eb852p-3	0x1.8fb1c83445065p-7	-0x1.5b707a91152c5p-8
+Whistler magnetic-only epsilon=0.070000	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.070000	2	B	0x1.851eb851eb852p-3	-0x1.0f1a24ab5616cp-7	0x1.553ad96266632p-7
+Whistler magnetic-only epsilon=0.070000	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.070000	3	B	0x1.851eb851eb852p-3	-0x1.b3d07c77528b6p-7	-0x1.b019475a6dd36p-21
+Whistler magnetic-only epsilon=0.070000	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.070000	4	B	0x1.851eb851eb852p-3	-0x1.7bef575568648p-10	0x1.b138114a1438ap-7
+Whistler magnetic-only epsilon=0.070000	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler magnetic-only epsilon=0.070000	5	B	0x1.851eb851eb852p-3	0x1.6c12cd13f7a9ap-7	-0x1.df1a273ff23f4p-8
+Whistler magnetic-only epsilon=0.070000	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=1	0	B	0x1.851eb851eb852p-3	0x1.8b070176307a3p-8	-0x1.8752adf50c1e9p-8
+Whistler noise seed=0 limit=1	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=1	1	B	0x1.851eb851eb852p-3	-0x1.8b070176307a2p-8	0x1.8752adf50c1e9p-8
+Whistler noise seed=0 limit=1	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=1	2	B	0x1.851eb851eb852p-3	-0x1.45bd207287744p-8	0x1.4ab9d995c5a15p-8
+Whistler noise seed=0 limit=1	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=1	3	B	0x1.851eb851eb852p-3	0x1.2f684d4ccce4p-9	-0x1.3ccae56644f52p-9
+Whistler noise seed=0 limit=1	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=1	4	B	0x1.851eb851eb852p-3	-0x1.9356352ec92a5p-8	0x1.96b93c4cba3abp-8
+Whistler noise seed=0 limit=1	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=1	5	B	0x1.851eb851eb852p-3	-0x1.753525c8b74c8p-8	0x1.70fefbc330ff5p-8
+Whistler noise seed=0 limit=1	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=7	0	B	0x1.851eb851eb852p-3	0x1.06697b2914768p-11	-0x1.ed7b7ce1c6f55p-9
+Whistler noise seed=0 limit=7	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=7	1	B	0x1.851eb851eb852p-3	-0x1.17645ceca9873p-9	0x1.6fd7209943262p-8
+Whistler noise seed=0 limit=7	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=7	2	B	0x1.851eb851eb852p-3	-0x1.8130aea91b616p-7	-0x1.275a6d4ab51e3p-7
+Whistler noise seed=0 limit=7	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=7	3	B	0x1.851eb851eb852p-3	-0x1.c560969b1e01ap-9	0x1.1f7cdd197f0e4p-9
+Whistler noise seed=0 limit=7	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=7	4	B	0x1.851eb851eb852p-3	-0x1.e6046e4480156p-7	0x1.35d03eeb74d23p-8
+Whistler noise seed=0 limit=7	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=7	5	B	0x1.851eb851eb852p-3	-0x1.19a6aec967a15p-10	0x1.7597131e0ff63p-8
+Whistler noise seed=0 limit=7	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=0	0	B	0x1.851eb851eb852p-3	0x1.c7bed82ad8182p-9	0x1.1156e67c564dbp-9
+Whistler noise seed=0 limit=0	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=0	1	B	0x1.851eb851eb852p-3	0x1.2fab946cff38p-8	0x1.7dc77899c617ep-8
+Whistler noise seed=0 limit=0	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=0	2	B	0x1.851eb851eb852p-3	-0x1.3067a2fc43e72p-7	-0x1.ea08ca91918fcp-10
+Whistler noise seed=0 limit=0	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=0	3	B	0x1.851eb851eb852p-3	-0x1.2e213e118948cp-8	-0x1.748fe25c83478p-10
+Whistler noise seed=0 limit=0	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=0	4	B	0x1.851eb851eb852p-3	-0x1.40139dcfd8fe9p-7	0x1.06f8dbf3ffc6ap-8
+Whistler noise seed=0 limit=0	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=0	5	B	0x1.851eb851eb852p-3	0x1.306fbbe3f6af6p-8	0x1.27c30370ab83cp-8
+Whistler noise seed=0 limit=0	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=-1	0	B	0x1.851eb851eb852p-3	-0x1.42555f0f7d6c6p-9	-0x1.909ab050df202p-10
+Whistler noise seed=0 limit=-1	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=-1	1	B	0x1.851eb851eb852p-3	-0x1.f78e63c116a9cp-9	0x1.0ad1554c075d2p-9
+Whistler noise seed=0 limit=-1	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=-1	2	B	0x1.851eb851eb852p-3	-0x1.572289a1f97efp-8	-0x1.d604aaa04468bp-9
+Whistler noise seed=0 limit=-1	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=-1	3	B	0x1.851eb851eb852p-3	-0x1.2ff08872a03cep-8	0x1.28887e2a3bep-16
+Whistler noise seed=0 limit=-1	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=-1	4	B	0x1.851eb851eb852p-3	-0x1.9dafb0b0e7e47p-7	0x1.4783f582b30afp-11
+Whistler noise seed=0 limit=-1	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=0 limit=-1	5	B	0x1.851eb851eb852p-3	-0x1.beb8228830f6p-8	0x1.b85aff9b8079ep-11
+Whistler noise seed=0 limit=-1	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=1	0	B	0x1.851eb851eb852p-3	0x1.5ba8a80c3a1b8p-8	-0x1.0e274731fcf19p-8
+Whistler noise seed=12345 limit=1	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=1	1	B	0x1.851eb851eb852p-3	-0x1.5ba8a80c3a1b9p-8	0x1.0e274731fcf1bp-8
+Whistler noise seed=12345 limit=1	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=1	2	B	0x1.851eb851eb852p-3	-0x1.7989db6fa1251p-8	-0x1.28a0fd84a9be9p-8
+Whistler noise seed=12345 limit=1	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=1	3	B	0x1.851eb851eb852p-3	0x1.c266e543448ffp-9	0x1.a462bb8622d7bp-8
+Whistler noise seed=12345 limit=1	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=1	4	B	0x1.851eb851eb852p-3	-0x1.b3f8b70985b6dp-8	-0x1.76648ab8e408p-9
+Whistler noise seed=12345 limit=1	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=1	5	B	0x1.851eb851eb852p-3	-0x1.4069d29296f67p-8	0x1.2d342fa1a4737p-8
+Whistler noise seed=12345 limit=1	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=7	0	B	0x1.851eb851eb852p-3	0x1.98b6d02d23236p-8	-0x1.7cd4150995d68p-8
+Whistler noise seed=12345 limit=7	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=7	1	B	0x1.851eb851eb852p-3	-0x1.d7f37e4bf0342p-8	-0x1.1098b01484718p-11
+Whistler noise seed=12345 limit=7	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=7	2	B	0x1.851eb851eb852p-3	-0x1.4e9b5fa1fb262p-9	-0x1.4977f98b9cbdcp-7
+Whistler noise seed=12345 limit=7	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=7	3	B	0x1.851eb851eb852p-3	0x1.a2231f80dacffp-8	0x1.e0c1076878213p-9
+Whistler noise seed=12345 limit=7	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=7	4	B	0x1.851eb851eb852p-3	-0x1.b392750850cc5p-7	-0x1.2e893726f4c71p-8
+Whistler noise seed=12345 limit=7	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=7	5	B	0x1.851eb851eb852p-3	-0x1.c4bda5d8b895cp-8	0x1.cd913f1767448p-12
+Whistler noise seed=12345 limit=7	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=0	0	B	0x1.851eb851eb852p-3	0x1.c0f30307e1d72p-8	-0x1.892a769ae569p-9
+Whistler noise seed=12345 limit=0	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=0	1	B	0x1.851eb851eb852p-3	-0x1.840083711ed9ap-8	0x1.826acab8e0294p-11
+Whistler noise seed=12345 limit=0	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=0	2	B	0x1.851eb851eb852p-3	-0x1.509f5abe25d0cp-8	-0x1.8f5abe43f0f04p-8
+Whistler noise seed=12345 limit=0	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=0	3	B	0x1.851eb851eb852p-3	0x1.c9d58207fa22fp-8	0x1.43b3b4cf9c2a5p-7
+Whistler noise seed=12345 limit=0	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=0	4	B	0x1.851eb851eb852p-3	-0x1.157dad701cc7bp-8	-0x1.01ce98c5c06c1p-8
+Whistler noise seed=12345 limit=0	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=0	5	B	0x1.851eb851eb852p-3	-0x1.67450c960967ap-8	0x1.66a83c1ee9752p-11
+Whistler noise seed=12345 limit=0	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=-1	0	B	0x1.851eb851eb852p-3	0x1.c141ba5d06735p-8	0x1.c10f609e35972p-11
+Whistler noise seed=12345 limit=-1	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=-1	1	B	0x1.851eb851eb852p-3	-0x1.5ab71eb5d9f21p-8	-0x1.19a95799e5f3dp-9
+Whistler noise seed=12345 limit=-1	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=-1	2	B	0x1.851eb851eb852p-3	0x1.c9a7e5a0937e6p-11	-0x1.d48be8263fce4p-7
+Whistler noise seed=12345 limit=-1	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=-1	3	B	0x1.851eb851eb852p-3	0x1.1604fa5fe7aa7p-8	0x1.067373174cfb4p-8
+Whistler noise seed=12345 limit=-1	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=-1	4	B	0x1.851eb851eb852p-3	-0x1.8a29d431c2d64p-7	0x1.4f807afd5ff14p-9
+Whistler noise seed=12345 limit=-1	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=12345 limit=-1	5	B	0x1.851eb851eb852p-3	-0x1.69c4ae550f091p-9	-0x1.74442cfddb4c4p-8
+Whistler noise seed=12345 limit=-1	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=1	0	B	0x1.851eb851eb852p-3	0x1.240ff773ce86cp-9	-0x1.bf6b51ba36d23p-8
+Whistler noise seed=18364758544493064720 limit=1	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=1	1	B	0x1.851eb851eb852p-3	-0x1.240ff773ce85dp-9	0x1.bf6b51ba36d24p-8
+Whistler noise seed=18364758544493064720 limit=1	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=1	2	B	0x1.851eb851eb852p-3	0x1.8490460ea32p-8	0x1.c723b09a512c9p-16
+Whistler noise seed=18364758544493064720 limit=1	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=1	3	B	0x1.851eb851eb852p-3	-0x1.c98aa0dd896b2p-8	0x1.8d600decef0ffp-9
+Whistler noise seed=18364758544493064720 limit=1	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=1	4	B	0x1.851eb851eb852p-3	0x1.30a4c4ccd3769p-8	0x1.0305fd1ac5128p-9
+Whistler noise seed=18364758544493064720 limit=1	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=1	5	B	0x1.851eb851eb852p-3	-0x1.6e08062adc55cp-9	0x1.c734273aae79ap-8
+Whistler noise seed=18364758544493064720 limit=1	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=7	0	B	0x1.851eb851eb852p-3	0x1.f5654d3e36636p-9	-0x1.0d7522057a44ap-8
+Whistler noise seed=18364758544493064720 limit=7	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=7	1	B	0x1.851eb851eb852p-3	0x1.a253997305882p-10	0x1.031529e6a40d9p-10
+Whistler noise seed=18364758544493064720 limit=7	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=7	2	B	0x1.851eb851eb852p-3	0x1.6d9cb0a009374p-8	-0x1.fada697893372p-9
+Whistler noise seed=18364758544493064720 limit=7	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=7	3	B	0x1.851eb851eb852p-3	0x1.528df2c768bcp-8	-0x1.5b80484356e5fp-8
+Whistler noise seed=18364758544493064720 limit=7	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=7	4	B	0x1.851eb851eb852p-3	0x1.6342099dc5fe4p-8	0x1.77a845298514fp-9
+Whistler noise seed=18364758544493064720 limit=7	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=7	5	B	0x1.851eb851eb852p-3	0x1.39dc8f60d42e4p-9	0x1.79adb8f895187p-9
+Whistler noise seed=18364758544493064720 limit=7	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=0	0	B	0x1.851eb851eb852p-3	-0x1.e281035e1c642p-10	-0x1.6d69029aea86ap-13
+Whistler noise seed=18364758544493064720 limit=0	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=0	1	B	0x1.851eb851eb852p-3	-0x1.891213838de1dp-8	0x1.0ab9509861084p-7
+Whistler noise seed=18364758544493064720 limit=0	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=0	2	B	0x1.851eb851eb852p-3	0x1.44a46601239ap-8	-0x1.06c3a846f504ap-10
+Whistler noise seed=18364758544493064720 limit=0	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=0	3	B	0x1.851eb851eb852p-3	0x1.75b0336907aa5p-9	-0x1.4951f5e9cee2p-8
+Whistler noise seed=18364758544493064720 limit=0	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=0	4	B	0x1.851eb851eb852p-3	0x1.a101d22c09a37p-8	-0x1.cc5f23b1d2aa8p-10
+Whistler noise seed=18364758544493064720 limit=0	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=0	5	B	0x1.851eb851eb852p-3	-0x1.e74cd082748fp-8	0x1.31133ba3576b4p-7
+Whistler noise seed=18364758544493064720 limit=0	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=-1	0	B	0x1.851eb851eb852p-3	0x1.ed4fc5199798bp-8	0x1.c94d349a4792ap-8
+Whistler noise seed=18364758544493064720 limit=-1	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=-1	1	B	0x1.851eb851eb852p-3	-0x1.2e512496d050fp-8	0x1.82aab5454f17ap-8
+Whistler noise seed=18364758544493064720 limit=-1	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=-1	2	B	0x1.851eb851eb852p-3	0x1.ccbc48377fb53p-8	-0x1.21f5697d70ee4p-7
+Whistler noise seed=18364758544493064720 limit=-1	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=-1	3	B	0x1.851eb851eb852p-3	-0x1.c0973ac466cc8p-12	-0x1.af4352c7253f1p-9
+Whistler noise seed=18364758544493064720 limit=-1	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=-1	4	B	0x1.851eb851eb852p-3	0x1.770c1b29fb32cp-9	0x1.0660b9b883154p-7
+Whistler noise seed=18364758544493064720 limit=-1	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler noise seed=18364758544493064720 limit=-1	5	B	0x1.851eb851eb852p-3	-0x1.ffa19589b23fbp-10	0x1.0726be52536fp-8
+Whistler noise seed=18364758544493064720 limit=-1	5	E	0x0p+0	0x0p+0	0x0p+0
+Whistler zero noise amplitude	0	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler zero noise amplitude	0	E	0x0p+0	0x0p+0	0x0p+0
+Whistler zero noise amplitude	1	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler zero noise amplitude	1	E	0x0p+0	0x0p+0	0x0p+0
+Whistler zero noise amplitude	2	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler zero noise amplitude	2	E	0x0p+0	0x0p+0	0x0p+0
+Whistler zero noise amplitude	3	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler zero noise amplitude	3	E	0x0p+0	0x0p+0	0x0p+0
+Whistler zero noise amplitude	4	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler zero noise amplitude	4	E	0x0p+0	0x0p+0	0x0p+0
+Whistler zero noise amplitude	5	B	0x1.851eb851eb852p-3	0x0p+0	0x0p+0
+Whistler zero noise amplitude	5	E	0x0p+0	0x0p+0	0x0p+0
+Weibel growth=0.000000	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.4ed916872b021p-2
+Weibel growth=0.000000	0	E	0x0p+0	0x0p+0	0x0p+0
+Weibel growth=0.000000	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.a6e978d4fdf3bp-2
+Weibel growth=0.000000	1	E	0x0p+0	0x0p+0	0x0p+0
+Weibel growth=0.000000	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.5d617b6315314p-2
+Weibel growth=0.000000	2	E	0x0p+0	0x0p+0	0x0p+0
+Weibel growth=0.000000	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.6178db6888dafp-2
+Weibel growth=0.000000	3	E	0x0p+0	0x0p+0	0x0p+0
+Weibel growth=0.000000	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.4ed955a47c40cp-2
+Weibel growth=0.000000	4	E	0x0p+0	0x0p+0	0x0p+0
+Weibel growth=0.000000	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.a5748e5f6861bp-2
+Weibel growth=0.000000	5	E	0x0p+0	0x0p+0	0x0p+0
+Weibel growth=-0.310000	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.4ed916872b021p-2
+Weibel growth=-0.310000	0	E	0x0p+0	-0x0p+0	0x0p+0
+Weibel growth=-0.310000	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.a6e978d4fdf3bp-2
+Weibel growth=-0.310000	1	E	0x0p+0	-0x1.6c3ee6f7460b7p-59	0x0p+0
+Weibel growth=-0.310000	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.5d617b6315314p-2
+Weibel growth=-0.310000	2	E	0x0p+0	0x1.46de9c3655ec8p-8	0x0p+0
+Weibel growth=-0.310000	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.6178db6888dafp-2
+Weibel growth=-0.310000	3	E	0x0p+0	-0x1.6796c4a213f6dp-8	0x0p+0
+Weibel growth=-0.310000	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.4ed955a47c40cp-2
+Weibel growth=-0.310000	4	E	0x0p+0	-0x1.74bb293d99588p-15	0x0p+0
+Weibel growth=-0.310000	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.a5748e5f6861bp-2
+Weibel growth=-0.310000	5	E	0x0p+0	0x1.c13faaadd81a7p-10	0x0p+0
+Weibel no seed	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Weibel no seed	0	E	0x0p+0	0x0p+0	0x0p+0
+Weibel no seed	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Weibel no seed	1	E	0x0p+0	0x0p+0	0x0p+0
+Weibel no seed	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Weibel no seed	2	E	0x0p+0	0x0p+0	0x0p+0
+Weibel no seed	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Weibel no seed	3	E	0x0p+0	0x0p+0	0x0p+0
+Weibel no seed	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Weibel no seed	4	E	0x0p+0	0x0p+0	0x0p+0
+Weibel no seed	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Weibel no seed	5	E	0x0p+0	0x0p+0	0x0p+0
+TwoStream no seed	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream no seed	0	E	0x0p+0	0x0p+0	0x0p+0
+TwoStream no seed	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream no seed	1	E	0x0p+0	0x0p+0	0x0p+0
+TwoStream no seed	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream no seed	2	E	0x0p+0	0x0p+0	0x0p+0
+TwoStream no seed	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream no seed	3	E	0x0p+0	0x0p+0	0x0p+0
+TwoStream no seed	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream no seed	4	E	0x0p+0	0x0p+0	0x0p+0
+TwoStream no seed	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream no seed	5	E	0x0p+0	0x0p+0	0x0p+0
+TwoStream reordered species	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream reordered species	0	E	0x1.14432bf200e94p-5	0x0p+0	0x0p+0
+TwoStream reordered species	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream reordered species	1	E	0x1.14432bf200e9p-5	0x0p+0	0x0p+0
+TwoStream reordered species	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream reordered species	2	E	-0x1.5386f45df8bd7p-4	0x0p+0	0x0p+0
+TwoStream reordered species	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream reordered species	3	E	0x1.cedac942eb1p-7	0x0p+0	0x0p+0
+TwoStream reordered species	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream reordered species	4	E	-0x1.d66ce4ebc4299p-4	0x0p+0	0x0p+0
+TwoStream reordered species	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TwoStream reordered species	5	E	0x1.ae99df0e88a1cp-5	0x0p+0	0x0p+0
+TGV no motional E	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV no motional E	0	E	0x0p+0	0x0p+0	0x0p+0
+TGV no motional E	1	B	0x1.851eb851eb854p-3	-0x1.d70a3d70a3d73p-3	0x1.7ae147ae147aep-2
+TGV no motional E	1	E	0x0p+0	0x0p+0	0x0p+0
+TGV no motional E	2	B	0x1.a520f2877fb15p-3	-0x1.54e38ef285124p-2	0x1.7ae147ae147aep-2
+TGV no motional E	2	E	0x0p+0	0x0p+0	0x0p+0
+TGV no motional E	3	B	0x1.a774a60b98742p-3	-0x1.85560126135acp-2	0x1.7ae147ae147aep-2
+TGV no motional E	3	E	0x0p+0	0x0p+0	0x0p+0
+TGV no motional E	4	B	0x1.7fa8daa7fdb14p-3	-0x1.814aeb720b9a4p-3	0x1.7ae147ae147aep-2
+TGV no motional E	4	E	0x0p+0	0x0p+0	0x0p+0
+TGV no motional E	5	B	0x1.54b54402501cep-3	-0x1.23c570b34bbfdp-2	0x1.7ae147ae147aep-2
+TGV no motional E	5	E	0x0p+0	0x0p+0	0x0p+0
+TGV flow only	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV flow only	0	E	-0x0p+0	-0x0p+0	-0x0p+0
+TGV flow only	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV flow only	1	E	-0x1.0d906764a4536p-54	-0x1.676b3486306f3p-55	0x1.ab6abb0070f2cp-58
+TGV flow only	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV flow only	2	E	-0x1.8a739a7d1c3f9p-4	-0x1.df4d53271d334p-7	0x1.4aa055337e873p-5
+TGV flow only	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV flow only	3	E	-0x1.1fe8433a76699p-3	-0x1.0112b66c5b438p-6	0x1.ff79dbc51c0cap-5
+TGV flow only	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV flow only	4	E	0x1.40ff69c3529a5p-5	0x1.470f3b72a3399p-9	-0x1.304289bb5ea38p-6
+TGV flow only	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV flow only	5	E	-0x1.a5280b705ec01p-5	0x1.6a76858c0aa39p-6	0x1.48ed4b0ebe574p-5
+TGV magnetic only	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV magnetic only	0	E	0x0p+0	0x0p+0	0x0p+0
+TGV magnetic only	1	B	0x1.851eb851eb854p-3	-0x1.d70a3d70a3d73p-3	0x1.7ae147ae147aep-2
+TGV magnetic only	1	E	0x0p+0	0x0p+0	0x0p+0
+TGV magnetic only	2	B	0x1.a520f2877fb15p-3	-0x1.54e38ef285124p-2	0x1.7ae147ae147aep-2
+TGV magnetic only	2	E	0x0p+0	0x0p+0	0x0p+0
+TGV magnetic only	3	B	0x1.a774a60b98742p-3	-0x1.85560126135acp-2	0x1.7ae147ae147aep-2
+TGV magnetic only	3	E	0x0p+0	0x0p+0	0x0p+0
+TGV magnetic only	4	B	0x1.7fa8daa7fdb14p-3	-0x1.814aeb720b9a4p-3	0x1.7ae147ae147aep-2
+TGV magnetic only	4	E	0x0p+0	0x0p+0	0x0p+0
+TGV magnetic only	5	B	0x1.54b54402501cep-3	-0x1.23c570b34bbfdp-2	0x1.7ae147ae147aep-2
+TGV magnetic only	5	E	0x0p+0	0x0p+0	0x0p+0
+TGV no seed	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV no seed	0	E	0x0p+0	0x0p+0	0x0p+0
+TGV no seed	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV no seed	1	E	0x0p+0	0x0p+0	0x0p+0
+TGV no seed	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV no seed	2	E	0x0p+0	0x0p+0	0x0p+0
+TGV no seed	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV no seed	3	E	0x0p+0	0x0p+0	0x0p+0
+TGV no seed	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV no seed	4	E	0x0p+0	0x0p+0	0x0p+0
+TGV no seed	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+TGV no seed	5	E	0x0p+0	0x0p+0	0x0p+0
+Harris no sheet field	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Harris no sheet field	0	E	0x0p+0	0x0p+0	0x0p+0
+Harris no sheet field	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Harris no sheet field	1	E	0x0p+0	0x0p+0	0x0p+0
+Harris no sheet field	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Harris no sheet field	2	E	0x0p+0	0x0p+0	0x0p+0
+Harris no sheet field	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Harris no sheet field	3	E	0x0p+0	0x0p+0	0x0p+0
+Harris no sheet field	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Harris no sheet field	4	E	0x0p+0	0x0p+0	0x0p+0
+Harris no sheet field	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Harris no sheet field	5	E	0x0p+0	0x0p+0	0x0p+0
+Double Harris positive amplitude	0	B	-0x1.0736f1df8f3bp-1	-0x1.d7105af809392p-3	0x1.7ae147ae147aep-2
+Double Harris positive amplitude	0	E	0x0p+0	0x0p+0	0x0p+0
+Double Harris positive amplitude	1	B	0x1.c6bfc86036daep-1	-0x1.d6fe0261d912fp-3	0x1.7ae147ae147aep-2
+Double Harris positive amplitude	1	E	0x0p+0	0x0p+0	0x0p+0
+Double Harris positive amplitude	2	B	0x1.4c721fd0c0642p-3	-0x1.410686f6e6fcp-4	0x1.7ae147ae147aep-2
+Double Harris positive amplitude	2	E	0x0p+0	0x0p+0	0x0p+0
+Double Harris positive amplitude	3	B	0x1.566a0945fd63ap-3	-0x1.95bf609fa05b2p-4	0x1.7ae147ae147aep-2
+Double Harris positive amplitude	3	E	0x0p+0	0x0p+0	0x0p+0
+Double Harris positive amplitude	4	B	0x1.ad1a8507830c4p-1	-0x1.c6b8ee05630dfp-3	0x1.7ae147ae147aep-2
+Double Harris positive amplitude	4	E	0x0p+0	0x0p+0	0x0p+0
+Double Harris positive amplitude	5	B	0x1.c6244bdf25128p-1	-0x1.d6f8f129ec5e3p-3	0x1.7ae147ae147aep-2
+Double Harris positive amplitude	5	E	0x0p+0	0x0p+0	0x0p+0
+ForceFree no sheet field	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+ForceFree no sheet field	0	E	0x0p+0	0x0p+0	0x0p+0
+ForceFree no sheet field	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+ForceFree no sheet field	1	E	0x0p+0	0x0p+0	0x0p+0
+ForceFree no sheet field	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+ForceFree no sheet field	2	E	0x0p+0	0x0p+0	0x0p+0
+ForceFree no sheet field	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+ForceFree no sheet field	3	E	0x0p+0	0x0p+0	0x0p+0
+ForceFree no sheet field	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+ForceFree no sheet field	4	E	0x0p+0	0x0p+0	0x0p+0
+ForceFree no sheet field	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+ForceFree no sheet field	5	E	0x0p+0	0x0p+0	0x0p+0
+Flux rope zero amplitude	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Flux rope zero amplitude	0	E	0x0p+0	0x0p+0	0x0p+0
+Flux rope zero amplitude	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Flux rope zero amplitude	1	E	0x0p+0	0x0p+0	0x0p+0
+Flux rope zero amplitude	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Flux rope zero amplitude	2	E	0x0p+0	0x0p+0	0x0p+0
+Flux rope zero amplitude	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Flux rope zero amplitude	3	E	0x0p+0	0x0p+0	0x0p+0
+Flux rope zero amplitude	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Flux rope zero amplitude	4	E	0x0p+0	0x0p+0	0x0p+0
+Flux rope zero amplitude	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Flux rope zero amplitude	5	E	0x0p+0	0x0p+0	0x0p+0
+Uniform smaller transverse axes	0	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Uniform smaller transverse axes	0	E	0x0p+0	0x0p+0	0x0p+0
+Uniform smaller transverse axes	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Uniform smaller transverse axes	1	E	0x0p+0	0x0p+0	0x0p+0
+Uniform smaller transverse axes	2	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Uniform smaller transverse axes	2	E	0x0p+0	0x0p+0	0x0p+0
+Uniform smaller transverse axes	3	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Uniform smaller transverse axes	3	E	0x0p+0	0x0p+0	0x0p+0
+Uniform smaller transverse axes	4	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Uniform smaller transverse axes	4	E	0x0p+0	0x0p+0	0x0p+0
+Uniform smaller transverse axes	5	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+Uniform smaller transverse axes	5	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris mode only	0	B	0x1.51e961aeb897ep-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMHarris mode only	0	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris mode only	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMHarris mode only	1	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris mode only	2	B	0x1.4cfd5ee30b7e4p-1	-0x1.decfb69cb6d0ep-3	0x1.7ae147ae147aep-2
+GEMHarris mode only	2	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris mode only	3	B	-0x1.15e07fc60b27ap-2	-0x1.cff15a8533494p-3	0x1.7ae147ae147aep-2
+GEMHarris mode only	3	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris mode only	4	B	0x1.0de830470bf04p-1	-0x1.969bed2713fc1p-3	0x1.7ae147ae147aep-2
+GEMHarris mode only	4	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris mode only	5	B	0x1.2881edd99ee02p-2	-0x1.de6b2a08ac40bp-3	0x1.7ae147ae147aep-2
+GEMHarris mode only	5	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris hump only	0	B	0x1.51e9620239288p-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMHarris hump only	0	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris hump only	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMHarris hump only	1	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris hump only	2	B	0x1.4fc43fce00502p-1	-0x1.d33274d90748dp-3	0x1.7ae147ae147aep-2
+GEMHarris hump only	2	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris hump only	3	B	-0x1.1a87a90c65cebp-2	-0x1.daee3f67bfdd4p-3	0x1.7ae147ae147aep-2
+GEMHarris hump only	3	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris hump only	4	B	0x1.f7ac27b87c56dp-2	-0x1.23ed339c1e414p-3	0x1.7ae147ae147aep-2
+GEMHarris hump only	4	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris hump only	5	B	0x1.05521a13a6b38p-2	-0x1.fd1a46b3be095p-3	0x1.7ae147ae147aep-2
+GEMHarris hump only	5	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris hump kx zero	0	B	0x1.4f943eb8f88fep-1	-0x1.d5c47ddd469bap-3	0x1.7ae147ae147aep-2
+GEMHarris hump kx zero	0	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris hump kx zero	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMHarris hump kx zero	1	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris hump kx zero	2	B	0x1.58c6a313f383cp-1	-0x1.d9717d3816678p-3	0x1.7ae147ae147aep-2
+GEMHarris hump kx zero	2	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris hump kx zero	3	B	-0x1.2bdc7b1f3425ap-2	-0x1.d48b9dc15f269p-3	0x1.7ae147ae147aep-2
+GEMHarris hump kx zero	3	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris hump kx zero	4	B	0x1.f574a63ce9785p-2	-0x1.d5943c7245d85p-3	0x1.7ae147ae147aep-2
+GEMHarris hump kx zero	4	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris hump kx zero	5	B	0x1.1d58392c4c5dep-2	-0x1.d74ff527cff25p-3	0x1.7ae147ae147aep-2
+GEMHarris hump kx zero	5	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris GEM keys	0	B	0x1.51e961aeb897ep-1	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMHarris GEM keys	0	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris GEM keys	1	B	0x1.851eb851eb852p-3	-0x1.d70a3d70a3d71p-3	0x1.7ae147ae147aep-2
+GEMHarris GEM keys	1	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris GEM keys	2	B	0x1.50775c072fa32p-1	-0x1.d706b2b8f48b9p-3	0x1.7ae147ae147aep-2
+GEMHarris GEM keys	2	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris GEM keys	3	B	-0x1.1bb91faaa461cp-2	-0x1.d70dafc9c4fc8p-3	0x1.7ae147ae147aep-2
+GEMHarris GEM keys	3	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris GEM keys	4	B	0x1.0199a7619b9fbp-1	-0x1.83b27821ee964p-3	0x1.7ae147ae147aep-2
+GEMHarris GEM keys	4	E	0x0p+0	0x0p+0	0x0p+0
+GEMHarris GEM keys	5	B	0x1.af0a4879d9fb7p-3	-0x1.11778d66c74a9p-2	0x1.7ae147ae147aep-2
+GEMHarris GEM keys	5	E	0x0p+0	0x0p+0	0x0p+0

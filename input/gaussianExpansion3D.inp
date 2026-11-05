@@ -1,0 +1,161 @@
+SaveDirName = data
+RestartDirName = data
+
+Case              = GaussianExpansion
+WriteMethod       = pvtk     # Output engine: pvtk (parallel VTK), adios2 or hdf5
+# Per-channel overrides of WriteMethod (same values); commented out, the channel inherits WriteMethod.
+# FieldWriteMethod     = pvtk
+# ParticlesWriteMethod = pvtk
+RestartWriteMethod = default   # Checkpoint engine: adios2 or hdf5; default: ADIOS2 if built, else HDF5, else none
+SimulationName    = gaussianExpansion3D
+
+#  %%%%%%%%%%%%%%%%%%% Gaussian expansion into vacuum (docs/user/gaussian_expansion.md) %%%%%%%%%%%%%%%%%%
+# Exact quasineutral self-similar expansion of D. S. Dorozhkina and V. E. Semenov, JETP Lett. 67, 573
+# (1998) (cold ions, a bunch that need not be spherical) and Phys. Rev. Lett. 81, 2691 (1998) (warm ions).
+# Every species loads n = rhoINIT*exp(-sum_a (x_a - center_a)^2/(2*sigma_a^2)) over the axes with sigma_a > 0
+# (uniform along the others) at the subcell centres; all species share npcel and the positions.
+GaussianExpansionCenterX = 7.0    # a grid node on every Gaussian axis: 128*dx
+GaussianExpansionCenterY = 7.0
+GaussianExpansionCenterZ = 7.0
+GaussianExpansionSigmaX = 0.5     # rms width per axis (0: uniform); 9.14*dx, 100 electron Debye lengths
+GaussianExpansionSigmaY = 0.5
+GaussianExpansionSigmaZ = 0.5
+GaussianExpansionCutoff = 4.3     # load only sum_a ((x_a - center_a)/sigma_a)^2 <= Cutoff^2 (n/n0 >= 9.7e-5); 0 loads every cell
+
+# Uniform background magnetic field.
+B0x = 0.0
+B0y = 0.0
+B0z = 0.0
+
+#  %%%%%%%%%%%%%%%%%%% TIME %%%%%%%%%%%%%%%%%%
+dt = 0.25         # omega_pe*dt = 2.5, uth_e*dt/dx = 0.23, c*dt/dx = 4.57
+ncycles = 1200    # t_end = 300 = 2.99 tau
+th = 0.5          # 0.5: exact energy conservation
+c = 1.0
+
+#  %%%%%%%%%%%%%%%%%%% SMOOTH %%%%%%%%%%%%%%%%%%
+# ECSimSmoothing = none (off) or energy_conserving; ECSimSmoothingOperator = face7 or binomial27.
+# face7: each pass gives Smooth*f + (1-Smooth)/6 * (sum of the six face neighbours); binomial27: fixed
+# [1,2,1]^3/64 weights. Active only with energy_conserving, SmoothNiter > 0 and Smooth < 1 (Smooth in [0, 1]).
+Smooth = 0.2      # Smoothing factor
+SmoothNiter = 6   # Smoothing passes
+ECSimSmoothing = energy_conserving
+ECSimSmoothingOperator = face7
+
+Lx = 14.0   # half-width 7.0 = 4.45 sigma(t_end), wall density 5.1e-5 of the centre
+Ly = 14.0
+Lz = 14.0
+nxc = 256   # dx = 0.0546875 = sigma0/9.14 = 10.9 electron Debye lengths
+nyc = 256
+nzc = 256
+
+# %%%%%%%%%%%%%% MPI TOPOLOGY %%%%%%%%%%%%%%
+# number of MPI subdomains in each direction
+XLEN = 2    # one LUMI-G node, 8 GCDs: the centre is the corner of all 8 ranks, each holds one octant
+YLEN = 2
+ZLEN = 2
+# field periodicity in each direction (true/false or 1/0)
+PERIODICX = false
+PERIODICY = false
+PERIODICZ = false
+# particle periodicity in each direction (defaults to the field value when omitted)
+PERIODICX_P = false
+PERIODICY_P = false
+PERIODICZ_P = false
+
+# %%%%%%%%%%%%%% PARTICLES %%%%%%%%%%%%%%%%%
+#    ns = number of species
+#    0 = electrons
+#    1 = protons
+ns = 2
+
+# qom = charge-to-mass ratio for different species
+qom = -100.0 1.0
+
+# Initial density: the peak charge density; equal values make rho_tot zero on every node
+rhoINIT = 1.0 1.0
+
+# 8 x 8 x 4 = 256 particles per cell per species, as the 16 x 16 x 1 of the 2D deck: loaded only inside the
+# cutoff sphere, 1.3e8 particles, 1.6e7 per rank
+# npcelx = number of particles per cell - Direction X (equal for all species: shared positions)
+npcelx = 8 8
+# npcely = number of particles per cell - Direction Y
+npcely = 8 8
+# npcelz = number of particles per cell - Direction Z
+npcelz = 4 4
+
+# uth = thermal velocity for different species - Direction X (electrons Maxwellian, ions cold)
+uth  = 0.05 0.0
+# vth = thermal velocity for different species - Direction Y
+vth  = 0.05 0.0
+# wth = thermal velocity for different species - Direction Z
+wth  = 0.05 0.0
+# u0 = drift velocity - Direction X
+u0 = 0.0 0.0
+# v0 = drift velocity - Direction Y
+v0 = 0.0 0.0
+# w0 = drift velocity - Direction Z
+w0 = 0.0 0.0
+# CenterInitialVelocity = per species: shift the loaded velocities so that the species mean equals that of the drift its case loads
+CenterInitialVelocity = true true   # zero momentum: the global mean of the sampled velocities is removed
+
+# Particle positions: QuietStart = true places every particle at the centre of its subcell (npcelx*npcely*npcelz
+# subcells per cell), the same points for every species, so species with equal npcel* sit on one another;
+# false (the default) draws a random point in each subcell, a different one for every species.
+# GaussianExpansion requires true: an electron on every ion.
+QuietStart = true
+
+# &&&&&&&&&&&& boundary conditions &&&&&&&&&&&&&&&
+
+#    EM field boundary condition
+#    0 = perfect electric conductor (PEC)
+#    1 = perfect magnetic conductor (PMC)
+#    2 = open (--check-input admits it; --initialize and --run reject it)
+
+    bcEMfaceXright = 0
+    bcEMfaceXleft =  0
+    bcEMfaceYright = 0
+    bcEMfaceYleft =  0
+    bcEMfaceZright = 0
+    bcEMfaceZleft =  0
+#    Particles Boundary condition
+#    1 = perfect mirror
+#    0 = exit, 2 = reemission, 3 = open out, 4 = open in: not implemented, refused on a wall
+#    Caveat: if the particle topology is periodic in a direction, that direction uses periodic particle boundaries.
+    bcPfaceXright = 1
+    bcPfaceXleft =  1
+    bcPfaceYright = 1
+    bcPfaceYleft =  1
+    bcPfaceZright = 1
+    bcPfaceZleft =  1
+
+# GMRES solver stopping criterion tolerance
+   GMREStol = 1E-15
+# Output for field
+   FieldOutputCycle = 100   # t/tau = 0, 0.25, ..., 3
+   # FieldOutputTag: B, E and Gauss (cell residual) joined by +. MomentsOutputTag: rho, J, PXX, PXY, PXZ, PYY, PYZ, PZZ joined by +;
+   # <name> selects every species, <name>_tot the total, <name><s> species s. Pressure is off unless named.
+   # With both tags omitted, B, E, rho and J (total and per species) are written.
+   FieldOutputTag   = B+E+Gauss
+   MomentsOutputTag = rho+rho_tot+J+PXX+PYY+PZZ
+# diagnostics.csv cadence (0 disables; defaults to FieldOutputCycle when omitted)
+   DiagnosticsOutputCycle = 1
+# Console energy cadence (0 reports only the final state)
+   DiagnosticEnergyCycle = 10
+# Gauss-law residual cadence: gauss.csv and one log line per sample (0 disables)
+   DiagnosticGaussCycle = 10
+# Particle output cadence (0 disables)
+   ParticlesOutputCycle = 400
+   # ParticlesOutputTag has no effect: a particle snapshot always holds position, velocity, charge and id.
+   ParticlesOutputTag = position+velocity+q
+# Checkpoint cadence (0 disables); CallFinalize also checkpoints the final state when RestartOutputCycle > 0
+   RestartOutputCycle = 0
+   CallFinalize = 1
+
+# The production run of docs/user/gaussian_expansion.md; RestartOutputCycle = 400 makes it restartable.
+# On a LUMI-G node (64 GB per GCD) the startup plan is 7.1 GiB per rank: particles 1.6, mass matrix 2.1,
+# solver 1.7, fields 0.8 GiB.
+# Quick run: CenterX/Y/Z = 4.0, Lx = Ly = Lz = 8.0, nxc = nyc = nzc = 128 (dx = 0.0625), ncycles = 800 (2 tau),
+# npcelx = npcely = npcelz = 3 3.
+# Octant run (validate against the full sphere first): this deck with CenterX/Y/Z = 0.0, Lx = Ly = Lz = 7.0,
+# nxc = nyc = nzc = 128, bcEMface*left = 1 (PMC), bcEMface*right = 0.

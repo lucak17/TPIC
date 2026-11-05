@@ -1,0 +1,161 @@
+# INPUT FILE for single Harris GEM challenge case
+# GEM reconnection challenge of J. Birn et al., J. Geophys. Res. 106, 3715 (2001); box, mass ratio
+# and densities differ from the challenge.
+
+SaveDirName = data_tpic_gemharris
+RestartDirName = data_tpic_gemharris
+
+Case              = GEMHarris
+WriteMethod       = pvtk     # Output engine: pvtk (parallel VTK), adios2 or hdf5
+# Per-channel overrides of WriteMethod (same values); commented out, the channel inherits WriteMethod.
+# FieldWriteMethod     = pvtk
+# ParticlesWriteMethod = pvtk
+RestartWriteMethod = default   # Checkpoint engine: adios2 or hdf5; default: ADIOS2 if built, else HDF5, else none
+SimulationName    = testGEM3D
+
+#  %%%%%%%%%%%%%%%%%%% Magnetic Reconnection %%%%%%%%%%%%%%%%%%
+# Uniform background magnetic field.
+B0x = 0.0
+B0y = 0.0
+B0z = 0.0
+# Case-specific Harris reconnecting field amplitude.
+HarrisB0x = 0.0195
+delta = 0.5
+
+# GEMHarris seed and loading options.
+# pertGEM: box-scale mode, fraction of HarrisB0x. pertHump: Gaussian hump of the
+#   out-of-plane potential, fraction of HarrisB0x; widths in units of delta.
+#   A negative kxHump or kyHump selects 2*pi/Lx or pi/Ly.
+# The hump below is the X-point seed of Case = GEM: 0.4*pi/10, widths of one delta, pi/(10*delta).
+pertGEM    = 0.0                   # default 0 (no box-scale mode)
+pertHump   = 0.12566370614359174   # default 0 (no hump)
+deltaxHump = 1.0                   # default 8
+deltayHump = 1.0                   # default 4
+kxHump     = 0.6283185307179586    # default -1
+kyHump     = 0.6283185307179586    # default -1
+# currentFromAmpere: drift of the sheet species from the curl of the initial field, so
+#   the seed carries its current. spatiallyVaryingThermal acts only together with it and has
+#   no effect: the wth it sets from the pressure rho*(drift^2 + wth^2) is the deck wth to rounding.
+currentFromAmpere       = true     # default false
+spatiallyVaryingThermal = false    # default false
+
+    
+#  %%%%%%%%%%%%%%%%%%% TIME %%%%%%%%%%%%%%%%%%
+dt = 0.1          # dt = time step   
+ncycles = 7000    # cycles
+th = 0.5          # th =   decentering parameter
+c = 1.0
+
+#  %%%%%%%%%%%%%%%%%%% SMOOTH %%%%%%%%%%%%%%%%%%
+Smooth = 0.2      # Smoothing factor (inactive when ECSimSmoothing=none)
+SmoothNiter = 6   # Smoothing iterations
+ECSimSmoothing = energy_conserving
+ECSimSmoothingOperator = face7
+
+Lx = 40   # Lx = simulation box length - x direction    
+Ly = 20   # Ly = simulation box length - y direction   
+Lz = 1    # Lz = simulation box length - z direction
+nxc = 400  # nxc = number of cells - x direction        
+nyc = 200  # nyc = number of cells - y direction 
+nzc = 1  # nzc = number of cells - z direction 
+
+# %%%%%%%%%%%%%% MPI TOPOLOGY %%%%%%%%%%%%%%
+# number of MPI subdomains in each direction
+XLEN = 1
+YLEN = 1
+ZLEN = 1
+# field periodicity in each direction (true/false or 1/0)
+PERIODICX = true
+PERIODICY = false
+PERIODICZ = true
+# particle periodicity in each direction (defaults to the field value when omitted)
+PERIODICX_P = true
+PERIODICY_P = false
+PERIODICZ_P = true
+
+# %%%%%%%%%%%%%% PARTICLES %%%%%%%%%%%%%%%%%
+#    ns = number of species
+#    0 = electrons
+#    1 = protons
+#    ...
+ns = 4
+
+# qom = charge-to-mass ratio for different species
+qom = -64.0 1.0 -64 1.0
+
+# Initial density (make sure that plasma is neutral)
+rhoINIT = 1.0 1.0 0.1 0.1
+
+# npcelx = number of particles per cell - Direction X 
+npcelx = 4 4 4 4
+# npcely = number of particles per cell - Direction Y
+npcely = 4 4 4 4 
+# npcelz = number of particles per cell - Direction Z
+npcelz = 4 4 4 4
+
+
+# uth = thermal velocity for different species - Direction X
+uth  = 0.045 0.0126 0.045 0.0126
+# vth = thermal velocity for different species - Direction Y
+vth  = 0.045 0.0126 0.045 0.0126
+# wth = thermal velocity for different species - Direction Z
+wth  = 0.045 0.0126 0.045 0.0126
+# u0 = drift velocity - Direction X
+u0 = 0.0 0.0 0.0 0.0
+# v0 = drift velocity - Direction Y
+v0 = 0.0 0.0 0.0 0.0
+# w0 = drift velocity - Direction Z
+w0 = 0.0065 -0.0325 0.0 0.0 
+# CenterInitialVelocity = per species: shift the loaded velocities so that the species mean equals that of the drift its case loads
+CenterInitialVelocity = false false false false
+
+# Particle positions: QuietStart = true places every particle at the centre of its subcell (npcelx*npcely*npcelz
+# subcells per cell), the same points for every species, so species with equal npcel* sit on one another;
+# false (the default) draws a random point in each subcell, a different one for every species.
+QuietStart = true
+
+# &&&&&&&&&&&& boundary conditions &&&&&&&&&&&&&&&
+    
+#    EM field boundary condition
+#    0 = perfect electric conductor (PEC)
+#    1 = perfect magnetic conductor (PMC)
+#    2 = open (--check-input admits it; --initialize and --run reject it)
+
+    bcEMfaceXright = 0
+    bcEMfaceXleft =  0
+    bcEMfaceYright = 0
+    bcEMfaceYleft =  0
+    bcEMfaceZright = 0
+    bcEMfaceZleft =  0
+#    Particles Boundary condition
+#    1 = perfect mirror
+#    0 = exit, 2 = reemission, 3 = open out, 4 = open in: not implemented, refused on a wall
+#    Caveat: if the particle topology is periodic in a direction, that direction uses periodic particle boundaries.
+    bcPfaceXright = 1
+    bcPfaceXleft =  1
+    bcPfaceYright = 1
+    bcPfaceYleft =  1
+    bcPfaceZright = 1
+    bcPfaceZleft =  1
+
+# GMRES solver stopping criterion tolerance
+   GMREStol = 1E-10
+# Output for field
+   FieldOutputCycle = 20
+   # FieldOutputTag supports electromagnetic fields and the Gauss residual: B+E+Gauss
+   FieldOutputTag   = B+E
+   # MomentsOutputTag supports rho/J and raw pressure tensor tags PXX/PXY/PXZ/PYY/PYZ/PZZ.
+   MomentsOutputTag = rho
+# diagnostics.csv cadence (0 disables; defaults to FieldOutputCycle when omitted)
+   DiagnosticsOutputCycle = 20
+# Console energy cadence (0 reports only the final state)
+   DiagnosticEnergyCycle = 1
+# Gauss-law residual cadence: gauss.csv and one log line per sample (0 disables)
+   DiagnosticGaussCycle = 0
+# Particle output cadence (0 disables)
+   ParticlesOutputCycle = 0
+   # ParticlesOutputTag has no effect: a particle snapshot always holds position, velocity, charge and id.
+   ParticlesOutputTag = position+velocity+q
+# Checkpoint cadence (0 disables); CallFinalize also checkpoints the final state when RestartOutputCycle > 0
+   RestartOutputCycle = 0
+   CallFinalize = 1

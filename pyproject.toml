@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tpic-tools"
+version = "0.1.0"
+description = "TPIC simulation output readers and analysis support"
+requires-python = ">=3.10"
+license = {text = "GPL-3.0-or-later"}
+
+[project.optional-dependencies]
+analysis = ["numpy", "matplotlib", "scipy"]
+
+[tool.setuptools.packages.find]
+where = ["tools"]
+include = ["tpic_tools*"]
